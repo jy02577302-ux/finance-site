@@ -43,15 +43,15 @@ export default function Header() {
     <header className="bg-white shadow-sm border-b sticky top-0 z-50">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          {/* Logo */}
+          {/* Logo - Premium */}
           <Link
             href={`/${currentLang}`}
             className="flex items-center gap-2 group"
           >
-            <div className="w-8 h-8 bg-primary-700 rounded-lg flex items-center justify-center transition-transform duration-200 group-hover:scale-110">
-              <span className="text-white font-bold text-lg">S</span>
+            <div className="w-8 h-8 bg-gradient-to-br from-accent-500 to-accent-600 rounded-lg flex items-center justify-center transition-transform duration-200 group-hover:scale-110 shadow-md">
+              <span className="text-primary-900 font-bold text-lg">S</span>
             </div>
-            <span className="font-bold text-xl text-gray-900 hidden sm:inline transition-colors group-hover:text-primary-700">
+            <span className="font-display font-bold text-xl text-primary-900 hidden sm:inline transition-colors group-hover:text-accent-600">
               STRESS FREE FINANCE
             </span>
           </Link>
@@ -68,8 +68,8 @@ export default function Header() {
                     relative px-4 py-2 text-sm font-medium rounded-md
                     transition-all duration-200 ease-in-out
                     ${isActive
-                      ? "text-primary-700 bg-primary-50"
-                      : "text-gray-600 hover:text-primary-700 hover:bg-gray-50"
+                      ? "text-accent-600 bg-accent-50"
+                      : "text-primary-600 hover:text-accent-600 hover:bg-primary-50"
                     }
                     after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2
                     after:w-0 after:h-0.5 after:bg-accent-500 after:transition-all after:duration-200
@@ -89,18 +89,18 @@ export default function Header() {
               variant="ghost"
               size="sm"
               onClick={toggleLanguage}
-              className="text-gray-600 hover:bg-primary-50 hover:text-primary-700 transition-colors"
+              className="text-primary-600 hover:bg-accent-50 hover:text-accent-600 transition-colors"
             >
               <Globe className="w-4 h-4 mr-2" />
               {isEnglish ? "中文" : "EN"}
             </Button>
 
-            {/* CTA Button */}
+            {/* CTA Button - Premium Gold */}
             <Link href={`/${currentLang}/contact`}>
               <Button
                 variant="ghost"
                 size="sm"
-                className="bg-accent-500 text-black hover:bg-accent-400 focus-visible:ring-accent-500 hover:shadow-lg active:scale-95 transition-all duration-200"
+                className="bg-gradient-to-r from-accent-500 to-accent-600 text-primary-900 hover:from-accent-400 hover:to-accent-500 focus-visible:ring-accent-500 hover:shadow-lg active:scale-95 transition-all duration-300 font-semibold"
               >
                 {isEnglish ? "Free Assessment" : "免费评估"}
               </Button>
@@ -119,7 +119,7 @@ export default function Header() {
 
         {/* Mobile Navigation */}
         {mobileMenuOpen && (
-          <nav className="md:hidden py-4 border-t bg-gray-50">
+          <nav className="md:hidden py-4 border-t bg-platinum-50">
             <div className="flex flex-col gap-1">
               {navLinks.map((link) => {
                 const isActive = pathname === link.href;
@@ -132,15 +132,15 @@ export default function Header() {
                       transition-all duration-200
                       flex items-center justify-between
                       ${isActive
-                        ? "bg-primary-50 text-primary-700 pl-6 border-l-4 border-primary-700"
-                        : "text-gray-600 hover:bg-white hover:shadow-sm"
+                        ? "bg-accent-50 text-accent-700 pl-6 border-l-4 border-accent-600"
+                        : "text-primary-600 hover:bg-white hover:shadow-sm"
                       }
                     `}
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     <span>{link.label}</span>
                     {isActive && (
-                      <svg className="w-4 h-4 text-primary-700" fill="currentColor" viewBox="0 0 20 20">
+                      <svg className="w-4 h-4 text-accent-600" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                       </svg>
                     )}
