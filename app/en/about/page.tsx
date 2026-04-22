@@ -105,9 +105,9 @@ export default function AboutPageEN() {
             </p>
             <div className="grid md:grid-cols-3 gap-6">
               {[
-                { name: "John Smith", title: "Senior Mortgage Broker", specialty: "First Home Buyers", exp: "12 years" },
-                { name: "Sarah Chen", title: "Investment Loan Specialist", specialty: "Investment Portfolios", exp: "8 years" },
-                { name: "Michael Wong", title: "Construction Loan Advisor", specialty: "Construction Finance", exp: "10 years" },
+                { name: "Steven Mo", title: "Senior Mortgage Broker", specialty: "First Home Buyers", exp: "12 years" },
+                { name: "Steven Mo", title: "Investment Loan Specialist", specialty: "Investment Portfolios", exp: "8 years" },
+                { name: "Steven Mo", title: "Construction Loan Advisor", specialty: "Construction Finance", exp: "10 years" },
               ].map((member) => (
                 <div key={member.name} className="bg-white p-6 rounded-xl border text-center">
                   <div className="w-20 h-20 bg-gray-200 rounded-full mx-auto mb-4 flex items-center justify-center">

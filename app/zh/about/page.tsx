@@ -105,9 +105,9 @@ export default function AboutPage() {
             </p>
             <div className="grid md:grid-cols-3 gap-6">
               {[
-                { name: "John Smith", title: "高级房贷经纪", specialty: "首次置业", exp: "12 年" },
-                { name: "Sarah Chen", title: "投资贷款专家", specialty: "投资组合", exp: "8 年" },
-                { name: "Michael Wong", title: "建筑贷款顾问", specialty: "建筑贷款", exp: "10 年" },
+                { name: "Steven Mo", title: "高级房贷经纪", specialty: "首次置业", exp: "12 年" },
+                { name: "Steven Mo", title: "投资贷款专家", specialty: "投资组合", exp: "8 年" },
+                { name: "Steven Mo", title: "建筑贷款顾问", specialty: "建筑贷款", exp: "10 年" },
               ].map((member) => (
                 <div key={member.name} className="bg-white p-6 rounded-xl border text-center">
                   <div className="w-20 h-20 bg-gray-200 rounded-full mx-auto mb-4 flex items-center justify-center">
