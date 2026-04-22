@@ -90,12 +90,14 @@ export default function HomePageZH() {
             {/* Product 1: Home Loan */}
             <div className="bg-white p-8 rounded-xl shadow-md border hover:shadow-lg transition">
               <h3 className="text-xl font-bold mb-4">房屋贷款</h3>
-              <p className="text-gray-600 mb-6">为自住或投资购买房产提供具有竞争力的利率和灵活的还款方式。</p>
+              <p className="text-gray-600 mb-6">
+                无论是首次购房、重新贷款还是投资，我们都能帮您找到合适方案。服务完全免费。
+              </p>
               <ul className="space-y-2 text-sm mb-8">
-                <li>• 利率从 5.89% 起</li>
-                <li>• 无月费，透明收费</li>
-                <li>• 支持抵消账户</li>
-                <li>• 快速审批 48 小时</li>
+                <li>• 免费服务，贷款经纪费由银行支付</li>
+                <li>• Access to 100+ 贷款机构</li>
+                <li>• 我们处理所有 paperwork，节省您的时间</li>
+                <li>• 独立建议，始终为您的最大利益</li>
               </ul>
               <a href="/zh/products/home-loan" className="block w-full text-center rounded-md border border-gray-200 bg-white px-4 py-2 text-sm font-medium hover:bg-gray-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
                 了解详情
@@ -105,12 +107,14 @@ export default function HomePageZH() {
             {/* Product 2: Business Loan */}
             <div className="bg-white p-8 rounded-xl shadow-md border hover:shadow-lg transition">
               <h3 className="text-xl font-bold mb-4">商业贷款</h3>
-              <p className="text-gray-600 mb-6">为企业和投资者提供灵活的商业融资方案，助力业务增长与投资。</p>
+              <p className="text-gray-600 mb-6">
+                为企业和投资者提供商业融资方案。免费服务，无任何隐藏费用。
+              </p>
               <ul className="space-y-2 text-sm mb-8">
-                <li>• 商业地产贷款</li>
-                <li>• 企业营运资金支持</li>
-                <li>• 设备与车辆融资</li>
-                <li>• 灵活还款结构</li>
+                <li>• 商业地产、营运资金、设备融资</li>
+                <li>• 100+ 贷款机构选择</li>
+                <li>• 快速审批，专业顾问支持</li>
+                <li>• 定制化方案，符合您的现金流</li>
               </ul>
               <a href="/zh/products/business-loan" className="block w-full text-center rounded-md border border-gray-200 bg-white px-4 py-2 text-sm font-medium hover:bg-gray-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
                 了解详情
@@ -120,12 +124,14 @@ export default function HomePageZH() {
             {/* Product 3: Development Loan */}
             <div className="bg-white p-8 rounded-xl shadow-md border hover:shadow-lg transition">
               <h3 className="text-xl font-bold mb-4">开发贷款</h3>
-              <p className="text-gray-600 mb-6">支持土地分割与住宅/商业开发项目，按工程进度分期拨款。</p>
+              <p className="text-gray-600 mb-6">
+                土地分割、住宅商业开发项目融资。按进度拨款，全程专业指导。免费咨询。
+              </p>
               <ul className="space-y-2 text-sm mb-8">
-                <li>• 按工程进度分期拨款</li>
-                <li>• 完工自动转永久贷款</li>
-                <li>• 只付利息 during construction</li>
-                <li>• 开发专家全程支持</li>
+                <li>• 开发贷款专家 10+ 年经验</li>
+                <li>• Access to  specialist lenders</li>
+                <li>• 分期拨款，完工转永久贷款</li>
+                <li>• 专人跟进，快速预审批</li>
               </ul>
               <a href="/zh/products/development-loan" className="block w-full text-center rounded-md border border-gray-200 bg-white px-4 py-2 text-sm font-medium hover:bg-gray-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
                 了解详情
@@ -144,22 +150,25 @@ export default function HomePageZH() {
               <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6">
                 <svg className="w-8 h-8 text-primary-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
               </div>
-              <h3 className="text-xl font-bold mb-4">专家团队</h3>
-              <p className="text-gray-600">我们的房贷经纪拥有 10+ 年墨尔本本地经验，精通各类贷款产品。</p>
+              <h3 className="text-xl font-bold mb-4">免费服务</h3>
+              <p className="text-gray-600 leading-relaxed">
+                我们的服务对您完全免费。贷款经纪费由银行支付，您无需支付任何咨询费或手续费。
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6">
                 <svg className="w-8 h-8 text-primary-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
               </div>
-              <h3 className="text-xl font-bold mb-4">快速审批</h3>
-              <p className="text-gray-600">简化流程，大多数申请 48 小时内获批，无需漫长等待。</p>
+              <h3 className="text-xl font-bold mb-4">100+ 贷款机构</h3>
+              <p className="text-gray-600 leading-relaxed">
+                我们 access 100+ lenders，从大型银行到专业金融机构，确保您获得最佳利率和条款。
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6">
                 <svg className="w-8 h-8 text-primary-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
               </div>
-              <h3 className="text-xl font-bold mb-4">免费评估，无任何义务</h3>
-              <p className="text-gray-600">初次咨询完全免费，不收取任何费用，您可安心比较方案。</p>
+              <h3 className="text-xl font-bold mb-4">节省您的时间</h3>
+              <p className="text-gray-600 leading-relaxed">
+                研究 hundreds of products 和处理繁琐的 paperwork 需要花费大量时间。让我们为您搞定一切。
             </div>
           </div>
         </div>
