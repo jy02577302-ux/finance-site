@@ -1,6 +1,11 @@
-"use client";
-
+import { Metadata } from "next";
 import Calculator from "@/components/calculator";
+
+export const metadata: Metadata = {
+  title: "房贷计算器 | STRESS FREE FINANCE",
+  description: "使用我们的免费房贷计算器估算月供、总利息和印花税。支持多种贷款类型，透明计算。",
+  keywords: "房贷计算器, 月供计算, 印花税, 贷款利息, 澳洲房贷"
+};
 
 export default function CalculatorsPage() {
   return (
