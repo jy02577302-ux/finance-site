@@ -206,42 +206,61 @@ export default function HomePageZH() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-gray-300 py-12">
-        <div className="container mx-auto px-4 grid md:grid-cols-4 gap-8">
+      <footer className="bg-gray-900 text-gray-300 py-8 md:py-12">
+        <div className="container mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
+          {/* Brand */}
           <div>
-            <h4 className="text-white font-bold text-lg mb-4">STRESS FREE FINANCE</h4>
-            <p className="text-sm">专业、透明、高效的房贷服务，助您轻松实现置业梦想。</p>
+            <h4 className="text-white font-bold text-lg mb-3">STRESS FREE FINANCE</h4>
+            <p className="text-xs md:text-sm leading-relaxed">专业、透明、高效的房贷服务，助您轻松实现置业梦想。</p>
           </div>
+
+          {/* Quick Links */}
           <div>
-            <h4 className="text-white font-bold text-lg mb-4">快速链接</h4>
-            <ul className="space-y-2 text-sm">
-              <li><Link href="/zh/products" className="hover:text-white">产品</Link></li>
-              <li><Link href="/zh/calculators" className="hover:text-white">计算器</Link></li>
-              <li><Link href="/zh/about" className="hover:text-white">关于我们</Link></li>
-              <li><Link href="/zh/contact" className="hover:text-white">联系我们</Link></li>
-              <li><Link href="/en" className="hover:text-white">English</Link></li>
+            <h4 className="text-white font-bold text-lg mb-3">快速链接</h4>
+            <ul className="space-y-2 text-xs md:text-sm">
+              <li><Link href="/zh/products" className="hover:text-white transition-colors">产品</Link></li>
+              <li><Link href="/zh/calculators" className="hover:text-white transition-colors">计算器</Link></li>
+              <li><Link href="/zh/about" className="hover:text-white transition-colors">关于我们</Link></li>
+              <li><Link href="/zh/contact" className="hover:text-white transition-colors">联系我们</Link></li>
+              <li><Link href="/en" className="hover:text-white transition-colors">English</Link></li>
             </ul>
           </div>
+
+          {/* Legal */}
           <div>
-            <h4 className="text-white font-bold text-lg mb-4">法律</h4>
-            <ul className="space-y-2 text-sm">
-              <li><Link href="/zh/legal/privacy" className="hover:text-white">隐私政策</Link></li>
-              <li><Link href="/zh/legal/terms" className="hover:text-white">服务条款</Link></li>
-              <li><Link href="/zh/legal/credit-guide" className="hover:text-white">信贷指南</Link></li>
+            <h4 className="text-white font-bold text-lg mb-3">法律</h4>
+            <ul className="space-y-2 text-xs md:text-sm">
+              <li><Link href="/zh/legal/privacy" className="hover:text-white transition-colors">隐私政策</Link></li>
+              <li><Link href="/zh/legal/terms" className="hover:text-white transition-colors">服务条款</Link></li>
+              <li><Link href="/zh/legal/credit-guide" className="hover:text-white transition-colors">信贷指南</Link></li>
             </ul>
           </div>
+
+          {/* Contact */}
           <div>
-            <h4 className="text-white font-bold text-lg mb-4">联系方式</h4>
-            <address className="not-italic text-sm space-y-2">
-              <p>123 Collins St</p>
-              <p>墨尔本 VIC 3000</p>
-              <p>电话：0412 892 782</p>
-              <p>邮箱：info@stressfree.com.au</p>
-            </address>
+            <h4 className="text-white font-bold text-lg mb-3">联系方式</h4>
+            <div className="text-xs md:text-sm space-y-2">
+              <p className="flex items-start gap-2">
+                <svg className="w-4 h-4 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+                <span>123 Collins St, Melbourne VIC 3000</span>
+              </p>
+              <p className="flex items-center gap-2">
+                <svg className="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
+                <a href="tel:0412892782" className="hover:text-white transition-colors">0412 892 782</a>
+              </p>
+              <p className="flex items-center gap-2">
+                <svg className="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+                <a href="mailto:info@stressfree.com.au" className="hover:text-white transition-colors break-all">info@stressfree.com.au</a>
+              </p>
+            </div>
           </div>
         </div>
-        <div className="container mx-auto px-4 mt-12 pt-8 border-t border-gray-800 text-center text-sm">
-          <p>&copy; {new Date().getFullYear()} STRESS FREE FINANCE. 保留所有权利。ACN: 123 456 789。澳大利亚信贷执照号：123456。</p>
+
+        {/* Bottom Bar */}
+        <div className="container mx-auto px-4 mt-8 pt-6 border-t border-gray-800 text-center">
+          <p className="text-xs md:text-sm text-gray-400 leading-relaxed">
+            &copy; {new Date().getFullYear()} STRESS FREE FINANCE. 保留所有权利。ACN: 123 456 789。澳大利亚信贷执照号：123456。
+          </p>
         </div>
       </footer>
     </div>
