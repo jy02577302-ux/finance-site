@@ -4,8 +4,8 @@ import { ArrowLeft, CheckCircle, Phone, Mail, TrendingUp } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Business Loan | STRESS FREE FINANCE",
-  description: "Business loans - free service, access to 100+ lenders. Commercial property, working capital, equipment financing. Fast approval.",
-  keywords: "business loan, commercial loan, business financing, commercial property loan, equipment finance, australian business loan, free mortgage broker"
+  description: "Business loans - free service, access to 100+ lenders. Commercial property, working capital, equipment financing. Expert brokers.",
+  keywords: "business loan, commercial loan, business financing, australian business loan, free mortgage broker"
 };
 
 export default function BusinessLoanPage() {
@@ -18,122 +18,135 @@ export default function BusinessLoanPage() {
             <ArrowLeft className="w-4 h-4" />
             Back to Products
           </Link>
-          <div className="flex items-center gap-3 mb-4">
-            <TrendingUp className="w-8 h-8" />
-            <h1 className="text-4xl md:text-5xl font-bold">Business Loan</h1>
-          </div>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">Business Loan</h1>
           <p className="text-xl text-emerald-100 max-w-2xl">
-            Flexible financing solutions for businesses, from commercial property to working capital.
+            Flexible financing solutions for businesses. Our expert brokers will guide you to the right solution.
           </p>
         </div>
       </section>
 
-      {/* Features */}
+      {/* Our Promise */}
       <section className="py-16">
         <div className="container mx-auto px-4">
-          {/* Benefits Bar */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+          <h2 className="text-3xl font-bold mb-8 text-center">Our Promise to You</h2>
+          <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             {[
-              { icon: "🆓", title: "Free Service", desc: "Paid by lender, not you" },
-              { icon: "🏦", title: "100+ Lenders", desc: "Access to broad loan panel" },
-              { icon: "⚡", title: "Fast Approval", desc: "Streamlined processing" },
-              { icon: "💼", title: "Expert Team", desc: "10+ years experience" },
-            ].map((benefit, i) => (
-              <div key={i} className="bg-emerald-50 rounded-xl p-4 text-center">
-                <p className="text-2xl mb-2">{benefit.icon}</p>
-                <h3 className="font-bold text-sm mb-1">{benefit.title}</h3>
-                <p className="text-xs text-gray-600">{benefit.desc}</p>
+              {
+                title: "No Cost to You",
+                desc: "Our business loan service is completely free. We are paid by the lenders, so you can focus on your business.",
+                icon: "🆓"
+              },
+              {
+                title: "Broad Lender Access",
+                desc: "We access 100+ lenders, from major banks to specialist finance providers, to find the best terms and rates.",
+                icon: "🏦"
+              },
+              {
+                title: "Tailored to Your Needs",
+                desc: "Every business is unique. We don't push products—we recommend solutions that fit your cash flow and growth plans.",
+                icon: "⚖️"
+              }
+            ].map((item, i) => (
+              <div key={i} className="text-center p-6">
+                <p className="text-4xl mb-4">{item.icon}</p>
+                <h3 className="text-xl font-bold mb-3">{item.title}</h3>
+                <p className="text-gray-600 leading-relaxed">{item.desc}</p>
               </div>
             ))}
           </div>
+        </div>
+      </section>
 
-          <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
-            <div>
-              <h2 className="text-3xl font-bold mb-6">Why Choose Our Business Loan?</h2>
-              <ul className="space-y-4">
-                {[
-                  "Commercial real estate purchase and refinance",
-                  "Business operating capital and cash flow support",
-                  "Equipment and vehicle financing solutions",
-                  "Flexible repayment structures and rate options",
-                  "Efficient approval process",
-                  "Dedicated business consultant throughout",
-                ].map((item, i) => (
-                  <li key={i} className="flex items-start gap-3">
-                    <CheckCircle className="w-6 h-6 text-emerald-600 mt-0.5" />
-                    <span className="text-gray-700">{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="bg-gray-50 p-8 rounded-2xl border">
-              <h3 className="text-xl font-bold mb-4">Ideal For</h3>
-              <div className="space-y-4">
-                {[
-                  { role: "Business Owners", desc: "Expand operations, purchase property, upgrade equipment", icon: "🏢" },
-                  { role: "Investors", desc: "Invest in commercial real estate, retail, industrial", icon: "🏙️" },
-                  { role: "Developers", desc: "Land development, project financing needs", icon: "🏗️" },
-                ].map((item, i) => (
-                  <div key={i} className="flex items-center gap-3">
-                    <div className="w-10 h-10 bg-emerald-100 rounded-full flex items-center justify-center text-lg">
-                      {item.icon}
-                    </div>
-                    <div>
-                      <p className="font-medium">{item.role}</p>
-                      <p className="text-sm text-gray-500">{item.desc}</p>
-                    </div>
-                  </div>
-                ))}
+      {/* Why Choose Us */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold mb-12 text-center">Why Choose Us</h2>
+          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <div className="text-center">
+              <div className="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                <svg className="w-8 h-8 text-emerald-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
               </div>
+              <h3 className="text-xl font-bold mb-4">Commercial Loan Specialists</h3>
+              <p className="text-gray-600 leading-relaxed">
+                10+ years of experience in commercial property, working capital, and equipment finance. We understand business needs.
+              </p>
+            </div>
+            <div className="text-center">
+              <div className="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                <svg className="w-8 h-8 text-emerald-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+              </div>
+              <h3 className="text-xl font-bold mb-4">Fast Approval</h3>
+              <p className="text-gray-600 leading-relaxed">
+                Strong relationships with lenders mean faster processing. Most applications get in-principle approval within days.
+              </p>
+            </div>
+            <div className="text-center">
+              <div className="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                <svg className="w-8 h-8 text-emerald-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" /></svg>
+              </div>
+              <h3 className="text-xl font-bold mb-4">End-to-End Support</h3>
+              <p className="text-gray-600 leading-relaxed">
+                From application to settlement and beyond, we provide ongoing support to ensure your financing stays on track.
+              </p>
             </div>
           </div>
+        </div>
+      </section>
 
-          {/* Loan Types */}
-          <h2 className="text-3xl font-bold mb-6">Our Business Loan Solutions</h2>
-          <div className="grid md:grid-cols-3 gap-8 mb-16">
+      {/* What We Cover */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold mb-8 text-center">What We Cover</h2>
+          <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             {[
               {
                 title: "Commercial Real Estate",
-                desc: "Purchase or refinance commercial properties including office, retail, and industrial."
+                desc: "Purchase or refinance office, retail, and industrial properties with competitive rates.",
+                icon: "🏢"
               },
               {
                 title: "Working Capital",
-                desc: "Short to medium-term funding for daily operations and expansion needs."
+                desc: "Short to medium-term funding for day-to-day operations and business expansion.",
+                icon: "💰"
               },
               {
-                title: "Equipment Financing",
-                desc: "Leasing and financing solutions for business equipment, vehicles, and machinery."
+                title: "Equipment Finance",
+                desc: "Leasing and financing for business vehicles, machinery, and equipment upgrades.",
+                icon: "🔧"
               }
             ].map((item, i) => (
-              <div key={i} className="bg-gray-50 p-6 rounded-xl border">
+              <div key={i} className="bg-white p-6 rounded-xl border text-center">
+                <p className="text-3xl mb-4">{item.icon}</p>
                 <h3 className="text-xl font-bold mb-3">{item.title}</h3>
-                <p className="text-gray-600">{item.desc}</p>
+                <p className="text-gray-600 leading-relaxed">{item.desc}</p>
               </div>
             ))}
           </div>
+        </div>
+      </section>
 
-          {/* CTA */}
-          <div className="text-center">
-            <h2 className="text-2xl font-bold mb-4">Need Business Financing?</h2>
-            <p className="text-gray-600 mb-6">
-              Our business loan specialists will tailor a financing solution to meet your needs.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="tel:0412892782"
-                className="inline-flex items-center justify-center gap-2 rounded-md bg-emerald-700 px-8 py-4 text-white font-semibold hover:bg-emerald-600"
-              >
-                <Phone className="w-5 h-5" />
-                Call 0412 892 782
-              </a>
-              <a
-                href="/en/contact"
-                className="inline-flex items-center justify-center gap-2 rounded-md border border-gray-300 bg-white px-8 py-4 text-gray-900 font-semibold hover:bg-gray-50"
-              >
-                <Mail className="w-5 h-5" />
-                Book Consultation
-              </a>
-            </div>
+      {/* CTA */}
+      <section className="bg-emerald-700 py-16">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl font-bold text-white mb-4">Need Business Financing?</h2>
+          <p className="text-xl text-emerald-100 max-w-2xl mx-auto mb-8">
+            Free consultation, no obligation. Let our experts tailor a solution for your business.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="tel:0412892782"
+              className="inline-flex items-center justify-center gap-2 rounded-md bg-white px-8 py-4 text-emerald-800 font-semibold hover:bg-gray-100"
+            >
+              <Phone className="w-5 h-5" />
+              Call 0412 892 782
+            </a>
+            <a
+              href="/en/contact"
+              className="inline-flex items-center justify-center gap-2 rounded-md border-2 border-white px-8 py-4 text-white font-semibold hover:bg-white hover:text-emerald-800"
+            >
+              <Mail className="w-5 h-5" />
+              Book Online
+            </a>
           </div>
         </div>
       </section>

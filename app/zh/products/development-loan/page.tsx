@@ -4,8 +4,8 @@ import { ArrowLeft, CheckCircle, Phone, Mail, HardHat } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "开发贷款 | STRESS FREE FINANCE",
-  description: "开发贷款 - 免费服务，100+贷款机构。土地分割、住宅商业开发。分期拨款，完工转永久贷款。",
-  keywords: "开发贷款, 土地开发, 项目融资, progress payment, 澳洲开发贷款, 建筑贷款, 免费房贷经纪"
+  description: "开发贷款 - 免费服务，100+银行和贷款机构。土地分割、住宅商业开发。分期拨款，完工转永久贷款。",
+  keywords: "开发贷款, 土地开发, 项目融资, progress payment, 澳洲开发贷款, 免费房贷经纪"
 };
 
 export default function DevelopmentLoanPage() {
@@ -18,136 +18,153 @@ export default function DevelopmentLoanPage() {
             <ArrowLeft className="w-4 h-4" />
             返回产品列表
           </Link>
-          <div className="flex items-center gap-3 mb-4">
-            <HardHat className="w-8 h-8" />
-            <h1 className="text-4xl md:text-5xl font-bold">开发贷款</h1>
-          </div>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">开发贷款</h1>
           <p className="text-xl text-amber-100 max-w-2xl">
             支持土地分割、住宅和商业开发项目。按工程进度分期拨款，全程专业指导。
           </p>
         </div>
       </section>
 
-      {/* Features */}
+      {/* Our Promise */}
       <section className="py-16">
         <div className="container mx-auto px-4">
-          {/* Benefits Bar */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+          <h2 className="text-3xl font-bold mb-8 text-center">我们的承诺</h2>
+          <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             {[
-              { icon: "🆓", title: "免费服务", desc: "贷款经纪费由银行支付" },
-              { icon: "🏦", title: "100+ 机构", desc: "access to 100+ lenders" },
-              { icon: "⚡", title: "快速启动", desc: "预审批快速高效" },
-              { icon: "👷", title: "开发专家", desc: "10+ 年开发贷款经验" },
-            ].map((benefit, i) => (
-              <div key={i} className="bg-amber-50 rounded-xl p-4 text-center">
-                <p className="text-2xl mb-2">{benefit.icon}</p>
-                <h3 className="font-bold text-sm mb-1">{benefit.title}</h3>
-                <p className="text-xs text-gray-600">{benefit.desc}</p>
+              {
+                title: "免费服务",
+                desc: "开发贷款服务完全免费。我们的费用由贷款机构支付，不会增加您的项目成本。",
+                icon: "🆓"
+              },
+              {
+                title: "专业网络",
+                desc: "我们与 100+ 贷款机构合作，包括专门从事开发贷的机构，能为您找到最合适的融资方案。",
+                icon: "🏦"
+              },
+              {
+                title: "独立建议",
+                desc: "我们不会偏向任何贷款机构。根据您的项目类型、规模和风险承受能力，推荐最优方案。",
+                icon: "⚖️"
+              }
+            ].map((item, i) => (
+              <div key={i} className="text-center p-6">
+                <p className="text-4xl mb-4">{item.icon}</p>
+                <h3 className="text-xl font-bold mb-3">{item.title}</h3>
+                <p className="text-gray-600 leading-relaxed">{item.desc}</p>
               </div>
             ))}
           </div>
+        </div>
+      </section>
 
-          <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
-            <div>
-              <h2 className="text-3xl font-bold mb-6">为什么选择我们的开发贷款？</h2>
-              <ul className="space-y-4">
+      {/* Why Choose Us */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold mb-12 text-center">为什么选择我们</h2>
+          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <div className="text-center">
+              <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                <svg className="w-8 h-8 text-amber-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+              </div>
+              <h3 className="text-xl font-bold mb-4">开发贷款专家</h3>
+              <p className="text-gray-600 leading-relaxed">
+                10+ 年开发贷款经验，熟悉土地分割、住宅和商业开发的整个流程和资金需求。
+              </p>
+            </div>
+            <div className="text-center">
+              <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                <svg className="w-8 h-8 text-amber-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+              </div>
+              <h3 className="text-xl font-bold mb-4">快速启动</h3>
+              <p className="text-gray-600 leading-relaxed">
+                预审批快速高效。我们理解开发项目对时间敏感，会加速审批流程，确保您及时获得资金。
+              </p>
+            </div>
+            <div className="text-center">
+              <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                <svg className="w-8 h-8 text-amber-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+              </div>
+              <h3 className="text-xl font-bold mb-4">全程管理</h3>
+              <p className="text-gray-600 leading-relaxed">
+                从预审到 settlement，从分期拨款到完工转永久贷款，开发专家全程一对一支持。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Key Features */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold mb-8 text-center">开发贷款要点</h2>
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <div className="bg-white p-6 rounded-xl border">
+              <h3 className="text-xl font-bold mb-4">分期拨款</h3>
+              <ul className="space-y-3">
                 {[
-                  "土地分割与规划项目融资支持",
-                  "住宅开发（别墅、联排、公寓楼）",
-                  "商业开发（零售、工业物业）",
                   "按工程进度分期拨款，控制风险",
-                  "完工后自动转为永久贷款",
-                  "专属开发顾问全程支持",
+                  "通常 5-6 个关键阶段（地基、框架、封顶、内装、完工）",
+                  "每阶段完成后申请，经检查通过后拨款",
+                  "期间通常只付利息，减轻现金流压力",
                 ].map((item, i) => (
-                  <li key={i} className="flex items-start gap-3">
-                    <CheckCircle className="w-6 h-6 text-amber-600 mt-0.5" />
-                    <span className="text-gray-700">{item}</span>
+                  <li key={i} className="flex items-start gap-2">
+                    <CheckCircle className="w-5 h-5 text-amber-600 mt-0.5" />
+                    <span className="text-gray-700 text-sm">{item}</span>
                   </li>
                 ))}
               </ul>
             </div>
-            <div className="bg-gray-50 p-8 rounded-2xl border">
-              <h3 className="text-xl font-bold mb-4">典型开发时间线</h3>
-              <div className="space-y-3">
+            <div className="bg-white p-6 rounded-xl border">
+              <h3 className="text-xl font-bold mb-4">完工转永久贷款</h3>
+              <ul className="space-y-3">
                 {[
-                  { phase: "预审批", time: "1-2 周" },
-                  { phase: "地块/项目选择", time: "2-4 周" },
-                  { phase: "正式申请 & 评估", time: "2-3 周" },
-                  { phase: "Settlement（首次）", time: "1 周" },
-                  { phase: "施工期（分期）", time: "6-18 月" },
-                  { phase: "完工 & 转永久", time: "2-4 周" },
+                  "项目完工后自动转为标准永久房贷",
+                  "利率按当时市场重新定价",
+                  "可转为本息同还或只还利息",
+                  "如果您已找到买家，可选择一次性还清",
                 ].map((item, i) => (
-                  <div key={i} className="flex items-center justify-between p-3 bg-white rounded-lg border">
-                    <span className="font-medium text-sm">{item.phase}</span>
-                    <span className="text-amber-700 font-semibold text-sm">{item.time}</span>
-                  </div>
+                  <li key={i} className="flex items-start gap-2">
+                    <CheckCircle className="w-5 h-5 text-amber-600 mt-0.5" />
+                    <span className="text-gray-700 text-sm">{item}</span>
+                  </li>
                 ))}
-              </div>
+              </ul>
             </div>
           </div>
-
-          {/* Drawdown stages */}
-          <h2 className="text-3xl font-bold mb-6">分期拨款阶段</h2>
-          <div className="grid md:grid-cols-5 gap-6 mb-16">
-            {[
-              { num: "1", title: "地基完成", desc: "Settlement 后 1-2 月" },
-              { num: "2", title: "框架完成", desc: "结构框架完工" },
-              { num: "3", title: "封顶", desc: "屋顶和外墙完成，防水" },
-              { num: "4", title: "内装", desc: "水电、石膏板、油漆" },
-              { num: "5", title: "完工", desc: "最终检查，入住许可" },
-            ].map((item, i) => (
-              <div key={i} className="text-center p-6 bg-gray-50 rounded-xl hover:shadow-md transition">
-                <div className="w-10 h-10 bg-amber-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 font-bold">
-                  {item.num}
-                </div>
-                <h3 className="font-bold mb-2">{item.title}</h3>
-                <p className="text-sm text-gray-600">{item.desc}</p>
-              </div>
-            ))}
-          </div>
-
-          {/* Important notes */}
-          <div className="bg-amber-50 rounded-2xl p-8 mb-12">
-            <h3 className="text-xl font-bold mb-4">重要注意事项</h3>
-            <ul className="space-y-3">
-              {[
-                "开发贷款通常要求更高首付（通常 20%-30%）",
-                "需要提供开发计划、建筑合同、成本预算等文件",
-                "期间通常只支付利息，降低现金流压力",
-                "建议使用进度检查，确保每阶段工程合格",
-                "完工转为永久贷款时，利率可能根据当前市场重新定价",
-                "开发商需持有相关执照和保险",
-              ].map((item, i) => (
-                <li key={i} className="flex items-start gap-2 text-gray-700">
-                  <svg className="w-5 h-5 text-amber-600 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" /></svg>
-                  {item}
-                </li>
-              ))}
+          <div className="mt-8 bg-amber-50 rounded-xl p-6 border border-amber-200">
+            <h3 className="text-lg font-bold mb-3 text-amber-900">重要提示</h3>
+            <ul className="space-y-2 text-sm text-gray-700">
+              <li>• 通常需要 20-30% 首付或项目资产</li>
+              <li>• 需提供开发计划、建筑合同、成本预算、 Builder License</li>
+              <li>• 开发商需持有相关执照和保险</li>
+              <li>• 我们强烈建议您使用进度检查服务，确保工程质量</li>
             </ul>
           </div>
+        </div>
+      </section>
 
-          {/* CTA */}
-          <div className="text-center">
-            <h2 className="text-2xl font-bold mb-4">准备开始开发项目？</h2>
-            <p className="text-gray-600 mb-6">
-              我们的开发贷款专家将全程协助，确保您的项目顺利进行。
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="tel:0412892782"
-                className="inline-flex items-center justify-center gap-2 rounded-md bg-amber-700 px-8 py-4 text-white font-semibold hover:bg-amber-600"
-              >
-                <Phone className="w-5 h-5" />
-                致电 0412 892 782
-              </a>
-              <a
-                href="/zh/contact"
-                className="inline-flex items-center justify-center gap-2 rounded-md border border-gray-300 bg-white px-8 py-4 text-gray-900 font-semibold hover:bg-gray-50"
-              >
-                <Mail className="w-5 h-5" />
-                预约咨询
-              </a>
-            </div>
+      {/* CTA */}
+      <section className="bg-amber-700 py-16">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl font-bold text-white mb-4">准备开始开发项目？</h2>
+          <p className="text-xl text-amber-100 max-w-2xl mx-auto mb-8">
+            免费咨询，无任何义务。我们的开发贷款专家将全程协助您的项目。
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="tel:0412892782"
+              className="inline-flex items-center justify-center gap-2 rounded-md bg-white px-8 py-4 text-amber-800 font-semibold hover:bg-gray-100"
+            >
+              <Phone className="w-5 h-5" />
+              致电 0412 892 782
+            </a>
+            <a
+              href="/zh/contact"
+              className="inline-flex items-center justify-center gap-2 rounded-md border-2 border-white px-8 py-4 text-white font-semibold hover:bg-white hover:text-amber-800"
+            >
+              <Mail className="w-5 h-5" />
+              预约咨询
+            </a>
           </div>
         </div>
       </section>
