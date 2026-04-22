@@ -5,8 +5,8 @@ import { ArrowLeft, CheckCircle, Phone, Mail } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Home Loan | STRESS FREE FINANCE",
-  description: "Our home loans offer competitive rates from 5.89% p.a., no monthly fees, 100% offset account. Fast approval within 48 hours. Free consultation.",
-  keywords: "home loan, owner occupied mortgage, low interest rate, offset account, melbourne home loan, australian mortgage"
+  description: "Home loans with competitive rates from 5.89% p.a. Free service, access to 100+ lenders. Fast approval 48hrs. No monthly fees.",
+  keywords: "home loan, owner occupied mortgage, low interest rate, offset account, melbourne home loan, australian mortgage, free mortgage broker"
 };
 
 export default function HomeLoanPageEN() {
@@ -29,17 +29,33 @@ export default function HomeLoanPageEN() {
       {/* Features */}
       <section className="py-16">
         <div className="container mx-auto px-4">
+          {/* Benefits Bar */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+            {[
+              { icon: "🆓", title: "Free Service", desc: "Paid by lender, not you" },
+              { icon: "🏦", title: "100+ Lenders", desc: "Access to broad loan panel" },
+              { icon: "⚡", title: "Fast Approval", desc: "Most approved within 48hrs" },
+              { icon: "💎", title: "5000+ Clients", desc: "Trusted by Australians" },
+            ].map((benefit, i) => (
+              <div key={i} className="bg-primary-50 rounded-xl p-4 text-center">
+                <p className="text-2xl mb-2">{benefit.icon}</p>
+                <h3 className="font-bold text-sm mb-1">{benefit.title}</h3>
+                <p className="text-xs text-gray-600">{benefit.desc}</p>
+              </div>
+            ))}
+          </div>
+
           <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
             <div>
               <h2 className="text-3xl font-bold mb-6">Why Choose Our Home Loan?</h2>
               <ul className="space-y-4">
                 {[
                   "Interest rates from 5.89% p.a.",
-                  "No monthly fees, transparent pricing",
-                  "100% offset account (free)",
+                  "No monthly fees, fully transparent pricing",
+                  "100% offset account (free) - save on interest",
                   "Flexible repayment frequency (weekly/fortnightly/monthly)",
                   "Fast approval - typically within 48 hours",
-                  "Principal & interest or interest-only options",
+                  "Both P&I and interest-only options available",
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-3">
                     <CheckCircle className="w-6 h-6 text-primary-600 mt-0.5" />

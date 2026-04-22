@@ -4,8 +4,8 @@ import { ArrowLeft, CheckCircle, Phone, Mail, HardHat } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "开发贷款 | STRESS FREE FINANCE",
-  description: "开发贷款支持土地分割、住宅和商业开发项目。按进度拨款，灵活条件，开发专家全程支持。",
-  keywords: "开发贷款, 建筑贷款, 土地开发, 项目融资, progress payment, 澳洲开发贷款, 建筑贷款"
+  description: "开发贷款 - 免费服务，100+贷款机构。土地分割、住宅商业开发。分期拨款，完工转永久贷款。",
+  keywords: "开发贷款, 土地开发, 项目融资, progress payment, 澳洲开发贷款, 建筑贷款, 免费房贷经纪"
 };
 
 export default function DevelopmentLoanPage() {
@@ -31,17 +31,33 @@ export default function DevelopmentLoanPage() {
       {/* Features */}
       <section className="py-16">
         <div className="container mx-auto px-4">
+          {/* Benefits Bar */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+            {[
+              { icon: "🆓", title: "免费服务", desc: "贷款经纪费由银行支付" },
+              { icon: "🏦", title: "100+ 机构", desc: "access to 100+ lenders" },
+              { icon: "⚡", title: "快速启动", desc: "预审批快速高效" },
+              { icon: "👷", title: "开发专家", desc: "10+ 年开发贷款经验" },
+            ].map((benefit, i) => (
+              <div key={i} className="bg-amber-50 rounded-xl p-4 text-center">
+                <p className="text-2xl mb-2">{benefit.icon}</p>
+                <h3 className="font-bold text-sm mb-1">{benefit.title}</h3>
+                <p className="text-xs text-gray-600">{benefit.desc}</p>
+              </div>
+            ))}
+          </div>
+
           <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
             <div>
               <h2 className="text-3xl font-bold mb-6">为什么选择我们的开发贷款？</h2>
               <ul className="space-y-4">
                 {[
-                  "土地分割与规化项目融资",
-                  "住宅开发（别墅、公寓楼）",
-                  "商业开发（零售、工业）",
-                  "按工程进度分期拨款",
+                  "土地分割与规划项目融资支持",
+                  "住宅开发（别墅、联排、公寓楼）",
+                  "商业开发（零售、工业物业）",
+                  "按工程进度分期拨款，控制风险",
                   "完工后自动转为永久贷款",
-                  "开发专家全程支持",
+                  "专属开发顾问全程支持",
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-3">
                     <CheckCircle className="w-6 h-6 text-amber-600 mt-0.5" />
@@ -51,19 +67,19 @@ export default function DevelopmentLoanPage() {
               </ul>
             </div>
             <div className="bg-gray-50 p-8 rounded-2xl border">
-              <h3 className="text-xl font-bold mb-4">典型开发流程</h3>
-              <div className="space-y-4">
+              <h3 className="text-xl font-bold mb-4">典型开发时间线</h3>
+              <div className="space-y-3">
                 {[
                   { phase: "预审批", time: "1-2 周" },
-                  { phase: "选择地块/项目", time: "2-4 周" },
-                  { phase: "正式申请与评估", time: "2-3 周" },
-                  { phase: "Settlement（首次拨款）", time: "1 周" },
-                  { phase: "施工期间（分期拨款）", time: "6-18 月" },
-                  { phase: "完工与转永久贷款", time: "2-4 周" },
+                  { phase: "地块/项目选择", time: "2-4 周" },
+                  { phase: "正式申请 & 评估", time: "2-3 周" },
+                  { phase: "Settlement（首次）", time: "1 周" },
+                  { phase: "施工期（分期）", time: "6-18 月" },
+                  { phase: "完工 & 转永久", time: "2-4 周" },
                 ].map((item, i) => (
                   <div key={i} className="flex items-center justify-between p-3 bg-white rounded-lg border">
-                    <span className="font-medium">{item.phase}</span>
-                    <span className="text-amber-700 font-semibold">{item.time}</span>
+                    <span className="font-medium text-sm">{item.phase}</span>
+                    <span className="text-amber-700 font-semibold text-sm">{item.time}</span>
                   </div>
                 ))}
               </div>
@@ -75,12 +91,12 @@ export default function DevelopmentLoanPage() {
           <div className="grid md:grid-cols-5 gap-6 mb-16">
             {[
               { num: "1", title: "地基完成", desc: "Settlement 后 1-2 月" },
-              { num: "2", title: "框架完成", desc: "建筑框架完工" },
-              { num: "3", title: "封顶", desc: "屋顶和外墙完成，房屋防水" },
-              { num: "4", title: "内装", desc: "水电、石膏板、油漆等" },
-              { num: "5", title: "完工", desc: "最终检查，颁发入住证" },
+              { num: "2", title: "框架完成", desc: "结构框架完工" },
+              { num: "3", title: "封顶", desc: "屋顶和外墙完成，防水" },
+              { num: "4", title: "内装", desc: "水电、石膏板、油漆" },
+              { num: "5", title: "完工", desc: "最终检查，入住许可" },
             ].map((item, i) => (
-              <div key={i} className="text-center p-6 bg-gray-50 rounded-xl">
+              <div key={i} className="text-center p-6 bg-gray-50 rounded-xl hover:shadow-md transition">
                 <div className="w-10 h-10 bg-amber-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 font-bold">
                   {item.num}
                 </div>

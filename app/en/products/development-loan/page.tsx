@@ -4,8 +4,8 @@ import { ArrowLeft, CheckCircle, Phone, Mail, HardHat } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Development Loan | STRESS FREE FINANCE",
-  description: "Development loans for land subdivision, residential and commercial projects. Progress drawdowns, expert guidance throughout.",
-  keywords: "development loan, construction loan, land development, project financing, progress payment, australian development finance"
+  description: "Development loans - free service, 100+ lenders. Land subdivision, residential/commercial projects. Progress drawdowns, convert to permanent.",
+  keywords: "development loan, land development, project financing, progress payment, australian development finance, free mortgage broker"
 };
 
 export default function DevelopmentLoanPage() {

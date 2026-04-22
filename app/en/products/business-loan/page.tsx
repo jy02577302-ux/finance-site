@@ -4,8 +4,8 @@ import { ArrowLeft, CheckCircle, Phone, Mail, TrendingUp } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Business Loan | STRESS FREE FINANCE",
-  description: "Business loans for commercial property, working capital, and equipment financing. Flexible solutions for Australian businesses.",
-  keywords: "business loan, commercial loan, business financing, commercial property loan, equipment finance, australian business loan"
+  description: "Business loans - free service, access to 100+ lenders. Commercial property, working capital, equipment financing. Fast approval.",
+  keywords: "business loan, commercial loan, business financing, commercial property loan, equipment finance, australian business loan, free mortgage broker"
 };
 
 export default function BusinessLoanPage() {
@@ -31,17 +31,33 @@ export default function BusinessLoanPage() {
       {/* Features */}
       <section className="py-16">
         <div className="container mx-auto px-4">
+          {/* Benefits Bar */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+            {[
+              { icon: "🆓", title: "Free Service", desc: "Paid by lender, not you" },
+              { icon: "🏦", title: "100+ Lenders", desc: "Access to broad loan panel" },
+              { icon: "⚡", title: "Fast Approval", desc: "Streamlined processing" },
+              { icon: "💼", title: "Expert Team", desc: "10+ years experience" },
+            ].map((benefit, i) => (
+              <div key={i} className="bg-emerald-50 rounded-xl p-4 text-center">
+                <p className="text-2xl mb-2">{benefit.icon}</p>
+                <h3 className="font-bold text-sm mb-1">{benefit.title}</h3>
+                <p className="text-xs text-gray-600">{benefit.desc}</p>
+              </div>
+            ))}
+          </div>
+
           <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
             <div>
               <h2 className="text-3xl font-bold mb-6">Why Choose Our Business Loan?</h2>
               <ul className="space-y-4">
                 {[
                   "Commercial real estate purchase and refinance",
-                  "Business operating capital support",
-                  "Equipment and vehicle financing",
+                  "Business operating capital and cash flow support",
+                  "Equipment and vehicle financing solutions",
                   "Flexible repayment structures and rate options",
-                  "Fast approval process",
-                  "Dedicated business consultant",
+                  "Efficient approval process",
+                  "Dedicated business consultant throughout",
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-3">
                     <CheckCircle className="w-6 h-6 text-emerald-600 mt-0.5" />
@@ -53,33 +69,21 @@ export default function BusinessLoanPage() {
             <div className="bg-gray-50 p-8 rounded-2xl border">
               <h3 className="text-xl font-bold mb-4">Ideal For</h3>
               <div className="space-y-4">
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 bg-emerald-100 rounded-full flex items-center justify-center">
-                    <svg className="w-5 h-5 text-emerald-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" /></svg>
+                {[
+                  { role: "Business Owners", desc: "Expand operations, purchase property, upgrade equipment", icon: "🏢" },
+                  { role: "Investors", desc: "Invest in commercial real estate, retail, industrial", icon: "🏙️" },
+                  { role: "Developers", desc: "Land development, project financing needs", icon: "🏗️" },
+                ].map((item, i) => (
+                  <div key={i} className="flex items-center gap-3">
+                    <div className="w-10 h-10 bg-emerald-100 rounded-full flex items-center justify-center text-lg">
+                      {item.icon}
+                    </div>
+                    <div>
+                      <p className="font-medium">{item.role}</p>
+                      <p className="text-sm text-gray-500">{item.desc}</p>
+                    </div>
                   </div>
-                  <div>
-                    <p className="font-medium">Business Owners</p>
-                    <p className="text-sm text-gray-500">Expand operations, purchase property, upgrade equipment</p>
-                  </div>
-                </div>
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 bg-emerald-100 rounded-full flex items-center justify-center">
-                    <svg className="w-5 h-5 text-emerald-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg>
-                  </div>
-                  <div>
-                    <p className="font-medium">Investors</p>
-                    <p className="text-sm text-gray-500">Invest in commercial real estate, retail, industrial</p>
-                  </div>
-                </div>
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 bg-emerald-100 rounded-full flex items-center justify-center">
-                    <svg className="w-5 h-5 text-emerald-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-                  </div>
-                  <div>
-                    <p className="font-medium">Developers</p>
-                    <p className="text-sm text-gray-500">Land development, project financing, construction loans</p>
-                  </div>
-                </div>
+                ))}
               </div>
             </div>
           </div>

@@ -5,8 +5,8 @@ import { ArrowLeft, CheckCircle, Phone, Mail } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "房屋贷款 | STRESS FREE FINANCE",
-  description: "我们的房屋贷款提供低利率（从 5.89% 起）、无月费、支持抵消账户。快速审批，平均 48 小时。免费咨询。",
-  keywords: "房屋贷款, 自住房贷款, 低利率房贷, 抵消账户, 澳洲房屋贷款, 首次置业"
+  description: "房屋贷款 - 免费服务，100+银行和贷款机构选择。低利率从 5.89% 起，快速审批 48 小时。",
+  keywords: "房屋贷款, 自住房贷款, 低利率房贷, 抵消账户, 澳洲房屋贷款, 首次置业, 免费房贷经纪"
 };
 
 export default function HomeLoanPage() {
@@ -29,17 +29,33 @@ export default function HomeLoanPage() {
       {/* Features */}
       <section className="py-16">
         <div className="container mx-auto px-4">
+          {/* Benefits Bar */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+            {[
+              { icon: "🆓", title: "免费服务", desc: "贷款经纪费由银行支付" },
+              { icon: "🏦", title: "100+ 机构", desc: "access to 100+ lenders" },
+              { icon: "⚡", title: "快速审批", desc: "大多数 48 小时内" },
+              { icon: "💎", title: "优质客户", desc: "5000+ 满意客户" },
+            ].map((benefit, i) => (
+              <div key={i} className="bg-primary-50 rounded-xl p-4 text-center">
+                <p className="text-2xl mb-2">{benefit.icon}</p>
+                <h3 className="font-bold text-sm mb-1">{benefit.title}</h3>
+                <p className="text-xs text-gray-600">{benefit.desc}</p>
+              </div>
+            ))}
+          </div>
+
           <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
             <div>
               <h2 className="text-3xl font-bold mb-6">为什么选择我们的房屋贷款？</h2>
               <ul className="space-y-4">
                 {[
-                  "利率从 5.89% 起（ annum）",
+                  "利率从 5.89% 起（p.a.）",
                   "无月费，透明收费，无隐藏成本",
-                  "支持抵消账户（Offset Account），节省利息",
-                  "灵活还款频率（每周/每两周/每月）",
+                  "100% 抵消账户（Offset）免费，节省利息",
+                  "灵活的还款频率（每周/每两周/每月）",
                   "快速审批，平均 48 小时内完成",
-                  "100% 对冲账户免费",
+                  "支持本息同还和只还利息选项",
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-3">
                     <CheckCircle className="w-6 h-6 text-primary-600 mt-0.5" />
