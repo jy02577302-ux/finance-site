@@ -91,7 +91,7 @@ export default function HomePageEN() {
             <div className="bg-white p-8 rounded-xl shadow-md border hover:shadow-lg transition">
               <h3 className="text-xl font-bold mb-4">Home Loan</h3>
               <p className="text-gray-600 mb-6">
-                Whether you're buying your first home, refinancing, or investing, we help you find the right loan. No cost to you.
+                Whether you're buying your first home, refinancing, or investing, we help you find the right loan. Free service - paid by lenders, not you.
               </p>
               <ul className="space-y-2 text-sm mb-8">
                 <li>• Free service - paid by lenders, not you</li>
@@ -108,7 +108,7 @@ export default function HomePageEN() {
             <div className="bg-white p-8 rounded-xl shadow-md border hover:shadow-lg transition">
               <h3 className="text-xl font-bold mb-4">Business Loan</h3>
               <p className="text-gray-600 mb-6">
-                Commercial financing for businesses. Property, working capital, equipment. Free service, no hidden fees.
+                Commercial financing for businesses. Free service, access to 100+ lenders. Professional support.
               </p>
               <ul className="space-y-2 text-sm mb-8">
                 <li>• Commercial real estate, working capital, equipment</li>
@@ -125,7 +125,7 @@ export default function HomePageEN() {
             <div className="bg-white p-8 rounded-xl shadow-md border hover:shadow-lg transition">
               <h3 className="text-xl font-bold mb-4">Development Loan</h3>
               <p className="text-gray-600 mb-6">
-                Development finance for land subdivision and residential/commercial projects. Progress drawdowns, expert guidance.
+                Development finance for land subdivision projects. Free service, specialist lenders, progress drawdowns.
               </p>
               <ul className="space-y-2 text-sm mb-8">
                 <li>• 10+ years development loan experience</li>
@@ -153,6 +153,7 @@ export default function HomePageEN() {
               <h3 className="text-xl font-bold mb-4">Free Service</h3>
               <p className="text-gray-600 leading-relaxed">
                 Our service is completely free to you. We are paid by the lenders, not by you. No consultation fees, no hidden charges.
+              </p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6">
@@ -161,6 +162,7 @@ export default function HomePageEN() {
               <h3 className="text-xl font-bold mb-4">100+ Lenders</h3>
               <p className="text-gray-600 leading-relaxed">
                 We access 100+ lenders, from major banks to specialist finance providers, ensuring you get the best rates and terms.
+              </p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6">
@@ -169,6 +171,7 @@ export default function HomePageEN() {
               <h3 className="text-xl font-bold mb-4">Save Your Time</h3>
               <p className="text-gray-600 leading-relaxed">
                 Researching hundreds of products and handling paperwork can take weeks. Let us do the heavy lifting while you focus on what matters.
+              </p>
             </div>
           </div>
         </div>
