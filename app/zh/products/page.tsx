@@ -4,8 +4,8 @@ import { Home, TrendingUp, HardHat, ArrowRight, Phone, Mail } from "lucide-react
 
 export const metadata: Metadata = {
   title: "贷款产品 | STRESS FREE FINANCE",
-  description: "我们提供房屋贷款、投资贷款和建筑贷款。低利率、快速审批、透明费用。免费咨询。",
-  keywords: "房屋贷款, 投资贷款, 建筑贷款, 澳洲房贷, 低利率, 快速审批, 墨尔本房贷"
+  description: "我们提供房屋贷款、商业贷款和开发贷款。免费服务，100多家银行和贷款机构选择。快速审批，透明费用。",
+  keywords: "房屋贷款, 商业贷款, 开发贷款, 澳洲房贷, 低利率, 快速审批, 墨尔本房贷, 免费咨询"
 };
 
 export default function ProductsPage() {
@@ -15,7 +15,7 @@ export default function ProductsPage() {
       icon: Home,
       color: "primary",
       href: "/zh/products/home-loan",
-      description: "为自住家庭提供具有竞争力的利率和灵活的还款方式。",
+      description: "为自住或投资购买房产提供具有竞争力的利率和灵活的还款方式。",
       features: [
         "利率从 5.89% 起",
         "无月费，透明收费",
@@ -25,30 +25,30 @@ export default function ProductsPage() {
       cta: "了解详情",
     },
     {
-      title: "投资贷款",
+      title: "商业贷款",
       icon: TrendingUp,
       color: "emerald",
-      href: "/zh/products/investment",
-      description: "最大化房产投资回报，提供税务优化方案和灵活信贷额度。",
+      href: "/zh/products/business-loan",
+      description: "为企业和投资者提供灵活的商业融资方案，助力业务增长。",
       features: [
-        "只还利息选项",
-        "灵活信用额度",
-        "税务优化建议",
-        "多套投资管理",
+        "商业地产贷款",
+        "企业营运资金",
+        "设备融资方案",
+        "灵活还款结构",
       ],
       cta: "了解详情",
     },
     {
-      title: "建筑贷款",
+      title: "开发贷款",
       icon: HardHat,
       color: "amber",
-      href: "/zh/products/construction",
-      description: "分期拨款、无缝转房贷，全程专业支持。",
+      href: "/zh/products/development-loan",
+      description: "支持房地产开发商和土地分割项目，提供分期拨款和专业指导。",
       features: [
         "按工程进度拨款",
-        "完工自动转永久房贷",
+        "完工自动转为永久贷款",
         "只付利息 during construction",
-        "建筑专家一对一",
+        "开发专家全程支持",
       ],
       cta: "了解详情",
     },
@@ -63,6 +63,42 @@ export default function ProductsPage() {
           <p className="text-xl text-primary-100 max-w-2xl mx-auto">
             无论您是首次置业、投资房产，还是建造梦想家园，我们都有合适的方案。
           </p>
+        </div>
+      </section>
+
+      {/* Why Choose Us - Benefits */}
+      <section className="py-8 bg-primary-50">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-4 gap-6 text-center">
+            <div>
+              <div className="w-10 h-10 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-2">
+                <svg className="w-5 h-5 text-primary-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0 2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+              </div>
+              <h3 className="font-bold text-sm">免费服务</h3>
+              <p className="text-xs text-gray-600">贷款经纪费由银行支付，不向您收费</p>
+            </div>
+            <div>
+              <div className="w-10 h-10 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-2">
+                <svg className="w-5 h-5 text-primary-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" /></svg>
+              </div>
+              <h3 className="font-bold text-sm">100+ 机构</h3>
+              <p className="text-xs text-gray-600"> access to 100+ lenders 和贷款产品</p>
+            </div>
+            <div>
+              <div className="w-10 h-10 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-2">
+                <svg className="w-5 h-5 text-primary-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+              </div>
+              <h3 className="font-bold text-sm">快速审批</h3>
+              <p className="text-xs text-gray-600">大多数申请 48 小时内获批</p>
+            </div>
+            <div>
+              <div className="w-10 h-10 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-2">
+                <svg className="w-5 h-5 text-primary-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+              </div>
+              <h3 className="font-bold text-sm">专业可靠</h3>
+              <p className="text-xs text-gray-600">持牌经纪，2015年成立，5000+满意客户</p>
+            </div>
+          </div>
         </div>
       </section>
 

@@ -87,48 +87,48 @@ export default function HomePageEN() {
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Our Loan Products</h2>
           <div className="grid md:grid-cols-3 gap-8">
-            {/* Product 1 */}
+            {/* Product 1: Home Loan */}
             <div className="bg-white p-8 rounded-xl shadow-md border hover:shadow-lg transition">
               <h3 className="text-xl font-bold mb-4">Home Loan</h3>
-              <p className="text-gray-600 mb-6">Competitive rates for owner-occupied homes. Flexible repayment options to suit your needs.</p>
+              <p className="text-gray-600 mb-6">Competitive rates and flexible repayment options for buying or investing in residential property.</p>
               <ul className="space-y-2 text-sm mb-8">
-                <li>• Low interest rates from 5.89%</li>
+                <li>• Rates from 5.89% p.a.</li>
                 <li>• No monthly fees, transparent pricing</li>
-                <li>• Offset account available</li>
-                <li>• Fast approval, typically within 48 hours</li>
+                <li>• 100% offset account available</li>
+                <li>• Fast approval within 48 hours</li>
               </ul>
               <a href="/en/products/home-loan" className="block w-full text-center rounded-md border border-gray-200 bg-white px-4 py-2 text-sm font-medium hover:bg-gray-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
-                Enquire Now
+                Learn More
               </a>
             </div>
 
-            {/* Product 2 */}
+            {/* Product 2: Business Loan */}
             <div className="bg-white p-8 rounded-xl shadow-md border hover:shadow-lg transition">
-              <h3 className="text-xl font-bold mb-4">Investment Loan</h3>
-              <p className="text-gray-600 mb-6">Maximise your property portfolio with our tailored investment lending solutions.</p>
+              <h3 className="text-xl font-bold mb-4">Business Loan</h3>
+              <p className="text-gray-600 mb-6">Flexible financing solutions for businesses, from commercial property to working capital needs.</p>
               <ul className="space-y-2 text-sm mb-8">
-                <li>• Interest-only options to improve cash flow</li>
-                <li>• Line of credit facilities</li>
-                <li>• Package deals for multiple loans</li>
-                <li>• Tax-deductible interest advice</li>
+                <li>• Commercial real estate financing</li>
+                <li>• Business operating capital</li>
+                <li>• Equipment and vehicle financing</li>
+                <li>• Custom repayment structures</li>
               </ul>
-              <a href="/en/products/investment" className="block w-full text-center rounded-md border border-gray-200 bg-white px-4 py-2 text-sm font-medium hover:bg-gray-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
-                Enquire Now
+              <a href="/en/products/business-loan" className="block w-full text-center rounded-md border border-gray-200 bg-white px-4 py-2 text-sm font-medium hover:bg-gray-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
+                Learn More
               </a>
             </div>
 
-            {/* Product 3 */}
+            {/* Product 3: Development Loan */}
             <div className="bg-white p-8 rounded-xl shadow-md border hover:shadow-lg transition">
-              <h3 className="text-xl font-bold mb-4">Construction Loan</h3>
-              <p className="text-gray-600 mb-6">Building your dream home? We offer progressive drawdowns and seamless conversion to permanent mortgage.</p>
+              <h3 className="text-xl font-bold mb-4">Development Loan</h3>
+              <p className="text-gray-600 mb-6">Funding for property developers and land subdivision projects with progress drawdowns.</p>
               <ul className="space-y-2 text-sm mb-8">
-                <li>• Progressive drawdowns based on construction milestones</li>
-                <li>• Automatic conversion to permanent mortgage</li>
-                <li>• Support for fixed-price contracts</li>
-                <li>• Dedicated construction specialist</li>
+                <li>• Progress drawdowns by milestones</li>
+                <li>• Convert to permanent loan upon completion</li>
+                <li>• Interest-only during construction</li>
+                <li>• Dedicated development specialist</li>
               </ul>
-              <a href="/en/products/construction" className="block w-full text-center rounded-md border border-gray-200 bg-white px-4 py-2 text-sm font-medium hover:bg-gray-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
-                Enquire Now
+              <a href="/en/products/development-loan" className="block w-full text-center rounded-md border border-gray-200 bg-white px-4 py-2 text-sm font-medium hover:bg-gray-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
+                Learn More
               </a>
             </div>
           </div>

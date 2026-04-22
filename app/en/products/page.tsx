@@ -4,8 +4,8 @@ import { Home, TrendingUp, HardHat, ArrowRight, Phone, Mail } from "lucide-react
 
 export const metadata: Metadata = {
   title: "Our Loan Products | STRESS FREE FINANCE",
-  description: "We offer home loans, investment loans, and construction loans in Australia. Competitive rates, fast approval, transparent fees. Free consultation.",
-  keywords: "home loans, investment loans, construction loans, australian mortgage, melbourne mortgage, low interest rates"
+  description: "Home loans, business loans, development loans. Free service, access to 100+ lenders. Fast approval, transparent fees. Contact us today.",
+  keywords: "home loans, business loans, development loans, australian mortgage, melbourne mortgage, free mortgage broker, 100 lenders"
 };
 
 export default function ProductsPageEN() {
@@ -15,7 +15,7 @@ export default function ProductsPageEN() {
       icon: Home,
       color: "primary",
       href: "/en/products/home-loan",
-      description: "Competitive rates and flexible repayment options for owner-occupied homes.",
+      description: "Competitive rates and flexible repayment options for buying or investing in residential property.",
       features: [
         "Rates from 5.89% p.a.",
         "No monthly fees",
@@ -25,30 +25,30 @@ export default function ProductsPageEN() {
       cta: "Learn More",
     },
     {
-      title: "Investment Loan",
+      title: "Business Loan",
       icon: TrendingUp,
       color: "emerald",
-      href: "/en/products/investment",
-      description: "Maximise property investment returns with tax optimisation and flexible credit.",
+      href: "/en/products/business-loan",
+      description: "Flexible financing solutions for businesses, from commercial property to working capital.",
       features: [
-        "Interest-only options",
-        "Line of credit",
-        "Tax optimisation advice",
-        "Portfolio management",
+        "Commercial real estate loans",
+        "Business funding & cash flow",
+        "Equipment financing",
+        "Custom repayment structures",
       ],
       cta: "Learn More",
     },
     {
-      title: "Construction Loan",
+      title: "Development Loan",
       icon: HardHat,
       color: "amber",
-      href: "/en/products/construction",
-      description: "Progressive drawdowns, seamless conversion, and expert construction support.",
+      href: "/en/products/development-loan",
+      description: "Funding for property developers and land subdivision projects with progress payments.",
       features: [
-        "Progress drawdowns",
-        "Auto conversion permanent",
-        "Interest-only during build",
-        "Dedicated specialist",
+        "Progress drawdowns based on milestones",
+        "Convert to permanent loan upon completion",
+        "Interest-only during construction",
+        "Dedicated development specialist",
       ],
       cta: "Learn More",
     },

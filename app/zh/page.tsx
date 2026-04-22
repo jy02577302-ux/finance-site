@@ -87,48 +87,48 @@ export default function HomePageZH() {
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">我们的贷款产品</h2>
           <div className="grid md:grid-cols-3 gap-8">
-            {/* Product 1 */}
+            {/* Product 1: Home Loan */}
             <div className="bg-white p-8 rounded-xl shadow-md border hover:shadow-lg transition">
               <h3 className="text-xl font-bold mb-4">房屋贷款</h3>
-              <p className="text-gray-600 mb-6">为自住家庭提供具有竞争力的利率，灵活的还款方式，助您轻松置业。</p>
+              <p className="text-gray-600 mb-6">为自住或投资购买房产提供具有竞争力的利率和灵活的还款方式。</p>
               <ul className="space-y-2 text-sm mb-8">
-                <li>• 低利率从 5.89% 起</li>
+                <li>• 利率从 5.89% 起</li>
                 <li>• 无月费，透明收费</li>
-                <li>• 支持抵消账户（Offset）</li>
-                <li>• 快速审批，平均 48 小时</li>
+                <li>• 支持抵消账户</li>
+                <li>• 快速审批 48 小时</li>
               </ul>
               <a href="/zh/products/home-loan" className="block w-full text-center rounded-md border border-gray-200 bg-white px-4 py-2 text-sm font-medium hover:bg-gray-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
-                立即咨询
+                了解详情
               </a>
             </div>
 
-            {/* Product 2 */}
+            {/* Product 2: Business Loan */}
             <div className="bg-white p-8 rounded-xl shadow-md border hover:shadow-lg transition">
-              <h3 className="text-xl font-bold mb-4">投资贷款</h3>
-              <p className="text-gray-600 mb-6">最大化您的房产投资回报，提供税务优化方案和灵活信贷额度。</p>
+              <h3 className="text-xl font-bold mb-4">商业贷款</h3>
+              <p className="text-gray-600 mb-6">为企业和投资者提供灵活的商业融资方案，助力业务增长与投资。</p>
               <ul className="space-y-2 text-sm mb-8">
-                <li>• 只还利息选项，减轻现金流压力</li>
-                <li>• 信用额度（Line of Credit）</li>
-                <li>• 打包优惠，降低整体成本</li>
-                <li>• 利息可抵税，专业建议</li>
+                <li>• 商业地产贷款</li>
+                <li>• 企业营运资金支持</li>
+                <li>• 设备与车辆融资</li>
+                <li>• 灵活还款结构</li>
               </ul>
-              <a href="/zh/products/investment" className="block w-full text-center rounded-md border border-gray-200 bg-white px-4 py-2 text-sm font-medium hover:bg-gray-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
-                立即咨询
+              <a href="/zh/products/business-loan" className="block w-full text-center rounded-md border border-gray-200 bg-white px-4 py-2 text-sm font-medium hover:bg-gray-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
+                了解详情
               </a>
             </div>
 
-            {/* Product 3 */}
+            {/* Product 3: Development Loan */}
             <div className="bg-white p-8 rounded-xl shadow-md border hover:shadow-lg transition">
-              <h3 className="text-xl font-bold mb-4">建筑贷款</h3>
-              <p className="text-gray-600 mb-6">建造梦想家园？我们提供分期拨款、无缝转房贷，全程专业支持。</p>
+              <h3 className="text-xl font-bold mb-4">开发贷款</h3>
+              <p className="text-gray-600 mb-6">支持土地分割与住宅/商业开发项目，按工程进度分期拨款。</p>
               <ul className="space-y-2 text-sm mb-8">
                 <li>• 按工程进度分期拨款</li>
-                <li>• 完工后自动转为永久房贷</li>
-                <li>• 支持固定价格合同</li>
-                <li>• 建筑专家一对一服务</li>
+                <li>• 完工自动转永久贷款</li>
+                <li>• 只付利息 during construction</li>
+                <li>• 开发专家全程支持</li>
               </ul>
-              <a href="/zh/products/construction" className="block w-full text-center rounded-md border border-gray-200 bg-white px-4 py-2 text-sm font-medium hover:bg-gray-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
-                立即咨询
+              <a href="/zh/products/development-loan" className="block w-full text-center rounded-md border border-gray-200 bg-white px-4 py-2 text-sm font-medium hover:bg-gray-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
+                了解详情
               </a>
             </div>
           </div>
