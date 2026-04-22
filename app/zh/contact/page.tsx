@@ -2,7 +2,7 @@ import ContactForm from "@/components/contact-form";
 
 export const metadata = {
   title: "联系我们 | STRESS FREE FINANCE",
-  description: "联系 STRESS FREE FINANCE 获取免费房贷评估。填写表单或直接致电 1300 123 456。",
+  description: "联系 STRESS FREE FINANCE 获取免费房贷评估。填写表单或直接致电 0412 892 782。",
 };
 
 export default function ContactPage() {
@@ -19,7 +19,7 @@ export default function ContactPage() {
         <div className="grid md:grid-cols-3 gap-8 mb-12">
           <div className="bg-white p-6 rounded-xl shadow border text-center">
             <h3 className="font-bold text-lg mb-2">电话</h3>
-            <p className="text-2xl text-primary-700">1300 123 456</p>
+            <p className="text-2xl text-primary-700">0412 892 782</p>
             <p className="text-sm text-gray-500 mt-2">周一至周五 9am-5pm AEST</p>
           </div>
           <div className="bg-white p-6 rounded-xl shadow border text-center">

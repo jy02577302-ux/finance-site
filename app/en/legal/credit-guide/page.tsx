@@ -30,7 +30,7 @@ export default function CreditGuidePageEN() {
               ABN: 123 456 789<br/>
               Australian Credit Licence (ACL): 123456<br/>
               Address: 123 Collins St, Melbourne VIC 3000<br/>
-              Phone: 1300 123 456<br/>
+              Phone: 0412 892 782<br/>
               Email: info@stressfree.com.au
             </p>
 
@@ -97,7 +97,7 @@ export default function CreditGuidePageEN() {
             <h2 className="text-2xl font-bold mt-12 mb-4">8. Complaints Process</h2>
             <p>If you have a complaint about our credit services:</p>
             <ol className="list-decimal pl-6 space-y-2 mb-6">
-              <li>Contact our internal complaints department: complaints@stressfree.com.au or 1300 123 456</li>
+              <li>Contact our internal complaints department: complaints@stressfree.com.au or 0412 892 782</li>
               <li>We will acknowledge within 1 business day and aim to resolve within 30 days</li>
               <li>If unsatisfied, you may contact the <strong>Australian Financial Complaints Authority (AFCA)</strong>:<br/>
                 Phone: 1800 931 678<br/>
@@ -111,7 +111,7 @@ export default function CreditGuidePageEN() {
             <p>
               Email: disputes@stressfree.com.au<br/>
               Mail: PO Box 123, Collins St West, Melbourne VIC 8007<br/>
-              Phone: 1300 123 456 (ask for Disputes Officer)
+              Phone: 0412 892 782 (ask for Disputes Officer)
             </p>
             <p>We will keep you updated throughout the investigation and provide a written response within 30 days.</p>
 
@@ -144,7 +144,7 @@ export default function CreditGuidePageEN() {
             <div className="bg-gray-50 p-6 rounded-xl mt-4">
               <p><strong>STRESS FREE FINANCE</strong></p>
               <p>Email: info@stressfree.com.au</p>
-              <p>Phone: 1300 123 456</p>
+              <p>Phone: 0412 892 782</p>
               <p>Address: 123 Collins St, Melbourne VIC 3000</p>
               <p className="mt-4"><strong>Australian Credit Licence Number:</strong> 123456</p>
             </div>

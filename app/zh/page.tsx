@@ -235,7 +235,7 @@ export default function HomePageZH() {
             <address className="not-italic text-sm space-y-2">
               <p>123 Collins St</p>
               <p>墨尔本 VIC 3000</p>
-              <p>电话：1300 123 456</p>
+              <p>电话：0412 892 782</p>
               <p>邮箱：info@stressfree.com.au</p>
             </address>
           </div>

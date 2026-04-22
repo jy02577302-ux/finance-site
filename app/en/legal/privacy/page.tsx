@@ -98,7 +98,7 @@ export default function PrivacyPolicyPageEN() {
             <div className="bg-gray-50 p-6 rounded-xl mt-4 mb-8">
               <p><strong>STRESS FREE FINANCE</strong></p>
               <p>Email: privacy@stressfree.com.au</p>
-              <p>Phone: 1300 123 456</p>
+              <p>Phone: 0412 892 782</p>
               <p>Address: 123 Collins St, Melbourne VIC 3000</p>
             </div>
 

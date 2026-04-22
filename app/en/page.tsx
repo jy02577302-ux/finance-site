@@ -235,7 +235,7 @@ export default function HomePageEN() {
             <address className="not-italic text-sm space-y-2">
               <p>123 Collins St</p>
               <p>Melbourne VIC 3000</p>
-              <p>Phone: 1300 123 456</p>
+              <p>Phone: 0412 892 782</p>
               <p>Email: info@stressfree.com.au</p>
             </address>
           </div>

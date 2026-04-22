@@ -117,11 +117,11 @@ export default function ConstructionLoanPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="tel:1300123456"
+                href="tel:0412892782"
                 className="inline-flex items-center justify-center gap-2 rounded-md bg-amber-700 px-8 py-4 text-white font-semibold hover:bg-amber-600"
               >
                 <Phone className="w-5 h-5" />
-                致电 1300 123 456
+                致电 0412 892 782
               </a>
               <a
                 href="/zh/contact"
