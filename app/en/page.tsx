@@ -20,9 +20,9 @@ export default function HomePageEN() {
 
         <div className="container mx-auto px-4 text-center relative z-10">
           <h1 className="text-4xl md:text-6xl font-display font-bold mb-6 leading-tight">
-            Stress-Free Finance Solutions
+            Stress Free Finance
             <span className="block mt-2 text-accent-500 bg-clip-text text-transparent bg-gradient-to-r from-accent-400 to-accent-500">
-              Melbourne
+              Carefree Life
             </span>
           </h1>
           <p className="text-xl md:text-2xl mb-10 max-w-3xl mx-auto text-primary-200 font-light">

@@ -20,7 +20,7 @@ export default function HomePageZH() {
 
         <div className="container mx-auto px-4 text-center relative z-10">
           <h1 className="text-4xl md:text-6xl font-display font-bold mb-6 leading-tight">
-            轻松贷款，无压力
+            财务轻松，生活乐融
             <span className="block mt-2 text-accent-500 bg-clip-text text-transparent bg-gradient-to-r from-accent-400 to-accent-500">
               STRESS FREE FINANCE
             </span>
