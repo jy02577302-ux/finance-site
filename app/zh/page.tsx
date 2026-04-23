@@ -289,26 +289,35 @@ export default function HomePageZH() {
         </div>
       </section>
 
-      {/* Wave Divider - CTA to Footer */}
-      <div className="relative h-20 -mt-4 overflow-visible">
+      {/* Wave Divider - CTA to Footer (matches Hero gradient) */}
+      <div className="relative h-24 -mt-6 overflow-visible">
         <svg
           className="absolute w-full h-full"
-          viewBox="0 0 1440 80"
+          viewBox="0 0 1440 96"
           preserveAspectRatio="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          {/* 深色波浪 (从 CTA 的深色平滑过渡) */}
+          <defs>
+            {/* Hero matching gradient */}
+            <linearGradient id="heroGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stopColor="#020617" stopOpacity="0.6"/>
+              <stop offset="100%" stopColor="#0f172a" stopOpacity="0.9"/>
+            </linearGradient>
+            {/* Gold accent gradient */}
+            <linearGradient id="goldGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stopColor="#d4a855" stopOpacity="0.4"/>
+              <stop offset="100%" stopColor="#d4a855" stopOpacity="0.8"/>
+            </linearGradient>
+          </defs>
+          {/* Main wave body - gradient from hero colors */}
           <path
-            d="M0,0 C240,40 480,0 720,30 C960,60 1200,0 1440,20 L1440,80 L0,80 Z"
-            fill="currentColor"
-            className="text-primary-950"
+            d="M0,0 C360,60 720,0 1080,40 C1260,60 1350,20 1440,10 L1440,96 L0,96 Z"
+            fill="url(#heroGradient)"
           />
-          {/* 金色装饰线 (波浪边缘) */}
+          {/* Gold accent line along the crest */}
           <path
-            d="M0,2 C240,42 480,2 720,32 C960,62 1200,2 1440,22 L1440,40 L0,40 Z"
-            fill="currentColor"
-            className="text-accent-500"
-            opacity="0.6"
+            d="M0,8 C360,68 720,8 1080,48 C1260,68 1350,28 1440,18 L1440,50 L0,50 Z"
+            fill="url(#goldGradient)"
           />
         </svg>
       </div>
