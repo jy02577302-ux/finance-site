@@ -7,117 +7,8 @@ export default function HomePageZH() {
     <div className="min-h-screen bg-white">
       {/* Hero Section - 高端深色系 + 墨尔本天际线 */}
       <section className="bg-gradient-to-br from-primary-900 via-primary-800 to-primary-900 text-white py-20 lg:py-32 relative overflow-hidden">
-        {/* 墨尔本天际线 SVG 背景 */}
-        <div className="absolute inset-0 opacity-40">
-          <svg className="absolute bottom-0 left-0 right-0 h-80 w-full" viewBox="0 0 1440 400" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-            {/* 深空渐变背景 */}
-            <defs>
-              <linearGradient id="sky-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
-                <stop offset="0%" stopColor="#0f172a" stopOpacity="0.7"/>
-                <stop offset="100%" stopColor="#1e293b" stopOpacity="0"/>
-              </linearGradient>
-            </defs>
-            <rect width="1440" height="400" fill="url(#sky-gradient)"/>
-
-            {/* 远山/天际线背景 */}
-            <path fill="#020617" fillOpacity="0.5" d="M0,280L60,290C120,300,240,320,360,310C480,300,600,260,720,250C840,240,960,250,1080,260C1200,270,1320,280,1380,285L1440,290L1440,400L1380,400C1320,400,1200,400,1080,400C960,400,840,400,720,400C600,400,480,400,360,400C240,400,120,400,60,400L0,400Z"></path>
-
-            {/* 主要建筑群剪影 - 墨尔本天际线 */}
-            <g fill="#0f172a" fillOpacity="0.85">
-              {/* Federation Square area */}
-              <path d="M100,400 L100,280 L140,280 L140,400 Z"/>
-              <path d="M160,400 L160,260 L200,240 L200,400 Z"/>
-              
-              {/* Eureka Tower ( tallest ) */}
-              <rect x="280" y="180" width="45" height="220" rx="2"/>
-              <polygon points="302,180 273,130 331,130"/>
-              
-              {/* Rialto Tower */}
-              <rect x="340" y="200" width="40" height="200" rx="2"/>
-              
-              {/* Australia 108 */}
-              <rect x="400" y="150" width="50" height="250" rx="2"/>
-              <polygon points="425,150 390,90 460,90"/>
-              
-              {/* Prima Pearl */}
-              <rect x="470" y="180" width="38" height="220" rx="2"/>
-              
-              {/* 120 Collins */}
-              <rect x="550" y="120" width="42" height="280" rx="2"/>
-              
-              {/* 101 Collins */}
-              <rect x="610" y="130" width="45" height="270" rx="2"/>
-              
-              {/* 567 Collins */}
-              <rect x="680" y="160" width="38" height="240" rx="2"/>
-              
-              {/* Crown Towers */}
-              <rect x="740" y="140" width="48" height="260" rx="2"/>
-              
-              {/* Nauru House */}
-              <rect x="810" y="180" width="40" height="220" rx="2"/>
-              
-              {/* Southern Cross Station area */}
-              <rect x="870" y="220" width="55" height="180" rx="2"/>
-              
-              {/* Docklands buildings */}
-              <rect x="950" y="240" width="60" height="160" rx="2"/>
-              <rect x="1020" y="260" width="50" height="140" rx="2"/>
-              <rect x="1090" y="280" width="55" height="120" rx="2"/>
-            </g>
-
-            {/* 金色窗户灯光 */}
-            <g fill="#d4a855">
-              {/* Eureka Tower windows */}
-              <circle cx="302" cy="210" r="2"/>
-              <circle cx="302" cy="230" r="2"/>
-              <circle cx="302" cy="250" r="2"/>
-              <circle cx="302" cy="270" r="2"/>
-              <circle cx="302" cy="290" r="2"/>
-              <circle cx="320" cy="220" r="2"/>
-              <circle cx="320" cy="250" r="2"/>
-              <circle cx="320" cy="280" r="2"/>
-              
-              {/* Australia 108 windows */}
-              <circle cx="425" cy="170" r="2"/>
-              <circle cx="425" cy="200" r="2"/>
-              <circle cx="425" cy="230" r="2"/>
-              <circle cx="425" cy="260" r="2"/>
-              <circle cx="425" cy="300" r="2"/>
-              
-              {/* 120 Collins windows */}
-              <circle cx="571" cy="140" r="2"/>
-              <circle cx="571" cy="180" r="2"/>
-              <circle cx="571" cy="220" r="2"/>
-              <circle cx="571" cy="260" r="2"/>
-              
-              {/* 101 Collins windows */}
-              <circle cx="632" cy="150" r="2"/>
-              <circle cx="632" cy="190" r="2"/>
-              <circle cx="632" cy="230" r="2"/>
-              <circle cx="632" cy="270" r="2"/>
-              
-              {/* Crown Towers windows */}
-              <circle cx="764" cy="160" r="2"/>
-              <circle cx="764" cy="200" r="2"/>
-              <circle cx="764" cy="240" r="2"/>
-              
-              {/* Additional scattered lights */}
-              <circle cx="340" cy="230" r="2"/>
-              <circle cx="500" cy="200" r="1.5"/>
-              <circle cx="550" cy="200" r="2"/>
-              <circle cx="610" cy="350" r="1.5"/>
-              <circle cx="680" cy="190" r="2"/>
-              <circle cx="740" cy="180" r="2"/>
-              <circle cx="870" cy="250" r="2"/>
-              <circle cx="940" cy="280" r="1.5"/>
-              <circle cx="1030" cy="300" r="2"/>
-            </g>
-
-            {/* 地面反光/城市光晕 */}
-            <rect x="0" y="395" width="1440" height="5" fill="#d4a855" fillOpacity="0.1"/>
-          </svg>
-        </div>
+        {/* 将要放置：高清墨尔本天际线图片（待添加） */}
+        <div className="absolute inset-0 bg-gradient-to-br from-primary-900/90 via-primary-800/90 to-primary-900/90 z-0"></div>
 
         <div className="container mx-auto px-4 text-center relative z-10">
           <h1 className="text-4xl md:text-6xl font-display font-bold mb-6 leading-tight">
@@ -290,7 +181,7 @@ export default function HomePageZH() {
                 </li>
                 <li className="flex items-start gap-2">
                   <svg className="w-5 h-5 text-accent-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
-                  <span>Access to specialist lenders</span>
+                  <span>Access to  specialist lenders</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <svg className="w-5 h-5 text-accent-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
@@ -344,7 +235,7 @@ export default function HomePageZH() {
         </div>
       </section>
 
-      {/* Testimonials - 卡片样式升级 */}
+      {/* Testimonials - 深色背景 */}
       <section className="py-20 bg-primary-900 text-white">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-display font-bold text-center mb-4">客户评价</h2>
@@ -372,13 +263,6 @@ export default function HomePageZH() {
 
       {/* CTA - 深色背景 + 金色按钮 */}
       <section className="bg-gradient-to-br from-primary-900 to-primary-800 py-20 relative overflow-hidden">
-        {/* 装饰纹理 */}
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute inset-0" style={{
-            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.3'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-          }}></div>
-        </div>
-
         <div className="container mx-auto px-4 text-center relative z-10">
           <h2 className="text-3xl md:text-4xl font-display font-bold mb-6 text-white">准备好轻松置业了吗？</h2>
           <p className="text-xl text-primary-300 mb-10 max-w-2xl mx-auto leading-relaxed">
