@@ -48,7 +48,7 @@ export default function HomePageEN() {
       {/* Trust Badges - Platinum */}
       <section className="bg-platinum-100 py-6 relative">
         {/* Hero → Trust Badges gold divider */}
-        <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-accent-500 to-transparent"></div>
+        <div className="absolute top-0 left-0 right-0 h-3 bg-gradient-to-r from-accent-500 to-transparent"></div>
 
         <div className="container mx-auto px-4 flex flex-wrap justify-center gap-8 items-center">
           <span className="text-sm font-medium text-primary-600">Licensed & Regulated:</span>
@@ -63,7 +63,7 @@ export default function HomePageEN() {
       {/* Calculator Preview - Platinum BG */}
       <section className="py-20 bg-platinum-50 relative">
         {/* Trust Badges → Calculator gold divider */}
-        <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-accent-500 to-transparent"></div>
+        <div className="absolute top-0 left-0 right-0 h-3 bg-gradient-to-r from-accent-500 to-transparent"></div>
 
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -105,7 +105,7 @@ export default function HomePageEN() {
       {/* Loan Products - Premium Cards */}
       <section className="py-20 bg-white relative">
         {/* Calculator → Products gold divider */}
-        <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-accent-500 to-transparent"></div>
+        <div className="absolute top-0 left-0 right-0 h-3 bg-gradient-to-r from-accent-500 to-transparent"></div>
 
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-display font-bold text-center mb-4 text-primary-900">Our Loan Products</h2>
@@ -223,7 +223,7 @@ export default function HomePageEN() {
       {/* Why Choose Us - Platinum BG + Gold Icons */}
       <section className="py-20 bg-platinum-50 relative">
         {/* Products → Why Choose Us gold divider */}
-        <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-accent-500 to-transparent"></div>
+        <div className="absolute top-0 left-0 right-0 h-3 bg-gradient-to-r from-accent-500 to-transparent"></div>
 
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-display font-bold text-center mb-4 text-primary-900">Why Choose Stress Free Finance</h2>
@@ -258,7 +258,7 @@ export default function HomePageEN() {
       {/* Testimonials - Dark Background */}
       <section className="py-20 bg-primary-900 text-white relative">
         {/* Why Choose Us → Testimonials gold divider */}
-        <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-accent-500 to-transparent"></div>
+        <div className="absolute top-0 left-0 right-0 h-3 bg-gradient-to-r from-accent-500 to-transparent"></div>
 
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-display font-bold text-center mb-4">What Our Clients Say</h2>
@@ -287,7 +287,7 @@ export default function HomePageEN() {
       {/* CTA - Premium Dark + Gold Button */}
       <section className="bg-gradient-to-br from-primary-900 to-primary-800 py-20 relative overflow-hidden">
         {/* Testimonials → CTA gold divider */}
-        <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-accent-500 to-transparent"></div>
+        <div className="absolute top-0 left-0 right-0 h-3 bg-gradient-to-r from-accent-500 to-transparent"></div>
 
         <div className="container mx-auto px-4 text-center relative z-10">
           <h2 className="text-3xl md:text-4xl font-display font-bold mb-6 text-white">Ready for a Stress-Free Mortgage?</h2>
@@ -306,7 +306,7 @@ export default function HomePageEN() {
       {/* Footer - Ultimate Dark Gold + Enhanced */}
       <footer className="bg-primary-950 text-primary-200 py-12 md:py-16 border-t-2 border-accent-500/30 relative">
         {/* 顶部金色渐变分隔线 */}
-        <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-accent-500 to-transparent"></div>
+        <div className="absolute top-0 left-0 right-0 h-3 bg-gradient-to-r from-accent-500 to-transparent"></div>
 
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
