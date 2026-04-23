@@ -42,7 +42,7 @@ export default function Header() {
   return (
     <header className="bg-white shadow-sm sticky top-0 z-50">
       {/* 顶部金色分隔线 */}
-      <div className="h-0.5 bg-gradient-to-r from-transparent via-accent-500 to-transparent"></div>
+      <div className="h-1 bg-gradient-to-r from-transparent via-accent-500 to-transparent"></div>
 
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
