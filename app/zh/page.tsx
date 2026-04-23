@@ -15,8 +15,8 @@ export default function HomePageZH() {
             className="w-full h-full object-cover object-bottom"
           />
         </div>
-        {/* 黑金渐变遮罩 - 保持配色和文字可读性 */}
-        <div className="absolute inset-0 bg-gradient-to-br from-primary-900/85 via-primary-800/80 to-primary-900/90"></div>
+        {/* 黑金渐变遮罩 - 60% 透明度，看到更多图片细节 */}
+        <div className="absolute inset-0 bg-gradient-to-br from-primary-900/60 via-primary-800/60 to-primary-900/60"></div>
 
         <div className="container mx-auto px-4 text-center relative z-10">
           <h1 className="text-4xl md:text-6xl font-display font-bold mb-6 leading-tight">
