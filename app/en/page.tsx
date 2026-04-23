@@ -46,7 +46,10 @@ export default function HomePageEN() {
       </section>
 
       {/* Trust Badges - Platinum */}
-      <section className="bg-platinum-100 py-6 border-b border-platinum-200">
+      <section className="bg-platinum-100 py-6 relative">
+        {/* Hero → Trust Badges gold divider */}
+        <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-accent-500 to-transparent"></div>
+
         <div className="container mx-auto px-4 flex flex-wrap justify-center gap-8 items-center">
           <span className="text-sm font-medium text-primary-600">Licensed & Regulated:</span>
           <div className="flex gap-8 text-accent-600 font-bold text-xl">
@@ -58,7 +61,10 @@ export default function HomePageEN() {
       </section>
 
       {/* Calculator Preview - Platinum BG */}
-      <section className="py-20 bg-platinum-50">
+      <section className="py-20 bg-platinum-50 relative">
+        {/* Trust Badges → Calculator gold divider */}
+        <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-accent-500 to-transparent"></div>
+
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -97,7 +103,10 @@ export default function HomePageEN() {
       </section>
 
       {/* Loan Products - Premium Cards */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-white relative">
+        {/* Calculator → Products gold divider */}
+        <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-accent-500 to-transparent"></div>
+
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-display font-bold text-center mb-4 text-primary-900">Our Loan Products</h2>
           <p className="text-center text-primary-600 mb-12 max-w-2xl mx-auto text-lg">Whatever your property goals, we have the right loan solution</p>
@@ -212,7 +221,10 @@ export default function HomePageEN() {
       </section>
 
       {/* Why Choose Us - Platinum BG + Gold Icons */}
-      <section className="py-20 bg-platinum-50">
+      <section className="py-20 bg-platinum-50 relative">
+        {/* Products → Why Choose Us gold divider */}
+        <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-accent-500 to-transparent"></div>
+
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-display font-bold text-center mb-4 text-primary-900">Why Choose Stress Free Finance</h2>
           <p className="text-center text-primary-600 mb-16 max-w-2xl mx-auto text-lg">Professional, transparent, and efficient service to make your property journey stress-free</p>
@@ -244,7 +256,10 @@ export default function HomePageEN() {
       </section>
 
       {/* Testimonials - Dark Background */}
-      <section className="py-20 bg-primary-900 text-white">
+      <section className="py-20 bg-primary-900 text-white relative">
+        {/* Why Choose Us → Testimonials gold divider */}
+        <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-accent-500 to-transparent"></div>
+
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-display font-bold text-center mb-4">What Our Clients Say</h2>
           <p className="text-center text-primary-300 mb-12 max-w-2xl mx-auto">Real feedback from satisfied clients</p>
@@ -271,6 +286,9 @@ export default function HomePageEN() {
 
       {/* CTA - Premium Dark + Gold Button */}
       <section className="bg-gradient-to-br from-primary-900 to-primary-800 py-20 relative overflow-hidden">
+        {/* Testimonials → CTA gold divider */}
+        <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-accent-500 to-transparent"></div>
+
         <div className="container mx-auto px-4 text-center relative z-10">
           <h2 className="text-3xl md:text-4xl font-display font-bold mb-6 text-white">Ready for a Stress-Free Mortgage?</h2>
           <p className="text-xl text-primary-300 mb-10 max-w-2xl mx-auto leading-relaxed">

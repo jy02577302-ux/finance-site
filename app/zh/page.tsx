@@ -45,8 +45,10 @@ export default function HomePageZH() {
         </div>
       </section>
 
-      {/* Trust Badges - 铂灰底 + 金色文字 */}
-      <section className="bg-platinum-100 py-6 border-b border-platinum-200">
+      {/* Trust Badges - 铂灰底 + 金色文字 + 顶部金线 */}
+      <section className="bg-platinum-100 py-6 relative">
+        {/* Hero → Trust Badges 金色分隔 */}
+        <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-accent-500 to-transparent"></div>
         <div className="container mx-auto px-4 flex flex-wrap justify-center gap-8 items-center">
           <span className="text-sm font-medium text-primary-600">持牌机构：</span>
           <div className="flex gap-8 text-accent-600 font-bold text-xl">
@@ -58,7 +60,10 @@ export default function HomePageZH() {
       </section>
 
       {/* Calculator Preview - 铂灰背景 */}
-      <section className="py-20 bg-platinum-50">
+      <section className="py-20 bg-platinum-50 relative">
+        {/* Trust Badges → Calculator 金色分隔 */}
+        <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-accent-500 to-transparent"></div>
+
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -97,7 +102,10 @@ export default function HomePageZH() {
       </section>
 
       {/* Loan Products - 右下-右对齐边框 + 金色点缀 */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-white relative">
+        {/* Calculator → Products 金色分隔 */}
+        <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-accent-500 to-transparent"></div>
+
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-display font-bold text-center mb-4 text-primary-900">我们的贷款产品</h2>
           <p className="text-center text-primary-600 mb-12 max-w-2xl mx-auto">无论您的置业目标是什么，我们都有专业方案助您实现</p>
@@ -212,7 +220,10 @@ export default function HomePageZH() {
       </section>
 
       {/* Why Choose Us - 简洁铂灰背景 + 金色图标 */}
-      <section className="py-20 bg-platinum-50">
+      <section className="py-20 bg-platinum-50 relative">
+        {/* Products → Why Choose Us 金色分隔 */}
+        <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-accent-500 to-transparent"></div>
+
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-display font-bold text-center mb-4 text-primary-900">为什么选择 STRESS FREE FINANCE</h2>
           <p className="text-center text-primary-600 mb-16 max-w-2xl mx-auto text-lg">我们以专业、透明、高效的服务，助您轻松实现置业梦想</p>
@@ -244,7 +255,10 @@ export default function HomePageZH() {
       </section>
 
       {/* Testimonials - 深色背景 */}
-      <section className="py-20 bg-primary-900 text-white">
+      <section className="py-20 bg-primary-900 text-white relative">
+        {/* Why Choose Us → Testimonials 金色分隔 */}
+        <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-accent-500 to-transparent"></div>
+
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-display font-bold text-center mb-4">客户评价</h2>
           <p className="text-center text-primary-300 mb-12 max-w-2xl mx-auto">来自真实客户的信任与反馈</p>
@@ -271,6 +285,9 @@ export default function HomePageZH() {
 
       {/* CTA - 深色背景 + 金色按钮 */}
       <section className="bg-gradient-to-br from-primary-900 to-primary-800 py-20 relative overflow-hidden">
+        {/* Testimonials → CTA 金色分隔 */}
+        <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-accent-500 to-transparent"></div>
+
         <div className="container mx-auto px-4 text-center relative z-10">
           <h2 className="text-3xl md:text-4xl font-display font-bold mb-6 text-white">准备好轻松置业了吗？</h2>
           <p className="text-xl text-primary-300 mb-10 max-w-2xl mx-auto leading-relaxed">
