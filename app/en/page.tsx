@@ -242,7 +242,7 @@ export default function HomePageEN() {
       </section>
 
       {/* Testimonials - Dark Background */}
-      <section className="py-20 bg-primary-900 text-white relative">
+      <section className="bg-gradient-to-br from-primary-900 to-primary-800 py-20 text-white relative overflow-hidden">
         {/* Why Choose Us → Testimonials gold divider */}
         <div className="absolute top-0 left-0 right-0 h-3 bg-gradient-to-r from-accent-500 to-transparent"></div>
 
