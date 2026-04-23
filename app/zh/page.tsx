@@ -5,10 +5,22 @@ import TestimonialCard from "@/components/testimonial-card";
 export default function HomePageZH() {
   return (
     <div className="min-h-screen bg-white">
-      {/* Hero Section - 高端深色系 + 墨尔本天际线 */}
+      {/* Hero Section - 高端深色系 + 夜景天际线效果 */}
       <section className="bg-gradient-to-br from-primary-900 via-primary-800 to-primary-900 text-white py-20 lg:py-32 relative overflow-hidden">
-        {/* 将要放置：高清墨尔本天际线图片（待添加） */}
-        <div className="absolute inset-0 bg-gradient-to-br from-primary-900/90 via-primary-800/90 to-primary-900/90 z-0"></div>
+        {/* 夜景光晕与噪点纹理 */}
+        <div className="absolute inset-0 opacity-30">
+          {/* 城市灯光噪点 */}
+          <div className="absolute inset-0" style={{
+            backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.1'/%3E%3C/svg%3E")`,
+          }}></div>
+        </div>
+        {/* 金色城市灯光点缀（模拟天际线） */}
+        <div className="absolute bottom-0 left-0 right-0 h-64 opacity-60">
+          <div className="absolute inset-0" style={{
+            backgroundImage: `radial-gradient(ellipse at bottom, #d4a855 0%, transparent 70%)`,
+            boxShadow: `inset 0 -20px 60px 10px rgba(212, 168, 85, 0.15)`,
+          }}></div>
+        </div>
 
         <div className="container mx-auto px-4 text-center relative z-10">
           <h1 className="text-4xl md:text-6xl font-display font-bold mb-6 leading-tight">

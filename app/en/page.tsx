@@ -5,9 +5,21 @@ import TestimonialCard from "@/components/testimonial-card";
 export default function HomePageEN() {
   return (
     <div className="min-h-screen bg-white">
-      {/* Hero Section - Premium Dark + placeholder for image */}
+      {/* Hero Section - Premium Dark + Night Skyline Effect */}
       <section className="bg-gradient-to-br from-primary-900 via-primary-800 to-primary-900 text-white py-20 lg:py-32 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary-900/90 via-primary-800/90 to-primary-900/90 z-0"></div>
+        {/* Night glow & noise texture */}
+        <div className="absolute inset-0 opacity-30">
+          <div className="absolute inset-0" style={{
+            backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.1'/%3E%3C/svg%3E")`,
+          }}></div>
+        </div>
+        {/* Golden city glow at horizon */}
+        <div className="absolute bottom-0 left-0 right-0 h-64 opacity-60">
+          <div className="absolute inset-0" style={{
+            backgroundImage: `radial-gradient(ellipse at bottom, #d4a855 0%, transparent 70%)`,
+            boxShadow: `inset 0 -20px 60px 10px rgba(212, 168, 85, 0.15)`,
+          }}></div>
+        </div>
 
         <div className="container mx-auto px-4 text-center relative z-10">
           <h1 className="text-4xl md:text-6xl font-display font-bold mb-6 leading-tight">
