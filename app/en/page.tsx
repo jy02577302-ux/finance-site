@@ -8,36 +8,54 @@ export default function HomePageEN() {
       {/* Hero Section - Premium Dark + Melbourne Skyline */}
       <section className="bg-gradient-to-br from-primary-900 via-primary-800 to-primary-900 text-white py-20 lg:py-32 relative overflow-hidden">
         {/* Melbourne Skyline SVG Background */}
-        <div className="absolute inset-0 opacity-30">
-          <svg className="absolute bottom-0 left-0 right-0 h-64 w-full" viewBox="0 0 1440 320" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <div className="absolute inset-0 opacity-40">
+          <svg className="absolute bottom-0 left-0 right-0 h-80 w-full" viewBox="0 0 1440 400" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            {/* Sky gradient */}
+            <defs>
+              <linearGradient id="sky-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stopColor="#0f172a" stopOpacity="0.7"/>
+                <stop offset="100%" stopColor="#1e293b" stopOpacity="0"/>
+              </linearGradient>
+            </defs>
+            <rect width="1440" height="400" fill="url(#sky-gradient)"/>
+
             {/* Distant hills */}
-            <path fill="#0f172a" fillOpacity="0.3" d="M0,192L60,197.3C120,203,240,213,360,229.3C480,245,600,267,720,261.3C840,256,960,224,1080,202.7C1200,181,1320,171,1380,165.3L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
-            {/* Main buildings silhouette */}
-            <path fill="#1e293b" fillOpacity="0.6" d="M0,320L48,272C96,224,192,128,288,128C384,128,480,224,576,261.3C672,299,768,277,864,261.3C960,245,1056,235,1152,234.7C1248,235,1344,245,1392,250.7L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-            {/* Key buildings - Eureka Tower, Australia 108, etc */}
-            <rect x="380" y="180" width="40" height="140" fill="#0f172a" fillOpacity="0.8"></rect>
-            <rect x="500" y="140" width="50" height="180" fill="#0f172a" fillOpacity="0.8"></rect>
-            <rect x="600" y="160" width="45" height="160" fill="#0f172a" fillOpacity="0.8"></rect>
-            <rect x="700" y="120" width="60" height="200" fill="#0f172a" fillOpacity="0.8"></rect>
-            <rect x="820" y="150" width="35" height="170" fill="#0f172a" fillOpacity="0.8"></rect>
-            <rect x="900" y="100" width="55" height="220" fill="#0f172a" fillOpacity="0.9"></rect>
-            {/* Golden windows lights */}
-            <circle cx="395" cy="200" r="2" fill="#d4a855"></circle>
-            <circle cx="395" cy="220" r="2" fill="#d4a855"></circle>
-            <circle cx="395" cy="240" r="2" fill="#d4a855"></circle>
-            <circle cx="525" cy="160" r="2" fill="#d4a855"></circle>
-            <circle cx="525" cy="200" r="2" fill="#d4a855"></circle>
-            <circle cx="525" cy="240" r="2" fill="#d4a855"></circle>
-            <circle cx="620" cy="200" r="2" fill="#d4a855"></circle>
-            <circle cx="620" cy="220" r="2" fill="#d4a855"></circle>
-            <circle cx="725" cy="160" r="2" fill="#d4a855"></circle>
-            <circle cx="725" cy="200" r="2" fill="#d4a855"></circle>
-            <circle cx="725" cy="240" r="2" fill="#d4a855"></circle>
-            <circle cx="925" cy="130" r="2" fill="#d4a855"></circle>
-            <circle cx="925" cy="160" r="2" fill="#d4a855"></circle>
-            <circle cx="925" cy="190" r="2" fill="#d4a855"></circle>
-            <circle cx="925" cy="220" r="2" fill="#d4a855"></circle>
-            <circle cx="925" cy="250" r="2" fill="#d4a855"></circle>
+            <path fill="#020617" fillOpacity="0.5" d="M0,280L60,290C120,300,240,320,360,310C480,300,600,260,720,250C840,240,960,250,1080,260C1200,270,1320,280,1380,285L1440,290L1440,400L1380,400C1320,400,1200,400,1080,400C960,400,840,400,720,400C600,400,480,400,360,400C240,400,120,400,60,400L0,400Z"></path>
+
+            {/* Melbourne buildings */}
+            <g fill="#0f172a" fillOpacity="0.85">
+              <path d="M100,400 L100,280 L140,280 L140,400 Z"/>
+              <path d="M160,400 L160,260 L200,240 L200,400 Z"/>
+              <rect x="280" y="180" width="45" height="220" rx="2"/>
+              <polygon points="302,180 273,130 331,130"/>
+              <rect x="340" y="200" width="40" height="200" rx="2"/>
+              <rect x="400" y="150" width="50" height="250" rx="2"/>
+              <polygon points="425,150 390,90 460,90"/>
+              <rect x="470" y="180" width="38" height="220" rx="2"/>
+              <rect x="550" y="120" width="42" height="280" rx="2"/>
+              <rect x="610" y="130" width="45" height="270" rx="2"/>
+              <rect x="680" y="160" width="38" height="240" rx="2"/>
+              <rect x="740" y="140" width="48" height="260" rx="2"/>
+              <rect x="810" y="180" width="40" height="220" rx="2"/>
+              <rect x="870" y="220" width="55" height="180" rx="2"/>
+              <rect x="950" y="240" width="60" height="160" rx="2"/>
+              <rect x="1020" y="260" width="50" height="140" rx="2"/>
+              <rect x="1090" y="280" width="55" height="120" rx="2"/>
+            </g>
+
+            {/* Golden lights */}
+            <g fill="#d4a855">
+              <circle cx="302" cy="210" r="2"/><circle cx="302" cy="230" r="2"/><circle cx="302" cy="250" r="2"/><circle cx="302" cy="270" r="2"/><circle cx="302" cy="290" r="2"/>
+              <circle cx="320" cy="220" r="2"/><circle cx="320" cy="250" r="2"/><circle cx="320" cy="280" r="2"/>
+              <circle cx="425" cy="170" r="2"/><circle cx="425" cy="200" r="2"/><circle cx="425" cy="230" r="2"/><circle cx="425" cy="260" r="2"/><circle cx="425" cy="300" r="2"/>
+              <circle cx="571" cy="140" r="2"/><circle cx="571" cy="180" r="2"/><circle cx="571" cy="220" r="2"/><circle cx="571" cy="260" r="2"/>
+              <circle cx="632" cy="150" r="2"/><circle cx="632" cy="190" r="2"/><circle cx="632" cy="230" r="2"/><circle cx="632" cy="270" r="2"/>
+              <circle cx="764" cy="160" r="2"/><circle cx="764" cy="200" r="2"/><circle cx="764" cy="240" r="2"/>
+              <circle cx="340" cy="230" r="2"/><circle cx="500" cy="200" r="1.5"/><circle cx="550" cy="200" r="2"/><circle cx="610" cy="350" r="1.5"/><circle cx="680" cy="190" r="2"/><circle cx="740" cy="180" r="2"/><circle cx="870" cy="250" r="2"/><circle cx="940" cy="280" r="1.5"/><circle cx="1030" cy="300" r="2"/>
+            </g>
+
+            {/* Ground glow */}
+            <rect x="0" y="395" width="1440" height="5" fill="#d4a855" fillOpacity="0.1"/>
           </svg>
         </div>
 
