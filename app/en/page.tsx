@@ -290,28 +290,29 @@ export default function HomePageEN() {
 
       {/* Footer - with Hero-matching wave top */}
       <footer className="relative text-primary-200" style={{ backgroundColor: '#020617' }}>
-        {/* Wave top - matches Hero gradient, covers full footer */}
-        <div className="absolute top-0 left-0 right-0 h-24 -z-10">
+        {/* Wave - visible transition from CTA to Footer */}
+        <div className="absolute top-0 left-0 right-0 h-32 -z-10">
           <svg
             className="absolute w-full h-full"
-            viewBox="0 0 1440 96"
+            viewBox="0 0 1440 128"
             preserveAspectRatio="none"
             xmlns="http://www.w3.org/2000/svg"
           >
             <defs>
               <linearGradient id="heroWaveGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-                <stop offset="0%" stopColor="#020617" stopOpacity="0.5"/>
-                <stop offset="100%" stopColor="#0f172a" stopOpacity="0.95"/>
+                <stop offset="0%" stopColor="#0f172a" stopOpacity="0.3"/>
+                <stop offset="40%" stopColor="#0f172a" stopOpacity="0.7"/>
+                <stop offset="100%" stopColor="#020617" stopOpacity="1"/>
               </linearGradient>
             </defs>
             <path
-              d="M0,10 C320,40 640,0 960,30 C1280,60 1440,20 1440,20 L1440,96 L0,96 Z"
+              d="M0,20 C360,60 720,0 1080,40 C1200,60 1320,30 1440,20 L1440,128 L0,128 Z"
               fill="url(#heroWaveGrad)"
             />
           </svg>
         </div>
 
-        <div className="container mx-auto px-4 py-12 md:py-16">
+        <div className="container mx-auto px-4 py-12 md:py-16 pt-24">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
             {/* Brand */}
             <div className="space-y-4">
