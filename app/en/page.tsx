@@ -45,24 +45,10 @@ export default function HomePageEN() {
         </div>
       </section>
 
-      {/* Trust Badges - Platinum */}
-      <section className="bg-platinum-100 py-6 relative">
-        {/* Hero → Trust Badges gold divider */}
-        <div className="absolute top-0 left-0 right-0 h-3 bg-gradient-to-r from-accent-500 to-transparent"></div>
-
-        <div className="container mx-auto px-4 flex flex-wrap justify-center gap-8 items-center">
-          <span className="text-sm font-medium text-primary-600">Licensed & Regulated:</span>
-          <div className="flex gap-8 text-accent-600 font-bold text-xl">
-            <span>AFCA</span>
-            <span>MFAA</span>
-            <span>ASIC</span>
-          </div>
-        </div>
-      </section>
 
       {/* Calculator Preview - Platinum BG */}
       <section className="py-20 bg-platinum-50 relative">
-        {/* Trust Badges → Calculator gold divider */}
+        {/* Hero → Calculator gold divider */}
         <div className="absolute top-0 left-0 right-0 h-3 bg-gradient-to-r from-accent-500 to-transparent"></div>
 
         <div className="container mx-auto px-4">

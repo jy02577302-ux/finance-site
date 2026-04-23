@@ -45,23 +45,10 @@ export default function HomePageZH() {
         </div>
       </section>
 
-      {/* Trust Badges - 铂灰底 + 金色文字 + 顶部金线 */}
-      <section className="bg-platinum-100 py-6 relative">
-        {/* Hero → Trust Badges 金色渐变分隔条 */}
-        <div className="absolute top-0 left-0 right-0 h-3 bg-gradient-to-r from-accent-500 to-transparent"></div>
-        <div className="container mx-auto px-4 flex flex-wrap justify-center gap-8 items-center">
-          <span className="text-sm font-medium text-primary-600">持牌机构：</span>
-          <div className="flex gap-8 text-accent-600 font-bold text-xl">
-            <span>AFCA</span>
-            <span>MFAA</span>
-            <span>ASIC</span>
-          </div>
-        </div>
-      </section>
 
       {/* Calculator Preview - 铂灰背景 */}
       <section className="py-20 bg-platinum-50 relative">
-        {/* Trust Badges → Calculator 金色分隔 */}
+        {/* Hero → Calculator 金色分隔条 */}
         <div className="absolute top-0 left-0 right-0 h-3 bg-gradient-to-r from-accent-500 to-transparent"></div>
 
         <div className="container mx-auto px-4">
