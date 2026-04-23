@@ -288,43 +288,30 @@ export default function HomePageEN() {
         </div>
       </section>
 
-      {/* Wave Divider - CTA to Footer (matches Hero gradient) */}
-      <div className="relative h-24 -mt-6 overflow-visible">
-        <svg
-          className="absolute w-full h-full"
-          viewBox="0 0 1440 96"
-          preserveAspectRatio="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <defs>
-            {/* Hero matching gradient */}
-            <linearGradient id="heroGradient" x1="0%" y1="0%" x2="0%" y2="100%">
-              <stop offset="0%" stopColor="#020617" stopOpacity="0.6"/>
-              <stop offset="100%" stopColor="#0f172a" stopOpacity="0.9"/>
-            </linearGradient>
-            {/* Gold accent gradient */}
-            <linearGradient id="goldGradient" x1="0%" y1="0%" x2="0%" y2="100%">
-              <stop offset="0%" stopColor="#d4a855" stopOpacity="0.4"/>
-              <stop offset="100%" stopColor="#d4a855" stopOpacity="0.8"/>
-            </linearGradient>
-          </defs>
-          {/* Main wave body - gradient from hero colors */}
-          <path
-            d="M0,0 C360,60 720,0 1080,40 C1260,60 1350,20 1440,10 L1440,96 L0,96 Z"
-            fill="url(#heroGradient)"
-          />
-          {/* Gold accent line along the crest */}
-          <path
-            d="M0,8 C360,68 720,8 1080,48 C1260,68 1350,28 1440,18 L1440,50 L0,50 Z"
-            fill="url(#goldGradient)"
-          />
-        </svg>
-      </div>
+      {/* Footer - with Hero-matching wave top */}
+      <footer className="bg-primary-950 text-primary-200 relative">
+        {/* Wave top - matches Hero gradient, covers full footer */}
+        <div className="absolute top-0 left-0 right-0 h-24 -z-10">
+          <svg
+            className="absolute w-full h-full"
+            viewBox="0 0 1440 96"
+            preserveAspectRatio="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <defs>
+              <linearGradient id="heroWaveGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stopColor="#020617" stopOpacity="0.5"/>
+                <stop offset="100%" stopColor="#0f172a" stopOpacity="0.95"/>
+              </linearGradient>
+            </defs>
+            <path
+              d="M0,10 C320,40 640,0 960,30 C1280,60 1440,20 1440,20 L1440,96 L0,96 Z"
+              fill="url(#heroWaveGrad)"
+            />
+          </svg>
+        </div>
 
-      {/* Footer - Ultimate Dark Gold + Enhanced */}
-      <footer className="bg-primary-950 text-primary-200 py-12 md:py-16">
-
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 py-12 md:py-16">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
             {/* Brand */}
             <div className="space-y-4">
