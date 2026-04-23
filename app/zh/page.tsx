@@ -68,7 +68,7 @@ export default function HomePageZH() {
 
             {/* 金色窗户灯光 */}
             <g fill="#d4a855">
-              <!-- Eureka Tower windows -->
+              {/* Eureka Tower windows */}
               <circle cx="302" cy="210" r="2"/>
               <circle cx="302" cy="230" r="2"/>
               <circle cx="302" cy="250" r="2"/>
@@ -78,31 +78,31 @@ export default function HomePageZH() {
               <circle cx="320" cy="250" r="2"/>
               <circle cx="320" cy="280" r="2"/>
               
-              <!-- Australia 108 windows -->
+              {/* Australia 108 windows */}
               <circle cx="425" cy="170" r="2"/>
               <circle cx="425" cy="200" r="2"/>
               <circle cx="425" cy="230" r="2"/>
               <circle cx="425" cy="260" r="2"/>
               <circle cx="425" cy="300" r="2"/>
               
-              <!-- 120 Collins windows -->
+              {/* 120 Collins windows */}
               <circle cx="571" cy="140" r="2"/>
               <circle cx="571" cy="180" r="2"/>
               <circle cx="571" cy="220" r="2"/>
               <circle cx="571" cy="260" r="2"/>
               
-              <!-- 101 Collins windows -->
+              {/* 101 Collins windows */}
               <circle cx="632" cy="150" r="2"/>
               <circle cx="632" cy="190" r="2"/>
               <circle cx="632" cy="230" r="2"/>
               <circle cx="632" cy="270" r="2"/>
               
-              <!-- Crown Towers windows -->
+              {/* Crown Towers windows */}
               <circle cx="764" cy="160" r="2"/>
               <circle cx="764" cy="200" r="2"/>
               <circle cx="764" cy="240" r="2"/>
               
-              <!-- Additional scattered lights -->
+              {/* Additional scattered lights */}
               <circle cx="340" cy="230" r="2"/>
               <circle cx="500" cy="200" r="1.5"/>
               <circle cx="550" cy="200" r="2"/>
