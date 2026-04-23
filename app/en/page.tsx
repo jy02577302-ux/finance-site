@@ -20,9 +20,9 @@ export default function HomePageEN() {
 
         <div className="container mx-auto px-4 text-center relative z-10">
           <h1 className="text-4xl md:text-6xl font-display font-bold mb-6 leading-tight">
-            Stress Free Finance
+            Stress-Free Finance Solutions
             <span className="block mt-2 text-accent-500 bg-clip-text text-transparent bg-gradient-to-r from-accent-400 to-accent-500">
-              Carefree Life
+              Melbourne
             </span>
           </h1>
           <p className="text-xl md:text-2xl mb-10 max-w-3xl mx-auto text-primary-200 font-light">
@@ -44,7 +44,6 @@ export default function HomePageEN() {
           </div>
         </div>
       </section>
-
 
       {/* Calculator Preview - Platinum BG */}
       <section className="py-20 bg-platinum-50 relative">
@@ -232,7 +231,7 @@ export default function HomePageEN() {
             </div>
             <div className="text-center group">
               <div className="w-20 h-20 bg-gradient-to-br from-accent-100 to-accent-200 rounded-full flex items-center justify-center mx-auto mb-6 shadow-md group-hover:scale-110 transition-transform duration-300">
-                <svg className="w-10 h-10 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                <svg className="w-10 h-10 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0 2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
               </div>
               <h3 className="text-2xl font-bold mb-4 text-primary-900">Save Your Time</h3>
               <p className="text-primary-600 leading-relaxed">Researching hundreds of products and handling paperwork can take weeks. Let us do the heavy lifting while you focus on what matters.</p>
@@ -241,14 +240,14 @@ export default function HomePageEN() {
         </div>
       </section>
 
-      {/* Testimonials - Dark Background */}
-      <section className="bg-gradient-to-br from-primary-900 to-primary-800 py-20 text-white relative overflow-hidden">
+      {/* Testimonials - Unified Light Background */}
+      <section className="bg-platinum-50 py-20 relative">
         {/* Why Choose Us → Testimonials gold divider */}
         <div className="absolute top-0 left-0 right-0 h-3 bg-gradient-to-r from-accent-500 to-transparent"></div>
 
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-display font-bold text-center mb-4">What Our Clients Say</h2>
-          <p className="text-center text-primary-300 mb-12 max-w-2xl mx-auto">Real feedback from satisfied clients</p>
+          <h2 className="text-3xl md:text-4xl font-display font-bold text-center mb-4 text-primary-900">What Our Clients Say</h2>
+          <p className="text-center text-primary-600 mb-12 max-w-2xl mx-auto">Real feedback from satisfied clients</p>
 
           <div className="grid md:grid-cols-3 gap-8">
             <TestimonialCard
@@ -270,14 +269,14 @@ export default function HomePageEN() {
         </div>
       </section>
 
-      {/* CTA - Premium Dark + Gold Button */}
-      <section className="bg-gradient-to-br from-primary-900 to-primary-800 py-20 relative overflow-hidden">
+      {/* CTA - Unified Light Background + Gold Button */}
+      <section className="bg-white py-20 relative">
         {/* Testimonials → CTA gold divider */}
         <div className="absolute top-0 left-0 right-0 h-3 bg-gradient-to-r from-accent-500 to-transparent"></div>
 
         <div className="container mx-auto px-4 text-center relative z-10">
-          <h2 className="text-3xl md:text-4xl font-display font-bold mb-6 text-white">Ready for a Stress-Free Mortgage?</h2>
-          <p className="text-xl text-primary-300 mb-10 max-w-2xl mx-auto leading-relaxed">
+          <h2 className="text-3xl md:text-4xl font-display font-bold mb-6 text-primary-900">Ready for a Stress-Free Mortgage?</h2>
+          <p className="text-xl text-primary-600 mb-10 max-w-2xl mx-auto leading-relaxed">
             Get a free, no-obligation assessment from our expert brokers.
           </p>
           <a
@@ -292,7 +291,7 @@ export default function HomePageEN() {
       {/* Footer - Ultimate Dark Gold + Enhanced */}
       <footer className="bg-primary-950 text-primary-200 py-12 md:py-16 border-t-2 border-accent-500/30 relative">
         {/* 顶部金色渐变分隔线 */}
-        <div className="absolute top-0 left-0 right-0 h-3 bg-gradient-to-r from-accent-500 to-transparent"></div>
+        <div className="absolute top-0 left-0 right-0 h-3 bg-gradient-to-r from-transparent via-accent-500 to-transparent"></div>
 
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
@@ -331,7 +330,7 @@ export default function HomePageEN() {
                       href={link.href}
                       className="group flex items-center text-primary-300 hover:text-accent-400 transition-colors"
                     >
-                      <span className="w-0 group-hover:w-4 h-0.5 bg-accent-500 mr-0 mr-2 group-hover:mr-2 transition-all duration-300"></span>
+                      <span className="w-0 group-hover:w-4 h-0.5 bg-accent-500 mr-0 group-hover:mr-2 transition-all duration-300"></span>
                       {link.label}
                     </Link>
                   </li>

@@ -241,14 +241,14 @@ export default function HomePageZH() {
         </div>
       </section>
 
-      {/* Testimonials - 深色背景 */}
-      <section className="bg-gradient-to-br from-primary-900 to-primary-800 py-20 text-white relative overflow-hidden">
+      {/* Testimonials - 统一浅色背景 */}
+      <section className="bg-platinum-50 py-20 relative">
         {/* Why Choose Us → Testimonials 金色分隔 */}
         <div className="absolute top-0 left-0 right-0 h-3 bg-gradient-to-r from-accent-500 to-transparent"></div>
 
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-display font-bold text-center mb-4">客户评价</h2>
-          <p className="text-center text-primary-300 mb-12 max-w-2xl mx-auto">来自真实客户的信任与反馈</p>
+          <h2 className="text-3xl md:text-4xl font-display font-bold text-center mb-4 text-primary-900">客户评价</h2>
+          <p className="text-center text-primary-600 mb-12 max-w-2xl mx-auto">来自真实客户的信任与反馈</p>
 
           <div className="grid md:grid-cols-3 gap-8">
             <TestimonialCard
@@ -270,14 +270,14 @@ export default function HomePageZH() {
         </div>
       </section>
 
-      {/* CTA - 深色背景 + 金色按钮 */}
-      <section className="bg-gradient-to-br from-primary-900 to-primary-800 py-20 relative overflow-hidden">
+      {/* CTA - 统一浅色背景 + 金色按钮 */}
+      <section className="bg-white py-20 relative">
         {/* Testimonials → CTA 金色分隔 */}
         <div className="absolute top-0 left-0 right-0 h-3 bg-gradient-to-r from-accent-500 to-transparent"></div>
 
         <div className="container mx-auto px-4 text-center relative z-10">
-          <h2 className="text-3xl md:text-4xl font-display font-bold mb-6 text-white">准备好轻松置业了吗？</h2>
-          <p className="text-xl text-primary-300 mb-10 max-w-2xl mx-auto leading-relaxed">
+          <h2 className="text-3xl md:text-4xl font-display font-bold mb-6 text-primary-900">准备好轻松置业了吗？</h2>
+          <p className="text-xl text-primary-600 mb-10 max-w-2xl mx-auto leading-relaxed">
             节省您的时间与精力。让我们用专业服务，帮您找到最合适的贷款方案。
           </p>
           <a
