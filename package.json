@@ -2,7 +2,7 @@
   "name": "finance-site",
   "version": "0.1.0",
   "private": true,
-  "buildTrigger": "2026-04-23-0809"
+  "buildTrigger": "2026-04-23-0903-melbourne-skyline",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

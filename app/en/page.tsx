@@ -5,13 +5,40 @@ import TestimonialCard from "@/components/testimonial-card";
 export default function HomePageEN() {
   return (
     <div className="min-h-screen bg-white">
-      {/* Hero Section - Premium Dark */}
+      {/* Hero Section - Premium Dark + Melbourne Skyline */}
       <section className="bg-gradient-to-br from-primary-900 via-primary-800 to-primary-900 text-white py-20 lg:py-32 relative overflow-hidden">
-        {/* Decorative Pattern */}
-        <div className="absolute inset-0 opacity-5">
-          <div className="absolute inset-0" style={{
-            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-          }}></div>
+        {/* Melbourne Skyline SVG Background */}
+        <div className="absolute inset-0 opacity-30">
+          <svg className="absolute bottom-0 left-0 right-0 h-64 w-full" viewBox="0 0 1440 320" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            {/* Distant hills */}
+            <path fill="#0f172a" fillOpacity="0.3" d="M0,192L60,197.3C120,203,240,213,360,229.3C480,245,600,267,720,261.3C840,256,960,224,1080,202.7C1200,181,1320,171,1380,165.3L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
+            {/* Main buildings silhouette */}
+            <path fill="#1e293b" fillOpacity="0.6" d="M0,320L48,272C96,224,192,128,288,128C384,128,480,224,576,261.3C672,299,768,277,864,261.3C960,245,1056,235,1152,234.7C1248,235,1344,245,1392,250.7L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+            {/* Key buildings - Eureka Tower, Australia 108, etc */}
+            <rect x="380" y="180" width="40" height="140" fill="#0f172a" fillOpacity="0.8"></rect>
+            <rect x="500" y="140" width="50" height="180" fill="#0f172a" fillOpacity="0.8"></rect>
+            <rect x="600" y="160" width="45" height="160" fill="#0f172a" fillOpacity="0.8"></rect>
+            <rect x="700" y="120" width="60" height="200" fill="#0f172a" fillOpacity="0.8"></rect>
+            <rect x="820" y="150" width="35" height="170" fill="#0f172a" fillOpacity="0.8"></rect>
+            <rect x="900" y="100" width="55" height="220" fill="#0f172a" fillOpacity="0.9"></rect>
+            {/* Golden windows lights */}
+            <circle cx="395" cy="200" r="2" fill="#d4a855"></circle>
+            <circle cx="395" cy="220" r="2" fill="#d4a855"></circle>
+            <circle cx="395" cy="240" r="2" fill="#d4a855"></circle>
+            <circle cx="525" cy="160" r="2" fill="#d4a855"></circle>
+            <circle cx="525" cy="200" r="2" fill="#d4a855"></circle>
+            <circle cx="525" cy="240" r="2" fill="#d4a855"></circle>
+            <circle cx="620" cy="200" r="2" fill="#d4a855"></circle>
+            <circle cx="620" cy="220" r="2" fill="#d4a855"></circle>
+            <circle cx="725" cy="160" r="2" fill="#d4a855"></circle>
+            <circle cx="725" cy="200" r="2" fill="#d4a855"></circle>
+            <circle cx="725" cy="240" r="2" fill="#d4a855"></circle>
+            <circle cx="925" cy="130" r="2" fill="#d4a855"></circle>
+            <circle cx="925" cy="160" r="2" fill="#d4a855"></circle>
+            <circle cx="925" cy="190" r="2" fill="#d4a855"></circle>
+            <circle cx="925" cy="220" r="2" fill="#d4a855"></circle>
+            <circle cx="925" cy="250" r="2" fill="#d4a855"></circle>
+          </svg>
         </div>
 
         <div className="container mx-auto px-4 text-center relative z-10">
