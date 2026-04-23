@@ -289,7 +289,7 @@ export default function HomePageEN() {
       </section>
 
       {/* Footer - with Hero-matching wave top */}
-      <footer className="bg-primary-950 text-primary-200 relative">
+      <footer className="relative text-primary-200" style={{ backgroundColor: '#020617' }}>
         {/* Wave top - matches Hero gradient, covers full footer */}
         <div className="absolute top-0 left-0 right-0 h-24 -z-10">
           <svg
