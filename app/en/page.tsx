@@ -288,10 +288,32 @@ export default function HomePageEN() {
         </div>
       </section>
 
+      {/* Wave Divider - CTA to Footer */}
+      <div className="relative h-20 -mt-4 overflow-visible">
+        <svg
+          className="absolute w-full h-full"
+          viewBox="0 0 1440 80"
+          preserveAspectRatio="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          {/* Dark wave (smooth transition from CTA) */}
+          <path
+            d="M0,0 C240,40 480,0 720,30 C960,60 1200,0 1440,20 L1440,80 L0,80 Z"
+            fill="currentColor"
+            className="text-primary-950"
+          />
+          {/* Gold accent line (wave edge) */}
+          <path
+            d="M0,2 C240,42 480,2 720,32 C960,62 1200,2 1440,22 L1440,40 L0,40 Z"
+            fill="currentColor"
+            className="text-accent-500"
+            opacity="0.6"
+          />
+        </svg>
+      </div>
+
       {/* Footer - Ultimate Dark Gold + Enhanced */}
-      <footer className="bg-primary-950 text-primary-200 py-12 md:py-16 border-t-2 border-accent-500/30 relative">
-        {/* 顶部金色渐变分隔线 */}
-        <div className="absolute top-0 left-0 right-0 h-3 bg-gradient-to-r from-transparent via-accent-500 to-transparent"></div>
+      <footer className="bg-primary-950 text-primary-200 py-12 md:py-16">
 
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
