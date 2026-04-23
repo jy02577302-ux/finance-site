@@ -40,15 +40,18 @@ export default function Header() {
       ];
 
   return (
-    <header className="bg-white shadow-sm border-b sticky top-0 z-50">
+    <header className="bg-white shadow-sm sticky top-0 z-50">
+      {/* 顶部金色分隔线 */}
+      <div className="h-0.5 bg-gradient-to-r from-transparent via-accent-500 to-transparent"></div>
+
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          {/* Logo - Premium */}
+          {/* Logo - Premium with Gold Border */}
           <Link
             href={`/${currentLang}`}
             className="flex items-center gap-2 group"
           >
-            <div className="w-8 h-8 bg-gradient-to-br from-accent-500 to-accent-600 rounded-lg flex items-center justify-center transition-transform duration-200 group-hover:scale-110 shadow-md">
+            <div className="w-8 h-8 bg-gradient-to-br from-accent-500 to-accent-600 rounded-lg flex items-center justify-center transition-transform duration-200 group-hover:scale-110 shadow-md ring-2 ring-accent-500/30">
               <span className="text-primary-900 font-bold text-lg">S</span>
             </div>
             <span className="font-display font-bold text-xl text-primary-900 hidden sm:inline transition-colors group-hover:text-accent-600">
@@ -95,6 +98,17 @@ export default function Header() {
               {isEnglish ? "中文" : "EN"}
             </Button>
 
+            {/* Phone Number (click-to-call) - Desktop */}
+            <a
+              href="tel:0412892782"
+              className="hidden sm:flex items-center gap-2 text-sm font-medium text-primary-600 hover:text-accent-600 transition-colors"
+            >
+              <svg className="w-4 h-4 text-accent-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+              </svg>
+              <span>0412 892 782</span>
+            </a>
+
             {/* CTA Button - Premium Gold */}
             <Link href={`/${currentLang}/contact`}>
               <Button
@@ -121,6 +135,17 @@ export default function Header() {
         {mobileMenuOpen && (
           <nav className="md:hidden py-4 border-t bg-platinum-50">
             <div className="flex flex-col gap-1">
+              {/* Phone */}
+              <a
+                href="tel:0412892782"
+                className="flex items-center gap-3 px-4 py-3 text-sm font-medium rounded-md text-primary-600 hover:bg-accent-50 hover:text-accent-600 transition-colors"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                <svg className="w-4 h-4 text-accent-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                </svg>
+                <span>0412 892 782</span>
+              </a>
               {navLinks.map((link) => {
                 const isActive = pathname === link.href;
                 return (
