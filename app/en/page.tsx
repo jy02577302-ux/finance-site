@@ -312,7 +312,7 @@ export default function HomePageEN() {
       </div>
 
       {/* Footer - Ultimate Dark Gold + Enhanced */}
-      <footer className="relative z-10 text-primary-200" style={{ backgroundColor: '#020617' }}>
+      <footer className="bg-primary-900 text-primary-200 relative z-10">
         <div className="container mx-auto px-4 py-12 md:py-16">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
             {/* Brand */}
