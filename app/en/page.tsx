@@ -288,9 +288,6 @@ export default function HomePageEN() {
         </div>
       </section>
 
-      {/* Footer - with Hero-matching wave top */}
-      <footer className="relative text-primary-200" style={{ backgroundColor: '#020617' }}>
-
       {/* Wave Divider - CTA to Footer */}
       <div className="relative h-32 overflow-visible">
         <svg
