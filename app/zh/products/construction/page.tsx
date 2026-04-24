@@ -90,6 +90,26 @@ export default function ConstructionLoanPage() {
             ))}
           </div>
 
+          {/* Interest Rates Reference */}
+          <section className="py-8">
+            <div className="container mx-auto px-4">
+              <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg p-6 border">
+                <h3 className="text-xl font-bold mb-4 text-center">📊 建筑贷款利率参考 (2026年4月)</h3>
+                <div className="grid md:grid-cols-2 gap-6 text-sm">
+                  <div className="text-center p-4 bg-amber-50 rounded-lg">
+                    <p className="text-gray-600 mb-1">新建住宅</p>
+                    <p className="text-2xl font-bold text-amber-700">6.79% - 7.99%</p>
+                  </div>
+                  <div className="text-center p-4 bg-amber-50 rounded-lg">
+                    <p className="text-gray-600 mb-1">翻新/扩建</p>
+                    <p className="text-2xl font-bold text-amber-700">7.29% - 8.49%</p>
+                  </div>
+                </div>
+                <p className="text-xs text-center text-gray-500 mt-3">* 利率取决于项目类型、LVR、建筑商资质和您的信用状况</p>
+              </div>
+            </div>
+          </section>
+
           {/* Important notes */}
           <div className="bg-amber-50 rounded-2xl p-8 mb-12">
             <h3 className="text-xl font-bold mb-4">重要注意事项</h3>
