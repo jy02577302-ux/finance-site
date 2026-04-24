@@ -28,6 +28,19 @@ export default function InvestmentLoanPageEN() {
         </div>
       </section>
 
+      {/* Featured Image */}
+      <div className="container mx-auto px-4 -mt-8 relative z-10">
+        <div className="max-w-4xl mx-auto rounded-2xl overflow-hidden shadow-2xl">
+          <div className="bg-gradient-to-br from-emerald-100 to-emerald-200 h-64 flex items-center justify-center">
+            <div className="text-center">
+              <svg className="w-16 h-16 text-emerald-600 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 7h8m0 0v8m0-8h-8m8 8H5a2 2 0 01-2-2V5a2 2 0 012-2h14a2 2 0 012 2v10a2 2 0 01-2 2z" /></svg>
+              <p className="text-emerald-800 font-medium">Add investment growth chart or property image</p>
+              <p className="text-sm text-emerald-600">Path: /public/images/products/investment-growth.jpg</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Features */}
       <section className="py-16">
         <div className="container mx-auto px-4">

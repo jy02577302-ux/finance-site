@@ -57,6 +57,19 @@ export default function BusinessLoanPage() {
         </div>
       </section>
 
+      {/* Featured Image */}
+      <div className="container mx-auto px-4 -mt-8 relative z-10">
+        <div className="max-w-4xl mx-auto rounded-2xl overflow-hidden shadow-2xl">
+          <div className="bg-gradient-to-br from-emerald-100 to-emerald-200 h-64 flex items-center justify-center">
+            <div className="text-center">
+              <svg className="w-16 h-16 text-emerald-600 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" /></svg>
+              <p className="text-emerald-800 font-medium">Add commercial property or office image</p>
+              <p className="text-sm text-emerald-600">Path: /public/images/products/business-office.jpg</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Why Choose Us */}
       <section className="py-16">
         <div className="container mx-auto px-4">
