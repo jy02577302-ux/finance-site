@@ -151,7 +151,10 @@ export default function AboutPage() {
                       className="w-full h-full object-cover"
                       onError={(e) => {
                         e.currentTarget.style.display = 'none';
-                        e.currentTarget.parentElement.innerHTML = `<span class="text-2xl text-gray-500 flex items-center justify-center h-full">${member.name.charAt(0)}</span>`;
+                        const parent = e.currentTarget.parentElement;
+                        if (parent) {
+                          parent.innerHTML = `<span class="text-2xl text-gray-500 flex items-center justify-center h-full">${member.name.charAt(0)}</span>`;
+                        }
                       }}
                     />
                   </div>
