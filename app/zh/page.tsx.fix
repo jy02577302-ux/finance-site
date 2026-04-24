@@ -1,0 +1,24 @@
+#!/usr/bin/env node
+
+const fs = require('fs');
+const path = '/root/.openclaw/programing-workspace/finance-site/app/zh/page.tsx';
+const content = fs.readFileSync(path, 'utf8');
+const fixed = content.replace(/text-accent-500/g, match => {
+  // 在 bg-platinum-50 区块内才替换
+  return match;
+});
+// 简单替换所有 occurrence 太激进。最好针对性替换 Calculator 区块。
+// 我将根据行号手动替换。
+
+// 更好的方法：只替换 lines 65-80 之间的
+const lines = content.split('\n');
+for (let i = 0; i < lines.length; i++) {
+  if (i >= 50 && i <= 100) {
+    if (lines[i].includes('text-accent-500')) {
+      lines[i] = lines[i].replace(/text-accent-500/g, 'text-accent-600');
+    }
+  }
+  // 英文版 page.tsx 也要改
+}
+fs.writeFileSync(path, lines.join('\n'));
+console.log('Fixed zh/page.tsx accent icons in platinum section');

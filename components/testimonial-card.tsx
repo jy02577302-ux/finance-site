@@ -11,7 +11,7 @@ export default function TestimonialCard({ name, location, text }: TestimonialCar
     <div className="bg-white p-6 rounded-2xl shadow-lg border border-platinum-200 hover:border-accent-300 hover:shadow-xl transition-all duration-300">
       <div className="flex mb-4">
         {[...Array(5)].map((_, i) => (
-          <Star key={i} className="w-5 h-5 fill-accent-500 text-accent-500" />
+          <Star key={i} className="w-5 h-5 fill-accent-600 text-accent-600" />
         ))}
       </div>
       <p className="text-primary-700 mb-6 italic leading-relaxed text-lg">"{text}"</p>
