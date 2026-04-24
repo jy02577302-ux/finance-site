@@ -290,41 +290,43 @@ export default function HomePageEN() {
 
       {/* Footer - with Hero-matching wave top */}
       <footer className="relative text-primary-200" style={{ backgroundColor: '#020617' }}>
-        {/* Wave - visible transition from CTA to Footer */}
-        <div className="absolute top-0 left-0 right-0 h-32 -z-10">
-          <svg
-            className="absolute w-full h-full"
-            viewBox="0 0 1440 128"
-            preserveAspectRatio="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <defs>
-              <linearGradient id="heroWaveGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-                <stop offset="0%" stopColor="#0f172a" stopOpacity="0.3"/>
-                <stop offset="40%" stopColor="#0f172a" stopOpacity="0.7"/>
-                <stop offset="100%" stopColor="#020617" stopOpacity="1"/>
-              </linearGradient>
-            </defs>
-            <path
-              d="M0,20 C360,60 720,0 1080,40 C1200,60 1320,30 1440,20 L1440,128 L0,128 Z"
-              fill="url(#heroWaveGrad)"
-            />
-          </svg>
-        </div>
 
-        <div className="container mx-auto px-4 py-12 md:py-16 pt-24">
+      {/* Wave Divider - CTA to Footer */}
+      <div className="relative h-32 overflow-visible">
+        <svg
+          className="absolute w-full h-full"
+          viewBox="0 0 1440 128"
+          preserveAspectRatio="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs>
+            <linearGradient id="heroWaveGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stopColor="#ffffff" stopOpacity="1"/>
+              <stop offset="30%" stopColor="#f1f5f9" stopOpacity="1"/>
+              <stop offset="60%" stopColor="#0f172a" stopOpacity="0.8"/>
+              <stop offset="100%" stopColor="#020617" stopOpacity="1"/>
+            </linearGradient>
+          </defs>
+          <path
+            d="M0,10 C360,50 720,0 1080,30 C1200,50 1320,20 1440,10 L1440,128 L0,128 Z"
+            fill="url(#heroWaveGrad)"
+          />
+        </svg>
+      </div>
+
+      {/* Footer - Ultimate Dark Gold + Enhanced */}
+      <footer className="relative text-primary-200" style={{ backgroundColor: '#020617' }}>
+        <div className="container mx-auto px-4 py-12 md:py-16">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
             {/* Brand */}
             <div className="space-y-4">
               <div className="relative inline-block">
                 <h4 className="text-white font-display font-bold text-2xl mb-2">STRESS FREE FINANCE</h4>
-                {/* 金色装饰线 */}
                 <div className="w-16 h-0.5 bg-gradient-to-r from-accent-500 to-transparent"></div>
               </div>
               <p className="text-sm leading-relaxed text-primary-300">
                 Professional, transparent, and stress-free mortgage services.
               </p>
-              {/* 信任标语 */}
               <p className="text-xs text-accent-400 font-medium tracking-wider uppercase">
                 100+ Lenders · Free Service · Melbourne Based
               </p>
@@ -411,7 +413,6 @@ export default function HomePageEN() {
               <p className="text-xs md:text-sm text-primary-500 leading-relaxed">
                 &copy; {new Date().getFullYear()} STRESS FREE FINANCE. All rights reserved. ACN: 123 456 789. Australian Credit Licence: 123456.
               </p>
-              {/* 社交媒体图标（占位，可添加实际链接） */}
               <div className="flex items-center gap-4">
                 <span className="text-xs text-primary-400">Follow us:</span>
                 <div className="flex gap-3">
