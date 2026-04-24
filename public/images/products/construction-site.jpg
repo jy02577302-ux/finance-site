@@ -1,0 +1,30 @@
+<svg width="1200" height="500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="conGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#92400e"/>
+      <stop offset="100%" style="stop-color:#78350f"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="500" fill="url(#conGrad)"/>
+  <rect x="80" y="150" width="300" height="250" fill="#1f2937"/>
+  <polygon points="80,150 230,50 380,150" fill="#374151"/>
+  <rect x="90" y="170" width="20" height="80" fill="#4b5563"/>
+  <rect x="130" y="170" width="20" height="80" fill="#4b5563"/>
+  <rect x="170" y="170" width="20" height="80" fill="#4b5563"/>
+  <rect x="210" y="170" width="20" height="80" fill="#4b5563"/>
+  <rect x="250" y="170" width="20" height="80" fill="#4b5563"/>
+  <rect x="290" y="170" width="20" height="80" fill="#4b5563"/>
+  <text x="230" y="130" font-family="Inter,Arial" font-size="20" fill="#d4a855" text-anchor="middle">建筑贷款</text>
+  <rect x="500" y="100" width="400" height="300" fill="#374151" opacity="0.7"/>
+  <rect x="520" y="120" width="360" height="40" fill="#4b5563"/>
+  <text x="700" y="145" font-family="Inter,Arial" font-size="16" fill="#d4a855" text-anchor="middle">Construction Progress Payment</text>
+  <rect x="540" y="180" width="80" height="200" fill="#6b7280"/>
+  <rect x="660" y="180" width="80" height="200" fill="#9ca3af"/>
+  <rect x="420" y="380" width="60" height="60" fill="#d4a855" opacity="0.8"/>
+  <text x="450" y="415" font-family="Inter,Arial" font-size="14" fill="#020617" text-anchor="middle" font-weight="bold">$</text>
+  <text x="450" y="415" font-family="Inter,Arial" font-size="12" fill="#020617" text-anchor="middle">LOAN</text>
+  <text x="900" y="420" font-family="Inter,Arial" font-size="16" fill="#d4a855" text-anchor="middle">6.29% - 7.49%</text>
+  <text x="900" y="450" font-family="Inter,Arial" font-size="12" fill="#9ca3af" text-anchor="middle">当前利率范围</text>
+  <text x="600" y="60" font-family="Inter,Arial" font-size="32" fill="white" text-anchor="middle">建造梦想家园</text>
+  <text x="600" y="95" font-family="Inter,Arial" font-size="16" fill="#d4a855" text-anchor="middle">progress payment + 完工转永贷</text>
+</svg>

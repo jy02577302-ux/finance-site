@@ -50,9 +50,27 @@
 
 ---
 
-## 优先级
+## 已完成 ✅
 
-1. **About 页团队照片** - 提升信任感
-2. **计算器页示意图** - 提高转化
-3. **产品页辅助图片** - 丰富视觉
-4. 其他细节优化
+- [x] 团队照片占位（3人）- `public/images/team/`
+  - `steven-mo.jpg` (200x200 SVG)
+  - `sarah-chen.jpg`
+  - `david-liu.jpg`
+- [x] 办公室图片占位 - `public/images/office/office-main.jpg` (1200x400)
+- [x] 计算器页 Hero 图 - `public/images/mortgage-dashboard.jpg` (1200x400)
+- [x] Business Loan 特色图 - `public/images/products/business-office.jpg`
+- [x] Investment 特色图 - `public/images/products/investment-growth.jpg`
+- [x] Development Loan 特色图 - `public/images/products/development-site.jpg`
+- [x] Construction Loan 特色图 - `public/images/products/construction-site.jpg`
+- [x] Home Loan 特色图 - `public/images/products/home-loan-hero.jpg`
+- [x] Contact 页地图占位（两语言）
+
+**图片均为 SVG 占位，可直接替换为真实 JPG/PNG。**
+
+## 待办（可选）
+
+- 替换真实照片：
+  - 团队成员实际头像（建议 400x400 或 800x800）
+  - 办公室实景（建议 1600x900）
+  - 产品场景图（建议 1200x500）
+  - Google Maps embed code（Contact 页）

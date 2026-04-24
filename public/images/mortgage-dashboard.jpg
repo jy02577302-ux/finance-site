@@ -1,0 +1,32 @@
+<svg width="1200" height="400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e293b"/>
+      <stop offset="100%" style="stop-color:#020617"/>
+    </linearGradient>
+    <linearGradient id="accentGold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#d4a855"/>
+      <stop offset="100%" style="stop-color:#fef08a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="400" fill="url(#bgGrad)"/>
+  <g opacity="0.4">
+    <circle cx="200" cy="100" r="60" fill="none" stroke="#d4a855" stroke-width="2"/>
+    <circle cx="200" cy="100" r="40" fill="none" stroke="#d4a855" stroke-width="2"/>
+    <line x1="200" y1="100" x2="200" y2="180" stroke="#d4a855" stroke-width="1"/>
+    <line x1="200" y1="100" x2="260" y2="60" stroke="#d4a855" stroke-width="1"/>
+  </g>
+  <rect x="400" y="50" width="300" height="300" rx="8" fill="#0f172a" opacity="0.8"/>
+  <rect x="420" y="70" width="260" height="40" rx="4" fill="#1e293b"/>
+  <text x="540" y="95" font-family="Inter,Arial" font-size="18" fill="#d4a855" text-anchor="middle">房贷计算器</text>
+  <rect x="420" y="130" width="120" height="30" rx="4" fill="#334155"/>
+  <text x="480" y="150" font-family="Inter,Arial" font-size="14" fill="#94a3b8">贷款金额</text>
+  <rect x="560" y="130" width="120" height="30" rx="4" fill="#334155"/>
+  <text x="620" y="150" font-family="Inter,Arial" font-size="14" fill="#94a3b8">利率</text>
+  <rect x="420" y="180" width="120" height="60" rx="4" fill="#0f172a"/>
+  <text x="480" y="205" font-family="Inter,Arial" font-size="12" fill="#94a3b8">月供</text>
+  <text x="480" y="230" font-family="Inter,Arial" font-size="20" fill="#d4a855" font-weight="bold">$2,966</text>
+  <circle cx="750" cy="200" r="70" fill="none" stroke="#d4a855" stroke-width="4" stroke-dasharray="8 4"/>
+  <text x="750" y="200" font-family="Inter,Arial" font-size="14" fill="#d4a855" text-anchor="middle">88%</text>
+  <text x="750" y="350" font-family="Inter,Arial" font-size="12" fill="#94a3b8" text-anchor="middle">Pre-approval Rate</text>
+</svg>
