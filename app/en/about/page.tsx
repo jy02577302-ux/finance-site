@@ -97,6 +97,21 @@ export default function AboutPageEN() {
             })}
           </div>
 
+          {/* Office Photo */}
+          <div className="my-16">
+            <h2 className="text-3xl font-bold mb-8 text-center">Our Office</h2>
+            <div className="relative rounded-2xl overflow-hidden shadow-lg">
+              {/* Placeholder for office photo */}
+              <div className="bg-gradient-to-br from-primary-100 to-primary-200 h-80 flex items-center justify-center">
+                <div className="text-center">
+                  <svg className="w-16 h-16 text-primary-400 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" /></svg>
+                  <p className="text-primary-600">Add office photo</p>
+                  <p className="text-sm text-gray-500">Path: /public/images/office/office-main.jpg</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
           {/* Team Overview */}
           <div className="bg-gray-50 rounded-2xl p-8 mb-16">
             <h2 className="text-2xl font-bold mb-6">Our Team</h2>
@@ -105,13 +120,40 @@ export default function AboutPageEN() {
             </p>
             <div className="grid md:grid-cols-3 gap-6">
               {[
-                { name: "Steven Mo", title: "Senior Mortgage Broker", specialty: "First Home Buyers", exp: "12 years" },
-                { name: "Steven Mo", title: "Investment Loan Specialist", specialty: "Investment Portfolios", exp: "8 years" },
-                { name: "Steven Mo", title: "Construction Loan Advisor", specialty: "Construction Finance", exp: "10 years" },
+                {
+                  name: "Steven Mo",
+                  title: "Senior Mortgage Broker",
+                  specialty: "First Home Buyers",
+                  exp: "12 years",
+                  avatar: "/images/team/steven-mo.jpg"
+                },
+                {
+                  name: "Sarah Chen",
+                  title: "Investment Loan Specialist",
+                  specialty: "Investment Portfolios",
+                  exp: "8 years",
+                  avatar: "/images/team/sarah-chen.jpg"
+                },
+                {
+                  name: "David Liu",
+                  title: "Construction Loan Advisor",
+                  specialty: "Construction Finance",
+                  exp: "10 years",
+                  avatar: "/images/team/david-liu.jpg"
+                },
               ].map((member) => (
                 <div key={member.name} className="bg-white p-6 rounded-xl border text-center">
-                  <div className="w-20 h-20 bg-gray-200 rounded-full mx-auto mb-4 flex items-center justify-center">
-                    <span className="text-2xl text-gray-500">{member.name.charAt(0)}</span>
+                  <div className="w-20 h-20 mx-auto mb-4 rounded-full overflow-hidden bg-gray-200">
+                    {/* TODO: Replace with real photo */}
+                    <img
+                      src={member.avatar}
+                      alt={member.name}
+                      className="w-full h-full object-cover"
+                      onError={(e) => {
+                        e.currentTarget.style.display = 'none';
+                        e.currentTarget.parentElement.innerHTML = `<span class="text-2xl text-gray-500 flex items-center justify-center h-full">${member.name.charAt(0)}</span>`;
+                      }}
+                    />
                   </div>
                   <h3 className="font-bold text-lg">{member.name}</h3>
                   <p className="text-primary-700 mb-1">{member.title}</p>

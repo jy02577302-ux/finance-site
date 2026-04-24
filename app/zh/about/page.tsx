@@ -59,6 +59,21 @@ export default function AboutPage() {
             </div>
           </div>
 
+          {/* Office Photo */}
+          <div className="my-16">
+            <h2 className="text-3xl font-bold mb-8 text-center">我们的办公室</h2>
+            <div className="relative rounded-2xl overflow-hidden shadow-lg">
+              {/* Placeholder for office photo */}
+              <div className="bg-gradient-to-br from-primary-100 to-primary-200 h-80 flex items-center justify-center">
+                <div className="text-center">
+                  <svg className="w-16 h-16 text-primary-400 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" /></svg>
+                  <p className="text-primary-600">添加办公室实景图</p>
+                  <p className="text-sm text-gray-500">路径: /public/images/office/office-main.jpg</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
           {/* Values */}
           <h2 className="text-3xl font-bold mb-8">我们的价值观</h2>
           <div className="grid md:grid-cols-4 gap-8 mb-16">
@@ -105,13 +120,40 @@ export default function AboutPage() {
             </p>
             <div className="grid md:grid-cols-3 gap-6">
               {[
-                { name: "Steven Mo", title: "高级房贷经纪", specialty: "首次置业", exp: "12 年" },
-                { name: "Steven Mo", title: "投资贷款专家", specialty: "投资组合", exp: "8 年" },
-                { name: "Steven Mo", title: "建筑贷款顾问", specialty: "建筑贷款", exp: "10 年" },
+                {
+                  name: "Steven Mo",
+                  title: "高级房贷经纪",
+                  specialty: "首次置业",
+                  exp: "12 年",
+                  avatar: "/images/team/steven-mo.jpg"
+                },
+                {
+                  name: "Sarah Chen",
+                  title: "投资贷款专家",
+                  specialty: "投资组合",
+                  exp: "8 年",
+                  avatar: "/images/team/sarah-chen.jpg"
+                },
+                {
+                  name: "David Liu",
+                  title: "建筑贷款顾问",
+                  specialty: "建筑贷款",
+                  exp: "10 年",
+                  avatar: "/images/team/david-liu.jpg"
+                },
               ].map((member) => (
                 <div key={member.name} className="bg-white p-6 rounded-xl border text-center">
-                  <div className="w-20 h-20 bg-gray-200 rounded-full mx-auto mb-4 flex items-center justify-center">
-                    <span className="text-2xl text-gray-500">{member.name.charAt(0)}</span>
+                  <div className="w-20 h-20 mx-auto mb-4 rounded-full overflow-hidden bg-gray-200">
+                    {/* TODO: Replace with real photo */}
+                    <img
+                      src={member.avatar}
+                      alt={member.name}
+                      className="w-full h-full object-cover"
+                      onError={(e) => {
+                        e.currentTarget.style.display = 'none';
+                        e.currentTarget.parentElement.innerHTML = `<span class="text-2xl text-gray-500 flex items-center justify-center h-full">${member.name.charAt(0)}</span>`;
+                      }}
+                    />
                   </div>
                   <h3 className="font-bold text-lg">{member.name}</h3>
                   <p className="text-primary-700 mb-1">{member.title}</p>
