@@ -144,18 +144,11 @@ export default function AboutPageEN() {
               ].map((member) => (
                 <div key={member.name} className="bg-white p-6 rounded-xl border text-center">
                   <div className="w-20 h-20 mx-auto mb-4 rounded-full overflow-hidden bg-gray-200">
-                    {/* TODO: Replace with real photo */}
+                    {/* TODO: Add real photo at /public/images/team/{name}.jpg */}
                     <img
                       src={member.avatar}
                       alt={member.name}
                       className="w-full h-full object-cover"
-                      onError={(e) => {
-                        e.currentTarget.style.display = 'none';
-                        const parent = e.currentTarget.parentElement;
-                        if (parent) {
-                          parent.innerHTML = `<span class="text-2xl text-gray-500 flex items-center justify-center h-full">${member.name.charAt(0)}</span>`;
-                        }
-                      }}
                     />
                   </div>
                   <h3 className="font-bold text-lg">{member.name}</h3>
