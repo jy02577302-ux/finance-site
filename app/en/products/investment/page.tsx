@@ -107,6 +107,30 @@ export default function InvestmentLoanPageEN() {
             </ul>
           </div>
 
+          {/* Interest Rates Reference */}
+          <section className="py-8">
+            <div className="container mx-auto px-4">
+              <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg p-6 border">
+                <h3 className="text-xl font-bold mb-4 text-center">📊 Investment Loan Rates Reference (April 2026)</h3>
+                <div className="grid md:grid-cols-3 gap-6 text-sm">
+                  <div className="text-center p-4 bg-emerald-50 rounded-lg">
+                    <p className="text-gray-600 mb-1">Interest Only</p>
+                    <p className="text-2xl font-bold text-emerald-700">6.29% - 6.99%</p>
+                  </div>
+                  <div className="text-center p-4 bg-emerald-50 rounded-lg">
+                    <p className="text-gray-600 mb-1">Principal & Interest</p>
+                    <p className="text-2xl font-bold text-emerald-700">5.99% - 6.69%</p>
+                  </div>
+                  <div className="text-center p-4 bg-emerald-50 rounded-lg">
+                    <p className="text-gray-600 mb-1">Investment (LVR 80%+)</p>
+                    <p className="text-2xl font-bold text-emerald-700">6.09% - 6.89%</p>
+                  </div>
+                </div>
+                <p className="text-xs text-center text-gray-500 mt-3">* Investment rates are typically higher than owner-occupier rates; depends on LVR, loan type, and financial profile</p>
+              </div>
+            </div>
+          </section>
+
           {/* CTA */}
           <div className="text-center">
             <h2 className="text-2xl font-bold mb-4">Ready to Build Your Portfolio?</h2>

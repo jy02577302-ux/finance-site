@@ -143,6 +143,26 @@ export default function DevelopmentLoanPage() {
         </div>
       </section>
 
+      {/* Interest Rates Reference */}
+      <section className="py-8">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg p-6 border">
+            <h3 className="text-xl font-bold mb-4 text-center">📊 Development Loan Rates Reference (April 2026)</h3>
+            <div className="grid md:grid-cols-2 gap-6 text-sm">
+              <div className="text-center p-4 bg-amber-50 rounded-lg">
+                <p className="text-gray-600 mb-1">Land Subdivision</p>
+                <p className="text-2xl font-bold text-amber-700">6.99% - 8.29%</p>
+              </div>
+              <div className="text-center p-4 bg-amber-50 rounded-lg">
+                <p className="text-gray-600 mb-1">Residential Construction</p>
+                <p className="text-2xl font-bold text-amber-700">6.79% - 7.99%</p>
+              </div>
+            </div>
+            <p className="text-xs text-center text-gray-500 mt-3">* Development rates are higher; depends on project size, location, builder's license, and LVR</p>
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="bg-amber-700 py-16">
         <div className="container mx-auto px-4 text-center">

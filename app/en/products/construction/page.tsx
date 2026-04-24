@@ -110,6 +110,26 @@ export default function ConstructionLoanPageEN() {
             </ul>
           </div>
 
+          {/* Interest Rates Reference */}
+          <section className="py-8">
+            <div className="container mx-auto px-4">
+              <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg p-6 border">
+                <h3 className="text-xl font-bold mb-4 text-center">📊 Construction Loan Rates Reference (April 2026)</h3>
+                <div className="grid md:grid-cols-2 gap-6 text-sm">
+                  <div className="text-center p-4 bg-amber-50 rounded-lg">
+                    <p className="text-gray-600 mb-1">New Construction</p>
+                    <p className="text-2xl font-bold text-amber-700">6.79% - 7.99%</p>
+                  </div>
+                  <div className="text-center p-4 bg-amber-50 rounded-lg">
+                    <p className="text-gray-600 mb-1">Renovation / Extension</p>
+                    <p className="text-2xl font-bold text-amber-700">7.29% - 8.49%</p>
+                  </div>
+                </div>
+                <p className="text-xs text-center text-gray-500 mt-3">* Construction rates are higher; depends on project type, LVR, builder's license, and completion timeline</p>
+              </div>
+            </div>
+          </section>
+
           {/* CTA */}
           <div className="text-center">
             <h2 className="text-2xl font-bold mb-4">Ready to Start Building?</h2>

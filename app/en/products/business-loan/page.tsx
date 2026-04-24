@@ -125,6 +125,30 @@ export default function BusinessLoanPage() {
         </div>
       </section>
 
+      {/* Interest Rates Reference */}
+      <section className="py-8">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg p-6 border">
+            <h3 className="text-xl font-bold mb-4 text-center">📊 Business Loan Rates Reference (April 2026)</h3>
+            <div className="grid md:grid-cols-3 gap-6 text-sm">
+              <div className="text-center p-4 bg-gray-50 rounded-lg">
+                <p className="text-gray-600 mb-1">Commercial Property</p>
+                <p className="text-2xl font-bold text-emerald-700">6.29% - 7.19%</p>
+              </div>
+              <div className="text-center p-4 bg-gray-50 rounded-lg">
+                <p className="text-gray-600 mb-1">Working Capital</p>
+                <p className="text-2xl font-bold text-emerald-700">7.50% - 9.50%</p>
+              </div>
+              <div className="text-center p-4 bg-gray-50 rounded-lg">
+                <p className="text-gray-600 mb-1">Equipment Finance</p>
+                <p className="text-2xl font-bold text-emerald-700">6.99% - 8.99%</p>
+              </div>
+            </div>
+            <p className="text-xs text-center text-gray-500 mt-3">* Rates vary based on loan size, term, security, and business financials</p>
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="bg-emerald-700 py-16">
         <div className="container mx-auto px-4 text-center">
