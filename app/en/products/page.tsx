@@ -132,6 +132,31 @@ export default function ProductsPageEN() {
             </div>
           </div>
 
+          {/* Interest Rates Overview */}
+          <section className="py-8">
+            <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg p-6 border">
+              <h3 className="text-xl font-bold mb-4 text-center">📊 Current Interest Rates (April 2026)</h3>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
+                {[
+                  { label: "Variable (Owner)", range: "5.89% - 6.49%", color: "text-primary-700" },
+                  { label: "Fixed (1-3 yrs)", range: "5.69% - 6.29%", color: "text-primary-700" },
+                  { label: "Investment", range: "6.09% - 6.79%", color: "text-emerald-700" },
+                  { label: "Interest Only", range: "6.29% - 6.99%", color: "text-amber-700" },
+                  { label: "Commercial", range: "6.29% - 7.19%", color: "text-emerald-700" },
+                  { label: "Development", range: "6.79% - 8.29%", color: "text-amber-700" },
+                  { label: "Construction", range: "6.29% - 7.49%", color: "text-amber-700" },
+                  { label: "Equipment", range: "6.99% - 8.99%", color: "text-emerald-700" },
+                ].map((item) => (
+                  <div key={item.label} className="text-center p-4 bg-gray-50 rounded-lg">
+                    <p className="text-gray-600 mb-1 text-xs">{item.label}</p>
+                    <p className={`text-xl font-bold ${item.color}`}>{item.range}</p>
+                  </div>
+                ))}
+              </div>
+              <p className="text-xs text-center text-gray-500 mt-3">* Rates are indicative. Actual rates depend on LVR, loan size, credit profile, and terms.</p>
+            </div>
+          </section>
+
           {/* CTA */}
           <div className="mt-12 text-center">
             <h2 className="text-2xl font-bold mb-4">Not Sure Which Product is Right for You?</h2>

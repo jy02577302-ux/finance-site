@@ -169,6 +169,31 @@ export default function ProductsPage() {
             </div>
           </div>
 
+          {/* Interest Rates Overview */}
+          <section className="py-8">
+            <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg p-6 border">
+              <h3 className="text-xl font-bold mb-4 text-center">📊 当前基准利率参考 (2026年4月)</h3>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
+                {[
+                  { label: "自住浮动", range: "5.89% - 6.49%", color: "text-primary-700" },
+                  { label: "自住固定(1-3年)", range: "5.69% - 6.29%", color: "text-primary-700" },
+                  { label: "投资贷款", range: "6.09% - 6.79%", color: "text-emerald-700" },
+                  { label: "只还利息", range: "6.29% - 6.99%", color: "text-amber-700" },
+                  { label: "商业地产", range: "6.29% - 7.19%", color: "text-emerald-700" },
+                  { label: "开发贷款", range: "6.79% - 8.29%", color: "text-amber-700" },
+                  { label: "建筑贷款", range: "6.29% - 7.49%", color: "text-amber-700" },
+                  { label: "设备融资", range: "6.99% - 8.99%", color: "text-emerald-700" },
+                ].map((item) => (
+                  <div key={item.label} className="text-center p-4 bg-gray-50 rounded-lg">
+                    <p className="text-gray-600 mb-1 text-xs">{item.label}</p>
+                    <p className={`text-xl font-bold ${item.color}`}>{item.range}</p>
+                  </div>
+                ))}
+              </div>
+              <p className="text-xs text-center text-gray-500 mt-3">* 利率仅供参考，实际利率取决于 LVR、贷款规模、信用状况和具体条款</p>
+            </div>
+          </section>
+
           {/* CTA */}
           <div className="mt-12 text-center">
             <h2 className="text-2xl font-bold mb-4">不确定哪种产品适合您？</h2>
