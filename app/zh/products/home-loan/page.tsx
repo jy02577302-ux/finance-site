@@ -68,11 +68,34 @@ export default function HomeLoanPage() {
                 <p className="text-gray-600 mb-6">
                   使用我们的在线计算器快速估算您的借款能力和月供。完全免费，无需注册。
                 </p>
-                <ul className="space-y-2 text-sm text-gray-600">
+                <ul className="space-y-2 text-sm text-gray-600 mb-6">
                   <li>• 快速估算月供</li>
                   <li>• 查看总利息支出</li>
                   <li>• 对比不同利率的影响</li>
                 </ul>
+                {/* 最新利率参考 */}
+                <div className="bg-primary-50 rounded-lg p-4 border border-primary-100">
+                  <h3 className="font-bold text-primary-900 mb-2">📊 当前利率参考 (2026年4月)</h3>
+                  <div className="grid grid-cols-2 gap-3 text-sm">
+                    <div>
+                      <span className="text-gray-600">浮动利率 (自住)</span>
+                      <p className="font-semibold text-primary-800">5.89% - 6.49%</p>
+                    </div>
+                    <div>
+                      <span className="text-gray-600">固定利率 (1-3年)</span>
+                      <p className="font-semibold text-primary-800">5.69% - 6.29%</p>
+                    </div>
+                    <div>
+                      <span className="text-gray-600">投资贷款</span>
+                      <p className="font-semibold text-primary-800">6.09% - 6.79%</p>
+                    </div>
+                    <div>
+                      <span className="text-gray-600">只还利息</span>
+                      <p className="font-semibold text-primary-800">6.29% - 6.99%</p>
+                    </div>
+                  </div>
+                  <p className="text-xs text-gray-500 mt-2">* 利率仅供参考，实际以银行审批为准</p>
+                </div>
               </div>
               <div className="bg-gray-50 p-6 rounded-xl">
                 <Calculator compact />

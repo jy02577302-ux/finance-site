@@ -68,11 +68,34 @@ export default function HomeLoanPageEN() {
                 <p className="text-gray-600 mb-6">
                   Use our calculator to estimate your borrowing power and monthly repayments. Fast, free, no registration required.
                 </p>
-                <ul className="space-y-2 text-sm text-gray-600">
+                <ul className="space-y-2 text-sm text-gray-600 mb-6">
                   <li>• Estimate your monthly repayments</li>
                   <li>• See total interest payable</li>
                   <li>• Compare different interest rates</li>
                 </ul>
+                {/* Current Rates Reference */}
+                <div className="bg-primary-50 rounded-lg p-4 border border-primary-100">
+                  <h3 className="font-bold text-primary-900 mb-2">📊 Current Interest Rates (April 2026)</h3>
+                  <div className="grid grid-cols-2 gap-3 text-sm">
+                    <div>
+                      <span className="text-gray-600">Variable (Owner Occupier)</span>
+                      <p className="font-semibold text-primary-800">5.89% - 6.49%</p>
+                    </div>
+                    <div>
+                      <span className="text-gray-600">Fixed (1-3 years)</span>
+                      <p className="font-semibold text-primary-800">5.69% - 6.29%</p>
+                    </div>
+                    <div>
+                      <span className="text-gray-600">Investment Loans</span>
+                      <p className="font-semibold text-primary-800">6.09% - 6.79%</p>
+                    </div>
+                    <div>
+                      <span className="text-gray-600">Interest Only</span>
+                      <p className="font-semibold text-primary-800">6.29% - 6.99%</p>
+                    </div>
+                  </div>
+                  <p className="text-xs text-gray-500 mt-2">* Rates are indicative, actual rates subject to lender approval</p>
+                </div>
               </div>
               <div className="bg-gray-50 p-6 rounded-xl">
                 <Calculator compact />
