@@ -174,6 +174,30 @@ export default function AboutPage() {
             ))}
           </div>
 
+          {/* Mission & Vision */}
+          <div className="mt-16 bg-gradient-to-r from-primary-50 to-primary-100 rounded-2xl p-8">
+            <div className="grid md:grid-cols-2 gap-12">
+              <div>
+                <h2 className="text-2xl font-bold mb-4">我们的使命</h2>
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  让每个澳大利亚家庭都能获得专业、透明、高效的房贷服务。我们相信，通过个性化的方案和全程支持，置业梦想可以变得更加轻松。
+                </p>
+                <p className="text-gray-700 leading-relaxed">
+                  我们致力于成为墨尔本最受信任的房贷经纪品牌，以客户满意为核心，持续提升服务质量和专业水准。
+                </p>
+              </div>
+              <div>
+                <h2 className="text-2xl font-bold mb-4">我们的愿景</h2>
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  成为澳洲领先的金融解决方案提供商，帮助 10,000+ 家庭实现置业目标，同时建立一支多元化、专业化的服务团队。
+                </p>
+                <p className="text-gray-700 leading-relaxed">
+                  我们追求卓越，不断创新服务模式，利用科技提升客户体验，同时保持人性化的服务温度。
+                </p>
+              </div>
+            </div>
+          </div>
+
           {/* CTA */}
           <div className="text-center">
             <h2 className="text-2xl font-bold mb-4">准备好与我们合作了吗？</h2>
