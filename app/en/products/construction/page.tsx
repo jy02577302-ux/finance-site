@@ -17,7 +17,7 @@ export default function ConstructionLoanPageEN() {
         {/* Background Image */}
         <div className="absolute inset-0">
           <Image
-            src="/images/products/construction-site.jpg"
+            src="/images/products/construction-site-v2.jpg"
             alt="Construction Site - Construction Loan"
             fill
             sizes="100vw"
@@ -109,7 +109,7 @@ export default function ConstructionLoanPageEN() {
           <div className="container mx-auto px-4 -mt-8 relative z-10">
             <div className="max-w-4xl mx-auto rounded-2xl overflow-hidden shadow-2xl">
               <Image
-                src="/images/products/construction-site.jpg"
+                src="/images/products/construction-site-v2.jpg"
                 alt="Construction Site - Construction Loan"
                 width={1200}
                 height={500}

@@ -17,7 +17,7 @@ export default function DevelopmentLoanPage() {
         {/* Background Image */}
         <div className="absolute inset-0">
           <Image
-            src="/images/products/development-site.jpg"
+            src="/images/products/development-site-v2.jpg"
             alt="Development Site - Development Loan"
             fill
             sizes="100vw"
@@ -76,7 +76,7 @@ export default function DevelopmentLoanPage() {
       <div className="container mx-auto px-4 -mt-8 relative z-10">
         <div className="max-w-4xl mx-auto rounded-2xl overflow-hidden shadow-2xl">
           <Image
-            src="/images/products/development-site.jpg"
+            src="/images/products/development-site-v2.jpg"
             alt="Development Site - Development Loan"
             width={1200}
             height={500}

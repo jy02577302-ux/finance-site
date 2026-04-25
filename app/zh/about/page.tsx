@@ -17,7 +17,7 @@ export default function AboutPage() {
         {/* Background Image */}
         <div className="absolute inset-0">
           <Image
-            src="/images/office/office-main.jpg"
+            src="/images/about-hero.jpg"
             alt="STRESS FREE FINANCE 办公室"
             fill
             sizes="100vw"
@@ -79,7 +79,7 @@ export default function AboutPage() {
             <h2 className="text-3xl font-bold mb-8 text-center">我们的办公室</h2>
             <div className="relative rounded-2xl overflow-hidden shadow-lg max-h-[500px]">
               <Image
-                src="/images/office/office-main.jpg"
+                src="/images/about-hero.jpg"
                 alt="STRESS FREE FINANCE 办公室 - 墨尔本CBD"
                 width={1600}
                 height={900}

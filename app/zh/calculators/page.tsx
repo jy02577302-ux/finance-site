@@ -16,7 +16,7 @@ export default function CalculatorsPage() {
         {/* Background Image */}
         <div className="absolute inset-0">
           <Image
-            src="/images/mortgage-dashboard.jpg"
+            src="/images/calculators-hero.jpg"
             alt="房贷计算仪表盘"
             fill
             sizes="100vw"
@@ -48,7 +48,7 @@ export default function CalculatorsPage() {
           <div className="max-w-4xl mx-auto mb-12">
             <div className="rounded-2xl overflow-hidden shadow-lg">
               <Image
-                src="/images/mortgage-dashboard.jpg"
+                src="/images/calculators-hero.jpg"
                 alt="房贷计算仪表盘"
                 width={1200}
                 height={400}

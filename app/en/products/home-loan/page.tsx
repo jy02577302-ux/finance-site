@@ -18,7 +18,7 @@ export default function HomeLoanPageEN() {
         {/* Background Image */}
         <div className="absolute inset-0">
           <Image
-            src="/images/products/home-loan-hero.jpg"
+            src="/images/products/home-loan-hero-v2.jpg"
             alt="Family Home - Home Loan"
             fill
             sizes="100vw"
@@ -124,7 +124,7 @@ export default function HomeLoanPageEN() {
       <div className="container mx-auto px-4 -mt-8 relative z-10">
         <div className="max-w-4xl mx-auto rounded-2xl overflow-hidden shadow-2xl">
           <Image
-            src="/images/products/home-loan-hero.jpg"
+            src="/images/products/home-loan-hero-v2.jpg"
             alt="Family Home - Home Loan"
             width={1200}
             height={500}

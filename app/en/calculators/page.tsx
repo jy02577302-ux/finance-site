@@ -15,7 +15,7 @@ export default function CalculatorsPage() {
         {/* Background Image */}
         <div className="absolute inset-0">
           <Image
-            src="/images/mortgage-dashboard.jpg"
+            src="/images/calculators-hero.jpg"
             alt="Mortgage Calculator Dashboard"
             fill
             sizes="100vw"
@@ -47,7 +47,7 @@ export default function CalculatorsPage() {
           <div className="max-w-4xl mx-auto mb-12">
             <div className="rounded-2xl overflow-hidden shadow-lg">
               <Image
-                src="/images/mortgage-dashboard.jpg"
+                src="/images/calculators-hero.jpg"
                 alt="Mortgage Calculator Dashboard"
                 width={1200}
                 height={400}

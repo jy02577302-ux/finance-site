@@ -14,7 +14,7 @@ export default function ContactPage() {
         {/* Background Image */}
         <div className="absolute inset-0">
           <Image
-            src="/images/office/office-main.jpg"
+            src="/images/contact-hero.jpg"
             alt="STRESS FREE FINANCE 办公室"
             fill
             sizes="100vw"

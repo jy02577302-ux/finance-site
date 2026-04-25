@@ -17,7 +17,7 @@ export default function InvestmentLoanPage() {
         {/* Background Image */}
         <div className="absolute inset-0">
           <Image
-            src="/images/products/investment-growth.jpg"
+            src="/images/products/investment-growth-v2.jpg"
             alt="投资增长图表 - 投资贷款"
             fill
             sizes="100vw"
@@ -47,7 +47,7 @@ export default function InvestmentLoanPage() {
       <div className="container mx-auto px-4 -mt-8 relative z-10">
         <div className="max-w-4xl mx-auto rounded-2xl overflow-hidden shadow-2xl">
           <Image
-            src="/images/products/investment-growth.jpg"
+            src="/images/products/investment-growth-v2.jpg"
             alt="投资增长图表 - 投资贷款"
             width={1200}
             height={500}
