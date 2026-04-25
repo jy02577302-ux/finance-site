@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>How to View New Images</title>
+  <style>
+    body { font-family: sans-serif; max-width: 800px; margin: 50px auto; padding: 20px; }
+    code { background: #f0f0f0; padding: 2px 6px; border-radius: 4px; }
+    .step { margin: 20px 0; padding: 15px; background: #f9f9f9; border-left: 4px solid #0070f3; }
+  </style>
+</head>
+<body>
+  <h1>🖼️ Viewing New Hero Images</h1>
+  
+  <div class="step">
+    <strong>Step 1: Force Refresh</strong><br>
+    Press <code>Ctrl+F5</code> (Windows/Linux) or <code>Cmd+Shift+R</code> (Mac) to clear browser cache and reload.
+  </div>
+
+  <div class="step">
+    <strong>Step 2: Or use Incognito/Private Window</strong><br>
+    Open a new incognito window (<code>Ctrl+Shift+N</code> in Chrome) and visit:<br>
+    <a href="https://finance-site-bay.vercel.app/images/hero-gallery.html">https://finance-site-bay.vercel.app/images/hero-gallery.html</a>
+  </div>
+
+  <div class="step">
+    <strong>Step 3: Verify Image URLs</strong><br>
+    These URLs should show new images (200 OK):<br>
+    <ul>
+      <li><a href="/images/about-hero.jpg">/images/about-hero.jpg</a> (183KB)</li>
+      <li><a href="/images/calculators-hero.jpg">/images/calculators-hero.jpg</a> (114KB)</li>
+      <li><a href="/images/contact-hero.jpg">/images/contact-hero.jpg</a> (153KB)</li>
+    </ul>
+  </div>
+
+  <div class="step">
+    <strong>Step 4: If still seeing old images</strong><br>
+    The images have been deployed multiple times. If cache persists, wait 1-2 minutes for Vercel CDN to propagate globally.
+  </div>
+
+  <hr>
+  <p><em>Last deployment: 2026-04-26 00:52 GMT+8</em></p>
+</body>
+</html>
