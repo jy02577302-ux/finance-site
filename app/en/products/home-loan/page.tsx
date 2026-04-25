@@ -14,7 +14,7 @@ export default function HomeLoanPageEN() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero */}
-      <section className="relative min-h-[500px] flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-[300px] flex items-center justify-center overflow-hidden">
         {/* Background Image */}
         <div className="absolute inset-0">
           <Image
