@@ -63,13 +63,13 @@ export default function AboutPage() {
           {/* Office Photo */}
           <div className="my-16">
             <h2 className="text-3xl font-bold mb-8 text-center">我们的办公室</h2>
-            <div className="relative rounded-2xl overflow-hidden shadow-lg">
+            <div className="relative rounded-2xl overflow-hidden shadow-lg max-h-[500px]">
               <Image
                 src="/images/office/office-main.jpg"
                 alt="STRESS FREE FINANCE 办公室 - 墨尔本CBD"
                 width={1600}
                 height={900}
-                className="w-full h-auto"
+                className="w-full h-auto object-cover"
               />
             </div>
           </div>
