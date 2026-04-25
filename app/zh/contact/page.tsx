@@ -7,14 +7,18 @@ export const metadata = {
 
 export default function ContactPage() {
   return (
-    <div className="min-h-screen bg-gray-50 py-20">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">联系我们</h1>
-          <p className="text-xl text-gray-600">
+    <div className="min-h-screen bg-gray-50">
+      {/* Hero */}
+      <section className="bg-gradient-to-br from-primary-700 to-primary-900 text-white py-16">
+        <div className="container mx-auto px-4 text-center">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">联系我们</h1>
+          <p className="text-xl text-primary-100 max-w-2xl mx-auto mb-8">
             免费咨询，无任何义务。我们随时为您提供专业建议。
           </p>
         </div>
+      </section>
+
+      <div className="container mx-auto px-4">
 
         <div className="grid md:grid-cols-3 gap-8 mb-12">
           <div className="bg-white p-6 rounded-xl shadow border text-center">
