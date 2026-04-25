@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { CheckCircle, Users, Award, Clock, Heart } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -63,14 +64,13 @@ export default function AboutPage() {
           <div className="my-16">
             <h2 className="text-3xl font-bold mb-8 text-center">我们的办公室</h2>
             <div className="relative rounded-2xl overflow-hidden shadow-lg">
-              {/* Placeholder for office photo */}
-              <div className="bg-gradient-to-br from-primary-100 to-primary-200 h-80 flex items-center justify-center">
-                <div className="text-center">
-                  <svg className="w-16 h-16 text-primary-400 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" /></svg>
-                  <p className="text-primary-600">添加办公室实景图</p>
-                  <p className="text-sm text-gray-500">路径: /public/images/office/office-main.jpg</p>
-                </div>
-              </div>
+              <Image
+                src="/images/office/office-main.jpg"
+                alt="STRESS FREE FINANCE 办公室 - 墨尔本CBD"
+                width={1600}
+                height={900}
+                className="w-full h-auto"
+              />
             </div>
           </div>
 

@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import Calculator from "@/components/calculator";
 import { ArrowLeft, CheckCircle, Phone, Mail } from "lucide-react";
@@ -104,6 +105,19 @@ export default function HomeLoanPage() {
           </div>
         </div>
       </section>
+
+      {/* Featured Image */}
+      <div className="container mx-auto px-4 -mt-8 relative z-10">
+        <div className="max-w-4xl mx-auto rounded-2xl overflow-hidden shadow-2xl">
+          <Image
+            src="/images/products/home-loan-hero.jpg"
+            alt="温馨家庭住宅 - 房屋贷款"
+            width={1200}
+            height={500}
+            className="w-full h-auto"
+          />
+        </div>
+      </div>
 
       {/* Why Choose Us */}
       <section className="py-16">

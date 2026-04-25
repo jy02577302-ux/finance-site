@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, CheckCircle, Phone, Mail, HardHat } from "lucide-react";
 
@@ -28,13 +29,13 @@ export default function DevelopmentLoanPage() {
       {/* Featured Image */}
       <div className="container mx-auto px-4 -mt-8 relative z-10">
         <div className="max-w-4xl mx-auto rounded-2xl overflow-hidden shadow-2xl">
-          <div className="bg-gradient-to-br from-amber-100 to-amber-200 h-64 flex items-center justify-center">
-            <div className="text-center">
-              <svg className="w-16 h-16 text-amber-600 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" /></svg>
-              <p className="text-amber-800 font-medium">添加开发项目或施工现场图片</p>
-              <p className="text-sm text-amber-600">路径: /public/images/products/development-site.jpg</p>
-            </div>
-          </div>
+          <Image
+            src="/images/products/development-site.jpg"
+            alt="土地开发现场 - 开发贷款"
+            width={1200}
+            height={500}
+            className="w-full h-auto"
+          />
         </div>
       </div>
 

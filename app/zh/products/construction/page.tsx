@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, CheckCircle, Phone, Mail, HardHat } from "lucide-react";
 
@@ -109,6 +110,19 @@ export default function ConstructionLoanPage() {
               </div>
             </div>
           </section>
+
+          {/* Featured Image */}
+          <div className="container mx-auto px-4 -mt-8 relative z-10">
+            <div className="max-w-4xl mx-auto rounded-2xl overflow-hidden shadow-2xl">
+              <Image
+                src="/images/products/construction-site.jpg"
+                alt="建筑施工场地 - 建筑贷款"
+                width={1200}
+                height={500}
+                className="w-full h-auto"
+              />
+            </div>
+          </div>
 
           {/* Important notes */}
           <div className="bg-amber-50 rounded-2xl p-8 mb-12">
