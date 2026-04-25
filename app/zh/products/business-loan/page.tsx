@@ -18,7 +18,7 @@ export default function BusinessLoanPage() {
         <div className="absolute inset-0">
           <Image
             src="/images/products/business-office-v2.jpg"
-            alt="商业地产 - 商业贷款"
+            alt="Commercial Property - Business Loan"
             fill
             sizes="100vw"
             style={{ width: '100%', height: '100%', objectFit: 'cover' }}

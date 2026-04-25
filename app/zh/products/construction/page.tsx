@@ -18,7 +18,7 @@ export default function ConstructionLoanPage() {
         <div className="absolute inset-0">
           <Image
             src="/images/products/construction-site-v2.jpg"
-            alt="建筑施工场地 - 建筑贷款"
+            alt="Construction Site - Construction Loan"
             fill
             sizes="100vw"
             style={{ width: '100%', height: '100%', objectFit: 'cover' }}

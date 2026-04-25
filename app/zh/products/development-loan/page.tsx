@@ -18,7 +18,7 @@ export default function DevelopmentLoanPage() {
         <div className="absolute inset-0">
           <Image
             src="/images/products/development-site-v2.jpg"
-            alt="土地开发现场 - 开发贷款"
+            alt="Development Site - Development Loan"
             fill
             sizes="100vw"
             style={{ width: '100%', height: '100%', objectFit: 'cover' }}

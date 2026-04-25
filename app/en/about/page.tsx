@@ -20,7 +20,6 @@ export default function AboutPageEN() {
             src="/images/about-hero.jpg"
             alt="STRESS FREE FINANCE Office"
             fill
-            style={{ objectFit: 'cover' }}
           />
         </div>
         {/* Gradient Overlay - left to right */}

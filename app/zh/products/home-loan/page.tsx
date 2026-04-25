@@ -19,7 +19,7 @@ export default function HomeLoanPage() {
         <div className="absolute inset-0">
           <Image
             src="/images/products/home-loan-hero-v2.jpg"
-            alt="温馨家庭住宅 - 房屋贷款"
+            alt="Family Home - Home Loan"
             fill
             sizes="100vw"
             style={{ width: '100%', height: '100%', objectFit: 'cover' }}

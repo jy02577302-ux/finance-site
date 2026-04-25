@@ -18,7 +18,7 @@ export default function InvestmentLoanPage() {
         <div className="absolute inset-0">
           <Image
             src="/images/products/investment-growth-v2.jpg"
-            alt="投资增长图表 - 投资贷款"
+            alt="Investment Growth Chart"
             fill
             sizes="100vw"
             style={{ width: '100%', height: '100%', objectFit: 'cover' }}
