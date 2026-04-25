@@ -67,10 +67,49 @@
 
 **图片均为 SVG 占位，可直接替换为真实 JPG/PNG。**
 
+## 📸 真实照片替换方案
+
+已创建详细文档：
+- ✅ `PHOTO_SHOOT_BRIEF.md` - 摄影/采购需求清单
+- ✅ `scripts/replace-photos.js` - 自动化替换脚本
+- ✅ `scripts/README.md` - 使用指南
+
+### 快捷操作流程
+
+1. **准备照片**
+   - 按规格拍摄或购买图片
+   - 放入 `photos/` 对应目录
+
+2. **运行脚本**
+   ```bash
+   node scripts/replace-photos.js --type all
+   ```
+
+3. **提交部署**
+   ```bash
+   git add -A
+   git commit -m "feat: replace placeholder photos with real images"
+   git push origin main
+   vercel --prod
+   ```
+
+### 照片要求速查
+
+| 类别 | 文件 | 尺寸 | 说明 |
+|------|------|------|------|
+| 团队 | team/*.jpg | 400-800px 正方形 | 商务肖像，白底 |
+| 办公室 | office-main.jpg | 1200x800 | 明亮现代 |
+| 通用 | mortgage-dashboard.jpg | 1200x400 | 数据可视化 |
+| 产品 | products/*.jpg | 1200x500 | 各类贷款场景 |
+
+详细要求见 **PHOTO_SHOOT_BRIEF.md**
+
+---
+
 ## 待办（可选）
 
-- 替换真实照片：
-  - 团队成员实际头像（建议 400x400 或 800x800）
-  - 办公室实景（建议 1600x900）
-  - 产品场景图（建议 1200x500）
-  - Google Maps embed code（Contact 页）
+- [ ] 采购/拍摄真实照片
+- [ ] 运行替换脚本
+- [ ] 提交并部署
+- [ ] Contact 页添加真实 Google Maps embed code
+- [ ] 后续 SEO 优化（OpenGraph 图片）
