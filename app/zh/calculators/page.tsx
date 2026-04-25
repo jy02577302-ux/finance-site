@@ -12,8 +12,22 @@ export default function CalculatorsPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero */}
-      <section className="bg-gradient-to-br from-primary-700 to-primary-900 text-white py-16">
-        <div className="container mx-auto px-4 text-center">
+      <section className="relative min-h-[500px] flex items-center justify-center overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <Image
+            src="/images/mortgage-dashboard.jpg"
+            alt="房贷计算仪表盘"
+            fill
+            sizes="100vw"
+            style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+          />
+        </div>
+        {/* Gradient Overlay - left to right */}
+        <div className="absolute inset-0 bg-gradient-to-br from-primary-900/90 via-primary-800/70 to-primary-900/50"></div>
+
+        {/* Content */}
+        <div className="relative container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">房贷计算器</h1>
           <p className="text-xl text-primary-100 max-w-2xl mx-auto mb-8">
             快速估算月供、总利息和印花税。透明计算，无隐藏费用，助您做出明智贷款决策。
@@ -28,7 +42,7 @@ export default function CalculatorsPage() {
       </section>
 
       {/* Calculator Section */}
-      <section className="py-12 bg-gray-50">
+      <section className="py-12 bg-gray-50" id="calculator-section">
         <div className="container mx-auto px-4">
           {/* Dashboard Preview */}
           <div className="max-w-4xl mx-auto mb-12">
@@ -44,7 +58,7 @@ export default function CalculatorsPage() {
           </div>
 
           {/* Calculator and Info */}
-          <div className="grid lg:grid-cols-3 gap-8" id="calculator-section">
+          <div className="grid lg:grid-cols-3 gap-8">
             <div className="lg:col-span-2">
               <div className="bg-white p-8 rounded-2xl shadow-lg border">
                 <Calculator />

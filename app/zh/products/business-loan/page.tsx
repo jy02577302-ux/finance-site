@@ -13,14 +13,28 @@ export default function BusinessLoanPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero */}
-      <section className="bg-gradient-to-br from-emerald-700 to-emerald-900 text-white py-16">
-        <div className="container mx-auto px-4">
+      <section className="relative min-h-[500px] flex items-center justify-center overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <Image
+            src="/images/products/business-office.jpg"
+            alt="商业地产 - 商业贷款"
+            fill
+            sizes="100vw"
+            style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+          />
+        </div>
+        {/* Gradient Overlay - left to right */}
+        <div className="absolute inset-0 bg-gradient-to-br from-emerald-900/90 via-emerald-800/70 to-emerald-900/50"></div>
+
+        {/* Content */}
+        <div className="relative container mx-auto px-4 text-center">
           <Link href="/zh/products" className="inline-flex items-center gap-2 text-emerald-200 hover:text-white mb-6">
             <ArrowLeft className="w-4 h-4" />
             返回产品列表
           </Link>
           <h1 className="text-4xl md:text-5xl font-bold mb-4">商业贷款</h1>
-          <p className="text-xl text-emerald-100 max-w-2xl">
+          <p className="text-xl text-emerald-100 max-w-2xl mx-auto">
             为企业和投资者提供灵活的商业融资方案。我们的专家将全程协助您找到最适合的解决方案。
           </p>
         </div>

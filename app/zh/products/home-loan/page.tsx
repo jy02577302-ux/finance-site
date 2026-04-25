@@ -14,14 +14,28 @@ export default function HomeLoanPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero */}
-      <section className="bg-gradient-to-br from-primary-700 to-primary-900 text-white py-16">
-        <div className="container mx-auto px-4">
+      <section className="relative min-h-[500px] flex items-center justify-center overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <Image
+            src="/images/products/home-loan-hero.jpg"
+            alt="温馨家庭住宅 - 房屋贷款"
+            fill
+            sizes="100vw"
+            style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+          />
+        </div>
+        {/* Gradient Overlay - left to right */}
+        <div className="absolute inset-0 bg-gradient-to-br from-primary-900/90 via-primary-800/70 to-primary-900/50"></div>
+
+        {/* Content */}
+        <div className="relative container mx-auto px-4 text-center">
           <Link href="/zh/products" className="inline-flex items-center gap-2 text-primary-200 hover:text-white mb-6">
             <ArrowLeft className="w-4 h-4" />
             返回产品列表
           </Link>
           <h1 className="text-4xl md:text-5xl font-bold mb-4">房屋贷款</h1>
-          <p className="text-xl text-primary-100 max-w-2xl">
+          <p className="text-xl text-primary-100 max-w-2xl mx-auto">
             无论是首次购房、重新贷款还是投资房产，我们的房贷经纪将为您提供全程专业建议。
           </p>
         </div>

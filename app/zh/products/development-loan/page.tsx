@@ -13,14 +13,28 @@ export default function DevelopmentLoanPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero */}
-      <section className="bg-gradient-to-br from-amber-700 to-amber-900 text-white py-16">
-        <div className="container mx-auto px-4">
+      <section className="relative min-h-[500px] flex items-center justify-center overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <Image
+            src="/images/products/development-site.jpg"
+            alt="土地开发现场 - 开发贷款"
+            fill
+            sizes="100vw"
+            style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+          />
+        </div>
+        {/* Gradient Overlay - left to right */}
+        <div className="absolute inset-0 bg-gradient-to-br from-amber-900/90 via-amber-800/70 to-amber-900/50"></div>
+
+        {/* Content */}
+        <div className="relative container mx-auto px-4 text-center">
           <Link href="/zh/products" className="inline-flex items-center gap-2 text-amber-200 hover:text-white mb-6">
             <ArrowLeft className="w-4 h-4" />
             返回产品列表
           </Link>
           <h1 className="text-4xl md:text-5xl font-bold mb-4">开发贷款</h1>
-          <p className="text-xl text-amber-100 max-w-2xl">
+          <p className="text-xl text-amber-100 max-w-2xl mx-auto">
             支持土地分割、住宅和商业开发项目。按工程进度分期拨款，全程专业指导。
           </p>
         </div>

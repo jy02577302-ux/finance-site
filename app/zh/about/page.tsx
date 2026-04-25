@@ -13,8 +13,22 @@ export default function AboutPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero */}
-      <section className="bg-gradient-to-br from-primary-700 to-primary-900 text-white py-16">
-        <div className="container mx-auto px-4 text-center">
+      <section className="relative min-h-[500px] flex items-center justify-center overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <Image
+            src="/images/office/office-main.jpg"
+            alt="STRESS FREE FINANCE 办公室"
+            fill
+            sizes="100vw"
+            style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+          />
+        </div>
+        {/* Gradient Overlay - left to right */}
+        <div className="absolute inset-0 bg-gradient-to-br from-primary-900/90 via-primary-800/70 to-primary-900/50"></div>
+
+        {/* Content */}
+        <div className="relative container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">关于 STRESS FREE FINANCE</h1>
           <p className="text-xl text-primary-100 max-w-2xl mx-auto">
             我们致力于为澳大利亚家庭提供专业、透明、高效的房贷服务，让置业变得轻松简单。
