@@ -46,7 +46,7 @@ export default function HomePageEN() {
       </section>
 
       {/* Calculator Preview - Platinum BG */}
-      <section className="py-20 bg-platinum-50 relative">
+      <section className="py-12 bg-platinum-50 relative">
         {/* Hero → Calculator gold divider */}
         <div className="absolute top-0 left-0 right-0 h-3 bg-gradient-to-r from-accent-500 to-transparent"></div>
 
@@ -88,7 +88,7 @@ export default function HomePageEN() {
       </section>
 
       {/* Loan Products - Premium Cards */}
-      <section className="py-20 bg-white relative">
+      <section className="py-12 bg-white relative">
         {/* Calculator → Products gold divider */}
         <div className="absolute top-0 left-0 right-0 h-3 bg-gradient-to-r from-accent-500 to-transparent"></div>
 
@@ -206,7 +206,7 @@ export default function HomePageEN() {
       </section>
 
       {/* Why Choose Us - Platinum BG + Gold Icons */}
-      <section className="py-20 bg-platinum-50 relative">
+      <section className="py-12 bg-platinum-50 relative">
         {/* Products → Why Choose Us gold divider */}
         <div className="absolute top-0 left-0 right-0 h-3 bg-gradient-to-r from-accent-500 to-transparent"></div>
 
@@ -241,7 +241,7 @@ export default function HomePageEN() {
       </section>
 
       {/* Testimonials - Unified Light Background */}
-      <section className="bg-platinum-50 py-20 relative">
+      <section className="bg-platinum-50 py-12 relative">
         {/* Why Choose Us → Testimonials gold divider */}
         <div className="absolute top-0 left-0 right-0 h-3 bg-gradient-to-r from-accent-500 to-transparent"></div>
 
@@ -270,7 +270,7 @@ export default function HomePageEN() {
       </section>
 
       {/* CTA - Unified Light Background + Gold Button */}
-      <section className="bg-white py-20 relative">
+      <section className="bg-white py-12 relative">
         {/* Testimonials → CTA gold divider */}
         <div className="absolute top-0 left-0 right-0 h-3 bg-gradient-to-r from-accent-500 to-transparent"></div>
 

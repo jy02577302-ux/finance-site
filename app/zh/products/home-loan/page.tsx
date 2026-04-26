@@ -42,7 +42,7 @@ export default function HomeLoanPage() {
       </section>
 
       {/* Our Promise */}
-      <section className="py-16">
+      <section className="py-12">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-8 text-center">我们的承诺</h2>
           <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
@@ -134,7 +134,7 @@ export default function HomeLoanPage() {
       </div>
 
       {/* Why Choose Us */}
-      <section className="py-16">
+      <section className="py-12">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-12 text-center">为什么选择我们</h2>
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
@@ -170,7 +170,7 @@ export default function HomeLoanPage() {
       </section>
 
       {/* How It Works */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-12 bg-gray-50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-12 text-center">我们的流程</h2>
           <div className="grid md:grid-cols-4 gap-8 max-w-4xl mx-auto">
@@ -193,7 +193,7 @@ export default function HomeLoanPage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-primary-700 py-16">
+      <section className="bg-primary-700 py-12">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">准备好开始了吗？</h2>
           <p className="text-xl text-primary-100 max-w-2xl mx-auto mb-8">

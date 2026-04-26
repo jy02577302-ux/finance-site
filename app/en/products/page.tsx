@@ -57,7 +57,7 @@ export default function ProductsPageEN() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero */}
-      <section className="bg-gradient-to-br from-primary-800 to-primary-900 text-white py-16">
+      <section className="bg-gradient-to-br from-primary-800 to-primary-900 text-white py-12">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Our Loan Products</h1>
           <p className="text-xl text-primary-100 max-w-2xl mx-auto">
@@ -67,7 +67,7 @@ export default function ProductsPageEN() {
       </section>
 
       {/* Products Grid */}
-      <section className="py-16">
+      <section className="py-12">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-8">
             {products.map((product) => {

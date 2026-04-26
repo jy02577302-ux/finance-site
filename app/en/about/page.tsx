@@ -37,7 +37,7 @@ export default function AboutPageEN() {
       </section>
 
       {/* Our Story */}
-      <section className="py-16">
+      <section className="py-12">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
             <div>

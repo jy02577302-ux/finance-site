@@ -47,7 +47,7 @@ export default function HomePageZH() {
 
 
       {/* Calculator Preview - 铂灰背景 */}
-      <section className="py-20 bg-platinum-50 relative">
+      <section className="py-12 bg-platinum-50 relative">
         {/* Hero → Calculator 金色分隔条 */}
         <div className="absolute top-0 left-0 right-0 h-3 bg-gradient-to-r from-accent-500 to-transparent"></div>
 
@@ -89,7 +89,7 @@ export default function HomePageZH() {
       </section>
 
       {/* Loan Products - 右下-右对齐边框 + 金色点缀 */}
-      <section className="py-20 bg-white relative">
+      <section className="py-12 bg-white relative">
         {/* Calculator → Products 金色分隔 */}
         <div className="absolute top-0 left-0 right-0 h-3 bg-gradient-to-r from-accent-500 to-transparent"></div>
 
@@ -207,7 +207,7 @@ export default function HomePageZH() {
       </section>
 
       {/* Why Choose Us - 简洁铂灰背景 + 金色图标 */}
-      <section className="py-20 bg-platinum-50 relative">
+      <section className="py-12 bg-platinum-50 relative">
         {/* Products → Why Choose Us 金色分隔 */}
         <div className="absolute top-0 left-0 right-0 h-3 bg-gradient-to-r from-accent-500 to-transparent"></div>
 
@@ -242,7 +242,7 @@ export default function HomePageZH() {
       </section>
 
       {/* Testimonials - 统一浅色背景 */}
-      <section className="bg-platinum-50 py-20 relative">
+      <section className="bg-platinum-50 py-12 relative">
         {/* Why Choose Us → Testimonials 金色分隔 */}
         <div className="absolute top-0 left-0 right-0 h-3 bg-gradient-to-r from-accent-500 to-transparent"></div>
 
@@ -271,7 +271,7 @@ export default function HomePageZH() {
       </section>
 
       {/* CTA - 统一浅色背景 + 金色按钮 */}
-      <section className="bg-white py-20 relative">
+      <section className="bg-white py-12 relative">
         {/* Testimonials → CTA 金色分隔 */}
         <div className="absolute top-0 left-0 right-0 h-3 bg-gradient-to-r from-accent-500 to-transparent"></div>
 

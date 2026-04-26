@@ -41,7 +41,7 @@ export default function BusinessLoanPage() {
       </section>
 
       {/* Our Promise */}
-      <section className="py-16">
+      <section className="py-12">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-8 text-center">Our Promise to You</h2>
           <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
@@ -86,7 +86,7 @@ export default function BusinessLoanPage() {
       </div>
 
       {/* Why Choose Us */}
-      <section className="py-16">
+      <section className="py-12">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-12 text-center">Why Choose Us</h2>
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
@@ -122,7 +122,7 @@ export default function BusinessLoanPage() {
       </section>
 
       {/* What We Cover */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-12 bg-gray-50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-8 text-center">What We Cover</h2>
           <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
@@ -178,7 +178,7 @@ export default function BusinessLoanPage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-emerald-700 py-16">
+      <section className="bg-emerald-700 py-12">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">Need Business Financing?</h2>
           <p className="text-xl text-emerald-100 max-w-2xl mx-auto mb-8">
