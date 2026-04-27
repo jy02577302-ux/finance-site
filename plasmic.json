@@ -1,0 +1,85 @@
+{
+  "platform": "nextjs",
+  "code": {
+    "lang": "ts",
+    "scheme": "blackbox",
+    "reactRuntime": "classic"
+  },
+  "style": {
+    "scheme": "css-modules",
+    "defaultStyleCssFilePath": "components/plasmic/plasmic__default_style.module.css"
+  },
+  "images": {
+    "scheme": "public-files",
+    "publicDir": "../public",
+    "publicUrlPrefix": "/"
+  },
+  "tokens": {
+    "scheme": "theo",
+    "tokensFilePath": "plasmic-tokens.theo.json"
+  },
+  "srcDir": "app",
+  "defaultPlasmicDir": "components/plasmic",
+  "projects": [
+    {
+      "projectId": "7XSwBw2GQLDk7qDguE5q2M",
+      "projectApiToken": "PLACEHOLDER_TOKEN",
+      "projectName": "finance_site",
+      "version": "latest",
+      "cssFilePath": "components/plasmic/finance_site/plasmic.module.css",
+      "components": [
+        {
+          "id": "0n_zuzF6Nl2o",
+          "name": "Homepage",
+          "type": "managed",
+          "projectId": "7XSwBw2GQLDk7qDguE5q2M",
+          "renderModuleFilePath": "components/plasmic/finance_site/PlasmicHomepage.tsx",
+          "importSpec": {
+            "modulePath": "app/page.tsx"
+          },
+          "cssFilePath": "components/plasmic/finance_site/PlasmicHomepage.module.css",
+          "scheme": "blackbox",
+          "componentType": "page",
+          "path": "/",
+          "rsc": {
+            "serverModulePath": "components/plasmic/finance_site/PlasmicHomepageServer.tsx",
+            "clientModulePath": "app/page-client.tsx"
+          }
+        }
+      ],
+      "icons": [],
+      "images": [],
+      "indirect": false,
+      "globalContextsFilePath": "",
+      "splitsProviderFilePath": "",
+      "styleTokensProviderFilePath": "components/plasmic/finance_site/PlasmicStyleTokensProvider.tsx",
+      "dataTokensFilePath": "",
+      "projectModuleFilePath": "components/plasmic/finance_site/plasmic.tsx",
+      "codeComponents": [
+        {
+          "id": "q4t7oCRhvP80",
+          "name": "PlasmicHead",
+          "displayName": "hostless-plasmic-head",
+          "componentImportPath": "@plasmicapp/react-web"
+        },
+        {
+          "id": "yfzhu2CtF_O9",
+          "name": "Fetcher",
+          "displayName": "plasmic-data-source-fetcher",
+          "componentImportPath": "@plasmicapp/react-web/lib/data-sources"
+        }
+      ],
+      "customFunctions": []
+    }
+  ],
+  "globalVariants": {
+    "variantGroups": []
+  },
+  "wrapPagesWithGlobalContexts": false,
+  "preserveJsImportExtensions": false,
+  "nextjsConfig": {
+    "pagesDir": "app"
+  },
+  "cliVersion": "0.1.359",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.359/dist/plasmic.schema.json"
+}

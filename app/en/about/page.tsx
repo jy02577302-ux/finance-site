@@ -112,19 +112,57 @@ export default function AboutPageEN() {
             })}
           </div>
 
-          {/* Office Photo */}
-          <div className="my-16">
-            <h2 className="text-3xl font-bold mb-8 text-center">Our Office</h2>
-            <div className="relative rounded-2xl overflow-hidden shadow-lg max-h-[500px]">
-              <Image
-                src="/images/about-hero.jpg"
-                alt="STRESS FREE FINANCE Office - Melbourne CBD"
-                width={1600}
-                height={900}
-                className="w-full h-auto object-cover"
-              />
+          {/* Partners */}
+          <section className="py-16 bg-gray-50">
+            <div className="container mx-auto px-4">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl font-bold mb-4">Our Partner Institutions</h2>
+                <p className="text-gray-600 max-w-3xl mx-auto">
+                  30+ institutions, vast loan solutions. Covering mainstream banks and non-bank lenders, we compare rates, fees, and flexibility to quickly find the most suitable loan structure for you from thousands of options.
+                </p>
+              </div>
+              
+              <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
+                {[
+                  "anz_logo.jpg",
+                  "commonwealth_bank_logo.png",
+                  "westpac_logo.jpg",
+                  "nab_logo.jpg",
+                  "boq_logo.png",
+                  "ing_logo.png",
+                  "amp_logo.png",
+                  "pepper_logo.png",
+                  "la_trobe_logo.png",
+                  "liberty_logo.png",
+                  "resimac_logo.png",
+                  "brighten_logo.png",
+                  "citybank_logo.jpg",
+                  "chinabank_logo.jpg",
+                  "st_logo.jpg",
+                  "sun_logo.jpg",
+                  "bc_invest_logo.png",
+                  "ac_logo.png",
+                  "ccc_logo.png"
+                ].map((logo, idx) => (
+                  <div key={idx} className="bg-white p-4 rounded-xl shadow-sm flex items-center justify-center hover:shadow-md transition">
+                    <Image
+                      src={`/images/partners/${logo}`}
+                      alt={`Partner Institution ${idx+1}`}
+                      width={120}
+                      height={80}
+                      className="object-contain max-h-16"
+                    />
+                  </div>
+                ))}
+              </div>
+              
+              <div className="mt-12 text-center">
+                <p className="text-gray-600 mb-4">
+                  Under the regulatory framework of Australian authorities, we maintain long-term partnerships with 20+ Australian banks and non-bank lenders. Our strong relationships with senior bankers at various institutions help us secure the most suitable products and smoothest approval experiences for you.
+                </p>
+              </div>
             </div>
-          </div>
+          </section>
 
           {/* Team Overview */}
           <div className="bg-gray-50 rounded-2xl p-8 mb-16">

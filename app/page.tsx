@@ -1,5 +1,5 @@
-import { redirect } from 'next/navigation';
+import { PlasmicHomepage } from "@/components/plasmic/finance_site/PlasmicHomepage";
 
-export default function HomeRedirect() {
-  redirect('/zh');
+export default function HomePage() {
+  return <PlasmicHomepage />;
 }
