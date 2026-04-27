@@ -57,7 +57,7 @@ export default function ProductsPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero */}
-      <section className="bg-gradient-to-br from-primary-800 to-primary-900 text-white py-12">
+      <section className="bg-gradient-to-br from-primary-800 to-primary-900 text-white py-8">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">我们的贷款产品</h1>
           <p className="text-xl text-primary-100 max-w-2xl mx-auto">
@@ -114,23 +114,23 @@ export default function ProductsPage() {
 
               return (
                 <div key={product.title} className="bg-white rounded-2xl shadow-lg border overflow-hidden">
-                  <div className={`${bgColor} text-white p-6`}>
+                  <div className="bg-primary-700 text-white p-6">
                     <Icon className="w-10 h-10 mb-4" />
                     <h2 className="text-2xl font-bold mb-2">{product.title}</h2>
-                    <p className="text-white/80">{product.description}</p>
+                    <p className="text-primary-100">{product.description}</p>
                   </div>
                   <div className="p-6">
                     <ul className="space-y-3 mb-8">
                       {product.features.map((feat) => (
                         <li key={feat} className="flex items-center gap-2">
-                          <svg className="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
+                          <svg className="w-5 h-5 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
                           <span className="text-gray-700">{feat}</span>
                         </li>
                       ))}
                     </ul>
                     <Link
                       href={product.href}
-                      className={`${bgColor} ${hoverColor} text-white w-full justify-between inline-flex items-center px-6 py-3 rounded-lg font-semibold`}
+                      className="bg-primary-700 hover:bg-primary-800 text-white w-full justify-between inline-flex items-center px-6 py-3 rounded-lg font-semibold"
                     >
                       {product.cta}
                       <ArrowRight className="w-5 h-5" />
