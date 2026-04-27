@@ -1,39 +1,41 @@
+import { Metadata } from "next";
 import Calculator from "@/components/calculator";
 import Image from "next/image";
-import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Mortgage Calculators | STRESS FREE FINANCE",
-  description: "Use our free mortgage calculators to estimate repayments, stamp duty, and borrowing capacity.",
+  title: "Mortgage Calculator | STRESS FREE FINANCE",
+  description: "Use our free mortgage calculator to estimate monthly repayments, total interest and stamp duty. Transparent calculations.",
+  keywords: "mortgage calculator, home loan calculator, stamp duty, australia mortgage"
 };
 
-export default function CalculatorsPage() {
+export default function CalculatorsPageEN() {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-white">
       {/* Hero */}
       <section className="relative min-h-[300px] flex items-center justify-center overflow-hidden">
-        {/* Background Image */}
         <div className="absolute inset-0">
           <Image
             src="/images/calculators-hero.jpg"
-            alt="Mortgage Calculator Dashboard"
+            alt="Mortgage calculator dashboard"
             fill
             sizes="100vw"
             style={{ width: '100%', height: '100%', objectFit: 'cover' }}
           />
         </div>
-        {/* Gradient Overlay - left to right */}
-        <div className="absolute inset-0 bg-gradient-to-br from-primary-900/90 via-primary-800/70 to-primary-900/50"></div>
-
-        {/* Content */}
+        <div className="absolute inset-0 bg-gradient-to-br from-black/70 via-black/50 to-transparent"></div>
         <div className="relative container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Mortgage Calculators</h1>
-          <p className="text-xl text-primary-100 max-w-2xl mx-auto mb-8">
-            Estimate your home loan repayments, calculate stamp duty, and see how much you can borrow.
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white" style={{ fontFamily: 'Playfair Display, serif' }}>Mortgage Calculator</h1>
+          <p className="text-xl text-white/90 max-w-2xl mx-auto mb-8" style={{ fontWeight: 300 }}>
+            Quickly estimate monthly repayments, total interest and stamp duty. Transparent calculations with no hidden fees.
           </p>
           <a
             href="#calculator-section"
-            className="inline-flex items-center justify-center rounded-lg bg-accent-500 px-6 py-3 text-base font-semibold text-primary-900 hover:bg-accent-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-500 transition-all shadow-md"
+            className="inline-flex items-center justify-center rounded-sm px-8 py-3 font-semibold transition-all"
+            style={{
+              background: 'linear-gradient(135deg, #d4a855 0%, #c59547 100%)',
+              color: '#fff',
+              boxShadow: '0 4px 12px rgba(212, 168, 85, 0.25)'
+            }}
           >
             Start Calculating
           </a>
@@ -41,53 +43,87 @@ export default function CalculatorsPage() {
       </section>
 
       {/* Calculator Section */}
-      <section className="py-12 bg-gray-50" id="calculator-section">
+      <section className="py-16 bg-gradient-to-br from-slate-50 to-white" id="calculator-section">
         <div className="container mx-auto px-4">
           {/* Dashboard Preview */}
           <div className="max-w-4xl mx-auto mb-12">
-            <div className="rounded-2xl overflow-hidden shadow-lg">
+            <div className="rounded-2xl overflow-hidden shadow-lg border" style={{ borderColor: 'rgba(212, 168, 85, 0.15)' }}>
               <Image
-                src="/images/calculators-hero.jpg"
-                alt="Mortgage Calculator Dashboard"
+                src="/images/mortgage-dashboard.jpg"
+                alt="Mortgage calculator dashboard"
                 width={1200}
                 height={400}
-                className="w-full h-auto"
+                className="w-full h-64 md:h-96 object-cover"
               />
             </div>
           </div>
 
-          {/* Calculator and Info */}
-          <div className="grid lg:grid-cols-3 gap-8" id="calculator-section">
-            <div className="lg:col-span-2">
-              <div className="bg-white p-8 rounded-2xl shadow-lg border">
-                <Calculator />
-              </div>
-            </div>
+          {/* Calculator */}
+          <div className="max-w-4xl mx-auto">
+            <Calculator />
+          </div>
 
-            <div className="space-y-8">
-              <div className="bg-white p-6 rounded-xl shadow border">
-                <h3 className="font-bold text-lg mb-4">Supported Loan Types</h3>
-                <ul className="space-y-3 text-sm text-gray-600">
-                  <li>• Principal & Interest</li>
-                  <li>• Interest Only</li>
-                  <li>• Fixed Rate Loans</li>
-                  <li>• Variable Rate Loans</li>
-                </ul>
+          {/* Info */}
+          <div className="mt-12 max-w-4xl mx-auto">
+            <div className="bg-white p-8 rounded-2xl border" style={{ borderColor: 'rgba(212, 168, 85, 0.2)', boxShadow: '0 4px 20px rgba(0,0,0,0.04)' }}>
+              <h2 className="text-2xl font-bold mb-6" style={{ color: '#1a1a1a', fontFamily: 'Playfair Display, serif' }}>Calculation Notes</h2>
+              <div className="grid md:grid-cols-2 gap-8">
+                <div>
+                  <h3 className="font-bold mb-3" style={{ color: '#d4a855' }}>Monthly Repayments</h3>
+                  <p className="text-gray-600 text-sm leading-relaxed">
+                    Repayment estimates are based on loan amount, interest rate, term and repayment type. Results are indicative only. Actual repayments may vary based on specific loan terms, fees and interest rate changes.
+                  </p>
+                </div>
+                <div>
+                  <h3 className="font-bold mb-3" style={{ color: '#d4a855' }}>Stamp Duty</h3>
+                  <p className="text-gray-600 text-sm leading-relaxed">
+                    Stamp duty is calculated based on property type, purchase price and down payment. Rates vary by state; this calculator uses VIC rates. Final amounts determined by government.
+                  </p>
+                </div>
               </div>
-
-              <div className="bg-white p-6 rounded-xl shadow border">
-                <h3 className="font-bold text-lg mb-4">Important Notes</h3>
-                <p className="text-sm text-gray-600 mb-2">
-                  Results are estimates only and do not constitute loan approval or formal quotes.
-                </p>
-                <p className="text-sm text-gray-600">
-                  Actual rates, fees, and terms may vary. Contact us for personalized advice.
+              <div className="mt-8 pt-6 border-t" style={{ borderColor: 'rgba(212, 168, 85, 0.1)' }}>
+                <p className="text-sm text-gray-500 text-center">
+                  * This calculator provides estimates only and does not constitute formal loan pre-approval. For precise calculations, please consult our brokers.
                 </p>
               </div>
             </div>
           </div>
         </div>
       </section>
+
+      {/* CTA */}
+      <div className="py-16" style={{ background: 'linear-gradient(135deg, #1a1a1a 0%, #2c2c2c 100%)' }}>
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-2xl font-bold mb-4 text-white" style={{ fontFamily: 'Playfair Display, serif' }}>Need a More Accurate Quote?</h2>
+          <p className="text-white/80 mb-6 max-w-2xl mx-auto">
+            Our experts can provide detailed loan scenarios and precise calculations based on your situation.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="tel:0412892782"
+              className="inline-flex items-center justify-center gap-2 px-8 py-3 font-semibold transition-all rounded-sm"
+              style={{
+                background: 'linear-gradient(135deg, #d4a855 0%, #c59547 100%)',
+                color: '#fff',
+                boxShadow: '0 4px 12px rgba(212, 168, 85, 0.25)'
+              }}
+            >
+              Call 0412 892 782
+            </a>
+            <a
+              href="/en/contact"
+              className="inline-flex items-center justify-center gap-2 px-8 py-3 font-semibold transition-colors rounded-sm"
+              style={{
+                background: 'transparent',
+                color: '#fff',
+                border: '1px solid rgba(212, 168, 85, 0.4)'
+              }}
+            >
+              Contact Us
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
