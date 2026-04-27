@@ -13,7 +13,7 @@ export default function ContactPage() {
       <section className="relative min-h-[300px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="/images/contact-hero.jpg"
+            src="/images/contact.jpg"
             alt="STRESS FREE FINANCE 办公室"
             fill
             sizes="100vw"
