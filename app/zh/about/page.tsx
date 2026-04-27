@@ -91,7 +91,7 @@ export default function AboutPage() {
                 
                 {/* Right: Logos Grid */}
                 <div className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100">
-                  <div className="grid grid-cols-2 gap-4">
+                  <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
                     {[
                       "anz_logo.jpg",
                       "commonwealth_bank_logo.png",
