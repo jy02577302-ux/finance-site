@@ -119,12 +119,12 @@ export default function ProductsPage() {
 
               return (
                 <div key={product.title} className="bg-white rounded-2xl shadow-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                  <div className="bg-gradient-to-br from-primary-700 to-primary-900 text-white p-8">
-                    <div className="w-14 h-14 bg-white/10 rounded-2xl flex items-center justify-center mb-4 backdrop-blur-sm">
-                      <Icon className="w-8 h-8" />
+                  <div className="bg-gray-50 p-8 border-b border-gray-100">
+                    <div className="w-14 h-14 bg-primary-100 rounded-2xl flex items-center justify-center mb-4">
+                      <Icon className="w-8 h-8 text-primary-700" />
                     </div>
-                    <h2 className="text-2xl font-bold mb-3">{product.title}</h2>
-                    <p className="text-primary-100 leading-relaxed">{product.description}</p>
+                    <h2 className="text-2xl font-bold mb-3 text-gray-900">{product.title}</h2>
+                    <p className="text-gray-600 leading-relaxed">{product.description}</p>
                   </div>
                   <div className="p-6">
                     <ul className="space-y-3 mb-8">
@@ -151,28 +151,28 @@ export default function ProductsPage() {
           </div>
 
           {/* Why Choose Us */}
-          <div className="mt-16 bg-gradient-to-br from-primary-50 to-blue-50 rounded-2xl p-8 border border-primary-100">
-            <h2 className="text-2xl font-bold mb-8 text-center">为什么选择我们？</h2>
+          <div className="mt-16 bg-gray-50 rounded-2xl p-8 border border-gray-100">
+            <h2 className="text-2xl font-bold mb-8 text-center text-gray-900">为什么选择我们？</h2>
             <div className="grid md:grid-cols-3 gap-8">
               <div className="text-center">
-                <div className="w-16 h-16 bg-primary-700 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
-                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                <div className="w-16 h-16 bg-primary-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <svg className="w-8 h-8 text-primary-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
                 </div>
-                <h3 className="font-bold text-lg mb-2">专业团队</h3>
+                <h3 className="font-bold text-lg mb-2 text-gray-900">专业团队</h3>
                 <p className="text-gray-600">10+ 年行业经验，持牌经纪为您服务</p>
               </div>
               <div className="text-center">
-                <div className="w-16 h-16 bg-primary-700 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
-                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+                <div className="w-16 h-16 bg-primary-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <svg className="w-8 h-8 text-primary-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
                 </div>
-                <h3 className="font-bold text-lg mb-2">快速审批</h3>
+                <h3 className="font-bold text-lg mb-2 text-gray-900">快速审批</h3>
                 <p className="text-gray-600">大多数申请 48 小时内获批</p>
               </div>
               <div className="text-center">
-                <div className="w-16 h-16 bg-primary-700 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
-                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0 2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                <div className="w-16 h-16 bg-primary-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <svg className="w-8 h-8 text-primary-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0 2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
                 </div>
-                <h3 className="font-bold text-lg mb-2">免费评估</h3>
+                <h3 className="font-bold text-lg mb-2 text-gray-900">免费评估</h3>
                 <p className="text-gray-600">初次咨询完全免费，无任何义务</p>
               </div>
             </div>
