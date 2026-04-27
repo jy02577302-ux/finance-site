@@ -113,53 +113,54 @@ export default function AboutPageEN() {
           </div>
 
           {/* Partners */}
-          <section className="py-16 bg-gray-50">
+          <section className="py-16 bg-gradient-to-br from-primary-50 to-blue-50">
             <div className="container mx-auto px-4">
-              <div className="text-center mb-12">
-                <h2 className="text-3xl font-bold mb-4">Our Partner Institutions</h2>
-                <p className="text-gray-600 max-w-3xl mx-auto">
-                  30+ institutions, vast loan solutions. Covering mainstream banks and non-bank lenders, we compare rates, fees, and flexibility to quickly find the most suitable loan structure for you from thousands of options.
-                </p>
-              </div>
-              
-              <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
-                {[
-                  "anz_logo.jpg",
-                  "commonwealth_bank_logo.png",
-                  "westpac_logo.jpg",
-                  "nab_logo.jpg",
-                  "boq_logo.png",
-                  "ing_logo.png",
-                  "amp_logo.png",
-                  "pepper_logo.png",
-                  "la_trobe_logo.png",
-                  "liberty_logo.png",
-                  "resimac_logo.png",
-                  "brighten_logo.png",
-                  "citybank_logo.jpg",
-                  "chinabank_logo.jpg",
-                  "st_logo.jpg",
-                  "sun_logo.jpg",
-                  "bc_invest_logo.png",
-                  "ac_logo.png",
-                  "ccc_logo.png"
-                ].map((logo, idx) => (
-                  <div key={idx} className="bg-white p-4 rounded-xl shadow-sm flex items-center justify-center hover:shadow-md transition">
-                    <Image
-                      src={`/images/partners/${logo}`}
-                      alt={`Partner Institution ${idx+1}`}
-                      width={120}
-                      height={80}
-                      className="object-contain max-h-16"
-                    />
+              <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
+                {/* Left: Copy */}
+                <div>
+                  <h2 className="text-3xl font-bold mb-6">Our Partner Institutions</h2>
+                  <p className="text-gray-700 mb-6 leading-relaxed">
+                    30+ institutions, vast loan solutions. Covering mainstream banks and non-bank lenders, we compare rates, fees, and flexibility to quickly find the most suitable loan structure for you from thousands of options.
+                  </p>
+                  <p className="text-gray-700 leading-relaxed">
+                    Under the regulatory framework of Australian authorities, we maintain long-term partnerships with 20+ Australian banks and non-bank lenders. Our strong relationships with senior bankers at various institutions help us secure the most suitable products and smoothest approval experiences for you.
+                  </p>
+                </div>
+                
+                {/* Right: Logos Grid */}
+                <div className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100">
+                  <div className="grid grid-cols-2 gap-4">
+                    {[
+                      "anz_logo.jpg",
+                      "commonwealth_bank_logo.png",
+                      "westpac_logo.jpg",
+                      "nab_logo.jpg",
+                      "boq_logo.png",
+                      "ing_logo.png",
+                      "amp_logo.png",
+                      "pepper_logo.png",
+                      "la_trobe_logo.png",
+                      "liberty_logo.png",
+                      "resimac_logo.png",
+                      "brighten_logo.png",
+                      "citybank_logo.jpg",
+                      "chinabank_logo.jpg",
+                      "st_logo.jpg",
+                      "sun_logo.jpg",
+                      "bc_invest_logo.png"
+                    ].map((logo, idx) => (
+                      <div key={idx} className="bg-gray-50 p-3 rounded-xl flex items-center justify-center hover:bg-primary-50 transition">
+                        <Image
+                          src={`/images/partners/${logo}`}
+                          alt={`Partner Institution ${idx+1}`}
+                          width={140}
+                          height={90}
+                          className="object-contain max-h-16"
+                        />
+                      </div>
+                    ))}
                   </div>
-                ))}
-              </div>
-              
-              <div className="mt-12 text-center">
-                <p className="text-gray-600 mb-4">
-                  Under the regulatory framework of Australian authorities, we maintain long-term partnerships with 20+ Australian banks and non-bank lenders. Our strong relationships with senior bankers at various institutions help us secure the most suitable products and smoothest approval experiences for you.
-                </p>
+                </div>
               </div>
             </div>
           </section>

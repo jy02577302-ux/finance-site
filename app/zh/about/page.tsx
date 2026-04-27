@@ -75,53 +75,54 @@ export default function AboutPage() {
           </div>
 
           {/* Partners */}
-          <section className="py-16 bg-gray-50">
+          <section className="py-16 bg-gradient-to-br from-primary-50 to-blue-50">
             <div className="container mx-auto px-4">
-              <div className="text-center mb-12">
-                <h2 className="text-3xl font-bold mb-4">我们的合作机构</h2>
-                <p className="text-gray-600 max-w-3xl mx-auto">
-                  30+机构，海量贷款方案。覆盖本地主流银行与非银机构，综合比较利率、费用与灵活度，从上千方案中为你快速筛选更合适的贷款结构。
-                </p>
-              </div>
-              
-              <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
-                {[
-                  "anz_logo.jpg",
-                  "commonwealth_bank_logo.png",
-                  "westpac_logo.jpg",
-                  "nab_logo.jpg",
-                  "boq_logo.png",
-                  "ing_logo.png",
-                  "amp_logo.png",
-                  "pepper_logo.png",
-                  "la_trobe_logo.png",
-                  "liberty_logo.png",
-                  "resimac_logo.png",
-                  "brighten_logo.png",
-                  "citybank_logo.jpg",
-                  "chinabank_logo.jpg",
-                  "st_logo.jpg",
-                  "sun_logo.jpg",
-                  "bc_invest_logo.png",
-                  "ac_logo.png",
-                  "ccc_logo.png"
-                ].map((logo, idx) => (
-                  <div key={idx} className="bg-white p-4 rounded-xl shadow-sm flex items-center justify-center hover:shadow-md transition">
-                    <Image
-                      src={`/images/partners/${logo}`}
-                      alt={`合作机构 ${idx+1}`}
-                      width={120}
-                      height={80}
-                      className="object-contain max-h-16"
-                    />
+              <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
+                {/* Left: Copy */}
+                <div>
+                  <h2 className="text-3xl font-bold mb-6">我们的合作机构</h2>
+                  <p className="text-gray-700 mb-6 leading-relaxed">
+                    30+机构，海量贷款方案。覆盖本地主流银行与非银机构，综合比较利率、费用与灵活度，从上千方案中为你快速筛选更合适的贷款结构。
+                  </p>
+                  <p className="text-gray-700 leading-relaxed">
+                    在澳洲相关监管机构监管框架下，我们与20多家澳洲银行及非银行机构保持长期合作关系，并与多家银行的资深 Banker 保持良好沟通渠道，有助于为您争取更合适的产品与更顺畅的审批体验。
+                  </p>
+                </div>
+                
+                {/* Right: Logos Grid */}
+                <div className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100">
+                  <div className="grid grid-cols-2 gap-4">
+                    {[
+                      "anz_logo.jpg",
+                      "commonwealth_bank_logo.png",
+                      "westpac_logo.jpg",
+                      "nab_logo.jpg",
+                      "boq_logo.png",
+                      "ing_logo.png",
+                      "amp_logo.png",
+                      "pepper_logo.png",
+                      "la_trobe_logo.png",
+                      "liberty_logo.png",
+                      "resimac_logo.png",
+                      "brighten_logo.png",
+                      "citybank_logo.jpg",
+                      "chinabank_logo.jpg",
+                      "st_logo.jpg",
+                      "sun_logo.jpg",
+                      "bc_invest_logo.png"
+                    ].map((logo, idx) => (
+                      <div key={idx} className="bg-gray-50 p-3 rounded-xl flex items-center justify-center hover:bg-primary-50 transition">
+                        <Image
+                          src={`/images/partners/${logo}`}
+                          alt={`合作机构 ${idx+1}`}
+                          width={140}
+                          height={90}
+                          className="object-contain max-h-16"
+                        />
+                      </div>
+                    ))}
                   </div>
-                ))}
-              </div>
-              
-              <div className="mt-12 text-center">
-                <p className="text-gray-600 mb-4">
-                  在澳洲相关监管机构监管框架下，我们与20多家澳洲银行及非银行机构保持长期合作关系，并与多家银行的资深 Banker 保持良好沟通渠道，有助于为您争取更合适的产品与更顺畅的审批体验。
-                </p>
+                </div>
               </div>
             </div>
           </section>
