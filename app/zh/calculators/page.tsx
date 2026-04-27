@@ -79,10 +79,10 @@ export default function CalculatorsPage() {
       </section>
 
       {/* CTA */}
-      <div className="py-16" style={{ background: 'linear-gradient(135deg, #1a1a1a 0%, #2c2c2c 100%)' }}>
+      <div className="py-16 bg-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-2xl font-bold mb-4 text-white" style={{ fontFamily: 'Playfair Display, serif' }}>需要更精确的方案？</h2>
-          <p className="text-white/80 mb-6 max-w-2xl mx-auto">
+          <h2 className="text-2xl font-bold mb-4" style={{ color: '#1a1a1a', fontFamily: 'Playfair Display, serif' }}>需要更精确的方案？</h2>
+          <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
             我们的专家将根据您的具体情况，提供详细贷款方案和精确计算。
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -102,7 +102,7 @@ export default function CalculatorsPage() {
               className="inline-flex items-center justify-center gap-2 px-8 py-3 font-semibold transition-colors rounded-sm"
               style={{
                 background: 'transparent',
-                color: '#fff',
+                color: '#1a1a1a',
                 border: '1px solid rgba(212, 168, 85, 0.4)'
               }}
             >
