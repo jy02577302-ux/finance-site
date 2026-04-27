@@ -15,7 +15,7 @@ export default function CalculatorsPageEN() {
       <section className="relative min-h-[300px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="/images/calculators-hero.jpg"
+            src="/images/cal.jpg"
             alt="Mortgage calculator dashboard"
             fill
             sizes="100vw"
