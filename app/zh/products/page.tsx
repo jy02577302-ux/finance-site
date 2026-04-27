@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { Home, TrendingUp, HardHat, ArrowRight, Phone, Mail } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -57,8 +58,22 @@ export default function ProductsPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero */}
-      <section className="bg-gradient-to-br from-primary-800 to-primary-900 text-white py-8">
-        <div className="container mx-auto px-4 text-center">
+      <section className="relative min-h-[300px] flex items-center justify-center overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <Image
+            src="/images/products/business-office.jpg"
+            alt="STRESS FREE FINANCE 贷款产品"
+            fill
+            sizes="100vw"
+            style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+          />
+        </div>
+        {/* Gradient Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-br from-primary-900/90 via-primary-800/70 to-primary-900/50"></div>
+
+        {/* Content */}
+        <div className="relative container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">我们的贷款产品</h1>
           <p className="text-xl text-primary-100 max-w-2xl mx-auto">
             无论您是首次置业、投资房产，还是建造梦想家园，我们都有合适的方案。
