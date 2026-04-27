@@ -16,7 +16,7 @@ export default function AboutPageEN() {
       <section className="relative min-h-[300px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="/images/about-hero.jpg"
+            src="/images/sff.jpg"
             alt="STRESS FREE FINANCE Office"
             fill
             sizes="100vw"
