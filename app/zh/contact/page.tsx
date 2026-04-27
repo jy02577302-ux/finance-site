@@ -82,7 +82,7 @@ export default function ContactPage() {
       <div className="container mx-auto px-4 py-16">
         {/* Intro Section */}
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="text-3xl font-bold mb-6" style={{ color: '#1a1a1a', fontFamily: 'Playfair Display, serif' }}">专业团队随时为您服务</h2>
+          <h2 className="text-3xl font-bold mb-6" style={{ color: '#1a1a1a', fontFamily: 'Playfair Display, serif' }}>专业团队随时为您服务</h2>
           <p className="text-gray-600 leading-relaxed mb-8">
             无论您有房贷、商业贷款还是开发贷款需求，我们的持牌经纪团队都随时准备为您提供免费、专业的咨询服务。我们承诺透明、高效、以客户为中心的服务。
           </p>
