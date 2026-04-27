@@ -45,19 +45,6 @@ export default function CalculatorsPage() {
       {/* Calculator Section */}
       <section className="py-16 bg-gradient-to-br from-slate-50 to-white" id="calculator-section">
         <div className="container mx-auto px-4">
-          {/* Dashboard Preview */}
-          <div className="max-w-4xl mx-auto mb-12">
-            <div className="rounded-2xl overflow-hidden shadow-lg border" style={{ borderColor: 'rgba(212, 168, 85, 0.15)' }}>
-              <Image
-                src="/images/mortgage-dashboard.jpg"
-                alt="房贷计算仪表盘"
-                width={1200}
-                height={400}
-                className="w-full h-64 md:h-96 object-cover"
-              />
-            </div>
-          </div>
-
           {/* Calculator */}
           <div className="max-w-4xl mx-auto">
             <Calculator />
