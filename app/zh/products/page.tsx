@@ -118,17 +118,17 @@ export default function ProductsPage() {
               const Icon = product.icon;
 
               return (
-                <div key={product.title} className="group bg-white rounded-2xl shadow-lg border border-gray-200 overflow-hidden hover:shadow-2xl transition-all duration-300">
+                <div key={product.title} className="group bg-white rounded-2xl shadow-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-all duration-300">
                   {/* Image Header */}
-                  <div className="relative h-48 overflow-hidden">
-                    <div className="absolute inset-0 bg-gradient-to-br from-primary-800 to-primary-900 opacity-90"></div>
+                  <div className="relative h-32 overflow-hidden">
+                    <div className="absolute inset-0 bg-gradient-to-r from-amber-500 to-orange-600"></div>
                     <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="w-20 h-20 bg-white/20 rounded-2xl flex items-center justify-center backdrop-blur-sm">
-                        <Icon className="w-10 h-10 text-white" />
+                      <div className="w-12 h-12 bg-white/30 rounded-xl flex items-center justify-center backdrop-blur-sm">
+                        <Icon className="w-6 h-6 text-white" />
                       </div>
                     </div>
-                    <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/60 to-transparent">
-                      <h2 className="text-2xl font-bold text-white mb-1">{product.title}</h2>
+                    <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/50 to-transparent">
+                      <h2 className="text-xl font-bold text-white">{product.title}</h2>
                     </div>
                   </div>
 
