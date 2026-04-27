@@ -1,0 +1,244 @@
+import { Metadata } from "next";
+import Link from "next/link";
+import Image from "next/image";
+import { Home, TrendingUp, HardHat, ArrowRight, Phone, Mail } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Our Loan Products | STRESS FREE FINANCE",
+  description: "Home loans, business loans, development loans. Free service, access to 100+ lenders. Fast approval, transparent fees. Contact us today.",
+  keywords: "home loans, business loans, development loans, australian mortgage, melbourne mortgage, free mortgage broker, 100 lenders"
+};
+
+export default function ProductsPageEN() {
+  const products = [
+    {
+      title: "Home Loan",
+      icon: Home,
+      href: "/en/products/home-loan",
+      description: "Competitive rates and flexible repayment options for buying or investing in residential property.",
+      features: [
+        "Rates from 5.89% p.a.",
+        "No monthly fees",
+        "100% offset account",
+        "Approval in 48 hours",
+      ],
+      cta: "Learn More",
+    },
+    {
+      title: "Business Loan",
+      icon: TrendingUp,
+      href: "/en/products/business-loan",
+      description: "Flexible financing solutions for businesses, from commercial property to working capital.",
+      features: [
+        "Commercial real estate loans",
+        "Business funding & cash flow",
+        "Equipment financing",
+        "Custom repayment structures",
+      ],
+      cta: "Learn More",
+    },
+    {
+      title: "Development Loan",
+      icon: HardHat,
+      href: "/en/products/development-loan",
+      description: "Funding for property developers and land subdivision projects with progress payments.",
+      features: [
+        "Progress drawdowns based on milestones",
+        "Convert to permanent loan upon completion",
+        "Interest-only during construction",
+        "Dedicated development specialist",
+      ],
+      cta: "Learn More",
+    },
+  ];
+
+  return (
+    <div className="min-h-screen bg-white">
+      {/* Hero */}
+      <section className="relative min-h-[300px] flex items-center justify-center overflow-hidden">
+        <div className="absolute inset-0">
+          <Image
+            src="/images/products/business-office.jpg"
+            alt="STRESS FREE FINANCE Loan Products"
+            fill
+            sizes="100vw"
+            style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+          />
+        </div>
+        <div className="absolute inset-0 bg-gradient-to-br from-primary-900/90 via-primary-800/70 to-primary-900/50"></div>
+        <div className="relative container mx-auto px-4 text-center">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">Our Loan Products</h1>
+          <p className="text-xl text-primary-100 max-w-2xl mx-auto">
+            Whether you're buying your first home, investing in property, or building your dream, we have the right solution.
+          </p>
+        </div>
+      </section>
+
+      {/* Why Choose Us */}
+      <section className="py-8 bg-primary-50">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-4 gap-6 text-center">
+            <div>
+              <div className="w-10 h-10 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-2">
+                <svg className="w-5 h-5 text-primary-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0 2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+              </div>
+              <h3 className="font-bold text-sm">Free Service</h3>
+              <p className="text-xs text-gray-600">Broker fee paid by bank</p>
+            </div>
+            <div>
+              <div className="w-10 h-10 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-2">
+                <svg className="w-5 h-5 text-primary-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" /></svg>
+              </div>
+              <h3 className="font-bold text-sm">30+ Lenders</h3>
+              <p className="text-xs text-gray-600">Access to 100+ loan products</p>
+            </div>
+            <div>
+              <div className="w-10 h-10 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-2">
+                <svg className="w-5 h-5 text-primary-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+              </div>
+              <h3 className="font-bold text-sm">Fast Approval</h3>
+              <p className="text-xs text-gray-600">Most approved within 48 hours</p>
+            </div>
+            <div>
+              <div className="w-10 h-10 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-2">
+                <svg className="w-5 h-5 text-primary-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+              </div>
+              <h3 className="font-bold text-sm">Licensed & Trusted</h3>
+              <p className="text-xs text-gray-600">Est. 2015, 5000+ happy clients</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Products Grid */}
+      <section className="py-12">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-3 gap-8">
+            {products.map((product) => {
+              const Icon = product.icon;
+
+              return (
+                <div key={product.title} className="group bg-white rounded-2xl shadow-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-all duration-300">
+                  {/* Image Header */}
+                  <div className="relative h-32 overflow-hidden">
+                    <div className="absolute inset-0 bg-gradient-to-r from-amber-500 to-orange-600"></div>
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <div className="w-12 h-12 bg-white/30 rounded-xl flex items-center justify-center backdrop-blur-sm">
+                        <Icon className="w-6 h-6 text-white" />
+                      </div>
+                    </div>
+                    <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/50 to-transparent">
+                      <h2 className="text-xl font-bold text-white">{product.title}</h2>
+                    </div>
+                  </div>
+
+                  {/* Content */}
+                  <div className="p-6">
+                    <p className="text-gray-600 mb-6 leading-relaxed">{product.description}</p>
+
+                    {/* Features */}
+                    <ul className="space-y-3 mb-8">
+                      {product.features.map((feat) => (
+                        <li key={feat} className="flex items-start gap-3">
+                          <div className="w-5 h-5 bg-primary-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                            <svg className="w-3 h-3 text-primary-700" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
+                          </div>
+                          <span className="text-gray-700 text-sm leading-relaxed">{feat}</span>
+                        </li>
+                      ))}
+                    </ul>
+
+                    {/* CTA */}
+                    <Link
+                      href={product.href}
+                      className="block w-full bg-primary-700 hover:bg-primary-800 text-white text-center py-3.5 rounded-lg font-semibold transition-colors"
+                    >
+                      Learn More
+                    </Link>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+
+          {/* Why Choose Us */}
+          <div className="mt-16 bg-gray-50 rounded-2xl p-8 border border-gray-100">
+            <h2 className="text-2xl font-bold mb-8 text-center text-gray-900">Why Choose Us?</h2>
+            <div className="grid md:grid-cols-3 gap-8">
+              <div className="text-center">
+                <div className="w-16 h-16 bg-primary-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <svg className="w-8 h-8 text-primary-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                </div>
+                <h3 className="font-bold text-lg mb-2 text-gray-900">Expert Team</h3>
+                <p className="text-gray-600">Licensed brokers with 10+ years of local Melbourne experience.</p>
+              </div>
+              <div className="text-center">
+                <div className="w-16 h-16 bg-primary-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <svg className="w-8 h-8 text-primary-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+                </div>
+                <h3 className="font-bold text-lg mb-2 text-gray-900">Fast Approval</h3>
+                <p className="text-gray-600">Most applications approved within 48 hours.</p>
+              </div>
+              <div className="text-center">
+                <div className="w-16 h-16 bg-primary-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <svg className="w-8 h-8 text-primary-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0 2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                </div>
+                <h3 className="font-bold text-lg mb-2 text-gray-900">No-Obligation</h3>
+                <p className="text-gray-600">Your first consultation is completely free.</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Interest Rates */}
+          <section className="py-8">
+            <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg p-6 border">
+              <h3 className="text-xl font-bold mb-4 text-center">📊 Current Interest Rates (April 2026)</h3>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
+                {[
+                  { label: "Owner Occupier (Variable)", range: "5.89% - 6.49%", color: "text-primary-700" },
+                  { label: "Owner Occupier (Fixed 1-3yr)", range: "5.69% - 6.29%", color: "text-primary-700" },
+                  { label: "Investment Loan", range: "6.09% - 6.79%", color: "text-emerald-700" },
+                  { label: "Interest Only", range: "6.29% - 6.99%", color: "text-amber-700" },
+                  { label: "Commercial Property", range: "6.29% - 7.19%", color: "text-emerald-700" },
+                  { label: "Development Loan", range: "6.79% - 8.29%", color: "text-amber-700" },
+                  { label: "Construction Loan", range: "6.29% - 7.49%", color: "text-amber-700" },
+                  { label: "Equipment Finance", range: "6.99% - 8.99%", color: "text-emerald-700" },
+                ].map((item) => (
+                  <div key={item.label} className="text-center p-4 bg-gray-50 rounded-lg">
+                    <p className="text-gray-600 mb-1 text-xs">{item.label}</p>
+                    <p className={`text-xl font-bold ${item.color}`}>{item.range}</p>
+                  </div>
+                ))}
+              </div>
+              <p className="text-xs text-center text-gray-500 mt-3">* Rates are indicative only. Actual rates depend on LVR, loan size, credit history and terms.</p>
+            </div>
+          </section>
+
+          {/* CTA */}
+          <div className="mt-12 text-center">
+            <h2 className="text-2xl font-bold mb-4">Not sure which product is right for you?</h2>
+            <p className="text-gray-600 mb-6">
+              Our experts will recommend the best solution based on your financial situation and goals.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a
+                href="tel:0412892782"
+                className="inline-flex items-center justify-center gap-2 rounded-md bg-primary-700 px-8 py-4 text-white font-semibold hover:bg-primary-600"
+              >
+                <Phone className="w-5 h-5" />
+                Call 0412 892 782
+              </a>
+              <a
+                href="/en/contact"
+                className="inline-flex items-center justify-center gap-2 rounded-md border border-gray-300 bg-white px-8 py-4 text-gray-900 font-semibold hover:bg-gray-50"
+              >
+                <Mail className="w-5 h-5" />
+                Contact Us Online
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}

@@ -1,0 +1,279 @@
+import { Metadata } from "next";
+import Link from "next/link";
+import Image from "next/image";
+import { CheckCircle, Users, Award, Clock, Heart } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "关于我们 | STRESS FREE FINANCE",
+  description: "STRESS FREE FINANCE 成立于 2015 年，拥有 10+ 年经验的房贷经纪团队。已帮助 5000+ 家庭实现置业梦想。",
+  keywords: "关于 STRESS FREE FINANCE, 房贷经纪, 墨尔本房贷, 贷款专家, AFS 牌照"
+};
+
+export default function AboutPage() {
+  return (
+    <div className="min-h-screen bg-white">
+      {/* Hero */}
+      <section className="relative min-h-[300px] flex items-center justify-center overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <Image
+            src="/images/about-hero.jpg"
+            alt="STRESS FREE FINANCE 办公室"
+            fill
+            sizes="100vw"
+            style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+          />
+        </div>
+        {/* Gradient Overlay - left to right */}
+        <div className="absolute inset-0 bg-gradient-to-br from-primary-900/90 via-primary-800/70 to-primary-900/50"></div>
+
+        {/* Content */}
+        <div className="relative container mx-auto px-4 text-center">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">关于 STRESS FREE FINANCE</h1>
+          <p className="text-xl text-primary-100 max-w-2xl mx-auto">
+            我们致力于为澳大利亚家庭提供专业、透明、高效的房贷服务，让置业变得轻松简单。
+          </p>
+        </div>
+      </section>
+
+      {/* Our Story */}
+      <section className="py-8">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
+            <div>
+              <h2 className="text-3xl font-bold mb-6">我们的故事</h2>
+              <p className="text-gray-700 mb-4">
+                STRESS FREE FINANCE 成立于 2015 年，由一群拥有超过 10 年行业经验的房贷经纪创立。我们的创始人曾服务于澳洲四大银行，深知传统房贷流程的繁琐与不便。
+              </p>
+              <p className="text-gray-700 mb-4">
+                我们的使命是让每个人都能轻松获得专业、透明的房贷服务。我们相信，好的金融产品不应该被复杂的过程所掩盖。因此，我们简化了每一步，用专业和热情服务每一位客户。
+              </p>
+              <p className="text-gray-700">
+                如今，我们已经帮助超过 5000 个家庭实现了置业梦想，管理贷款总额超过 20 亿澳元。但我们最骄傲的，不是这些数字，而是客户的口碑和推荐。
+              </p>
+            </div>
+            <div className="bg-gray-50 p-8 rounded-2xl border">
+              <div className="grid grid-cols-2 gap-6">
+                <div className="text-center p-4">
+                  <p className="text-4xl font-bold text-primary-700">5000+</p>
+                  <p className="text-gray-600">满意客户</p>
+                </div>
+                <div className="text-center p-4">
+                  <p className="text-4xl font-bold text-primary-700">$2B+</p>
+                  <p className="text-gray-600">管理贷款</p>
+                </div>
+                <div className="text-center p-4">
+                  <p className="text-4xl font-bold text-primary-700">48h</p>
+                  <p className="text-gray-600">平均审批</p>
+                </div>
+                <div className="text-center p-4">
+                  <p className="text-4xl font-bold text-primary-700">10+</p>
+                  <p className="text-gray-600">年行业经验</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Partners */}
+          <section className="py-16 bg-gradient-to-br from-primary-50 to-blue-50">
+            <div className="container mx-auto px-4">
+              <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
+                {/* Left: Copy */}
+                <div>
+                  <h2 className="text-3xl font-bold mb-6">我们的合作机构</h2>
+                  <p className="text-gray-700 mb-6 leading-relaxed">
+                    30+机构，海量贷款方案。覆盖本地主流银行与非银机构，综合比较利率、费用与灵活度，从上千方案中为你快速筛选更合适的贷款结构。
+                  </p>
+                  <p className="text-gray-700 leading-relaxed">
+                    在澳洲相关监管机构监管框架下，我们与20多家澳洲银行及非银行机构保持长期合作关系，并与多家银行的资深 Banker 保持良好沟通渠道，有助于为您争取更合适的产品与更顺畅的审批体验。
+                  </p>
+                </div>
+                
+                {/* Right: Logos Grid */}
+                <div className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100">
+                  <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                    {[
+                      "anz_logo.jpg",
+                      "commonwealth_bank_logo.png",
+                      "westpac_logo.jpg",
+                      "nab_logo.jpg",
+                      "boq_logo.png",
+                      "ing_logo.png",
+                      "amp_logo.png",
+                      "pepper_logo.png",
+                      "la_trobe_logo.png",
+                      "liberty_logo.png",
+                      "resimac_logo.png",
+                      "brighten_logo.png",
+                      "citybank_logo.jpg",
+                      "chinabank_logo.jpg",
+                      "st_logo.jpg",
+                      "sun_logo.jpg",
+                      "bc_invest_logo.png"
+                    ].map((logo, idx) => (
+                      <div key={idx} className="bg-gray-50 p-3 rounded-xl flex items-center justify-center hover:bg-primary-50 transition">
+                        <Image
+                          src={`/images/partners/${logo}`}
+                          alt={`合作机构 ${idx+1}`}
+                          width={140}
+                          height={90}
+                          className="object-contain max-h-16"
+                        />
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* Values */}
+          <h2 className="text-3xl font-bold mb-8">我们的价值观</h2>
+          <div className="grid md:grid-cols-4 gap-8 mb-16">
+            {[
+              {
+                icon: Heart,
+                title: "诚信为本",
+                desc: "我们承诺透明收费，无隐藏费用。每一笔贷款都经得起审视。",
+              },
+              {
+                icon: Users,
+                title: "客户至上",
+                desc: "您的利益是我们优先考虑。我们提供 free, no-obligation 咨询。",
+              },
+              {
+                icon: Award,
+                title: "专业精神",
+                desc: "持续学习，掌握最新政策和产品。我们的建议 always in your best interest.",
+              },
+              {
+                icon: Clock,
+                title: "高效执行",
+                desc: "简化流程，48 小时预批，让我们为您节省宝贵时间。",
+              },
+            ].map((value) => {
+              const Icon = value.icon;
+              return (
+                <div key={value.title} className="text-center">
+                  <div className="w-14 h-14 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Icon className="w-7 h-7 text-primary-700" />
+                  </div>
+                  <h3 className="text-xl font-bold mb-2">{value.title}</h3>
+                  <p className="text-gray-600">{value.desc}</p>
+                </div>
+              );
+            })}
+          </div>
+
+          {/* Team Overview */}
+          <div className="bg-gray-50 rounded-2xl p-8 mb-16">
+            <h2 className="text-2xl font-bold mb-6">我们的团队</h2>
+            <p className="text-gray-700 mb-6">
+              我们的房贷经纪团队均持有澳洲金融牌照（AFS License），并定期参加培训以保持专业水准。无论您是首次置业者、经验丰富的投资者，还是需要建筑贷款，我们都有对应专家为您服务。
+            </p>
+            <div className="grid md:grid-cols-3 gap-6">
+              {[
+                {
+                  name: "Steven Mo",
+                  title: "高级房贷经纪",
+                  specialty: "首次置业",
+                  exp: "12 年",
+                  avatar: "/images/team/steven-mo.jpg"
+                },
+                {
+                  name: "Sarah Chen",
+                  title: "投资贷款专家",
+                  specialty: "投资组合",
+                  exp: "8 年",
+                  avatar: "/images/team/sarah-chen.jpg"
+                },
+                {
+                  name: "David Liu",
+                  title: "建筑贷款顾问",
+                  specialty: "建筑贷款",
+                  exp: "10 年",
+                  avatar: "/images/team/david-liu.jpg"
+                },
+              ].map((member) => (
+                <div key={member.name} className="bg-white p-6 rounded-xl border text-center">
+                  <div className="w-20 h-20 mx-auto mb-4 rounded-full overflow-hidden bg-gray-200">
+                    {/* TODO: Add real photo at /public/images/team/{name}.jpg */}
+                    <img
+                      src={member.avatar}
+                      alt={member.name}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <h3 className="font-bold text-lg">{member.name}</h3>
+                  <p className="text-primary-700 mb-1">{member.title}</p>
+                  <p className="text-sm text-gray-500">{member.specialty} · {member.exp}经验</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Licenses */}
+          <h2 className="text-2xl font-bold mb-6">牌照与合规</h2>
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
+            {[
+              { name: "AFCA", full: "澳大利亚金融投诉局 (AFCA)", desc: "会员编号: 123456" },
+              { name: "MFAA", full: "Mortgage & Finance Association of Australia", desc: "认证会员" },
+              { name: "ASIC", full: "Australian Securities & Investments Commission", desc: "AFS 牌照: 123456" },
+            ].map((license) => (
+              <div key={license.name} className="border rounded-xl p-6">
+                <h3 className="font-bold text-lg mb-2">{license.full}</h3>
+                <p className="text-gray-600">{license.desc}</p>
+              </div>
+            ))}
+          </div>
+
+          {/* Mission & Vision */}
+          <div className="mt-16 bg-gradient-to-r from-primary-50 to-primary-100 rounded-2xl p-8">
+            <div className="grid md:grid-cols-2 gap-12">
+              <div>
+                <h2 className="text-2xl font-bold mb-4">我们的使命</h2>
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  让每个澳大利亚家庭都能获得专业、透明、高效的房贷服务。我们相信，通过个性化的方案和全程支持，置业梦想可以变得更加轻松。
+                </p>
+                <p className="text-gray-700 leading-relaxed">
+                  我们致力于成为墨尔本最受信任的房贷经纪品牌，以客户满意为核心，持续提升服务质量和专业水准。
+                </p>
+              </div>
+              <div>
+                <h2 className="text-2xl font-bold mb-4">我们的愿景</h2>
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  成为澳洲领先的金融解决方案提供商，帮助 10,000+ 家庭实现置业目标，同时建立一支多元化、专业化的服务团队。
+                </p>
+                <p className="text-gray-700 leading-relaxed">
+                  我们追求卓越，不断创新服务模式，利用科技提升客户体验，同时保持人性化的服务温度。
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* CTA */}
+          <div className="text-center">
+            <h2 className="text-2xl font-bold mb-4">准备好与我们合作了吗？</h2>
+            <p className="text-gray-600 mb-6">
+              无论您处于哪个阶段，我们都乐意提供免费、专业的建议。
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a
+                href="tel:0412892782"
+                className="inline-flex items-center justify-center gap-2 rounded-md bg-primary-700 px-8 py-4 text-white font-semibold hover:bg-primary-600"
+              >
+                致电 0412 892 782
+              </a>
+              <a
+                href="/zh/contact"
+                className="inline-flex items-center justify-center gap-2 rounded-md border border-gray-300 bg-white px-8 py-4 text-gray-900 font-semibold hover:bg-gray-50"
+              >
+                在线预约
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}
