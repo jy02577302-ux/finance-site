@@ -51,7 +51,7 @@ export default function ProductsPageGoldTest() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero */}
-      <section class="relative min-h-[300px] flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-[300px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <Image
             src="/images/products/business-office.jpg"
@@ -129,31 +129,41 @@ export default function ProductsPageGoldTest() {
 
           {/* Why Choose Us */}
           <div className="mt-16 p-8 rounded-lg" style={{
-            background: 'linear-gradient(135deg, #1a1a1a 0%, #2c2c2c 100%)',
-            color: '#fff'
+            background: '#fff',
+            border: '1px solid rgba(212, 168, 85, 0.2)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.04)'
           }}>
-            <h2 className="text-2xl font-bold mb-8 text-center" style={{ fontFamily: 'Playfair Display, serif' }}>为什么选择我们？</h2>
+            <h2 className="text-2xl font-bold mb-8 text-center" style={{ color: '#1a1a1a', fontFamily: 'Playfair Display, serif' }}>为什么选择我们？</h2>
             <div className="grid md:grid-cols-3 gap-8">
               <div className="text-center">
-                <div className="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center" style={{ background: 'rgba(212, 168, 85, 0.15)', border: '1px solid rgba(212, 168, 85, 0.3)' }}>
-                  <svg className="w-8 h-8" style={{ color: '#d4a855' }} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                <div className="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center" style={{
+                  background: 'linear-gradient(135deg, #d4a855 0%, #c59547 100%)',
+                  boxShadow: '0 4px 12px rgba(212, 168, 85, 0.25)'
+                }}>
+                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
                 </div>
-                <h3 className="font-bold text-lg mb-2">专业团队</h3>
-                <p className="text-gray-400">10+ 年行业经验，持牌经纪为您服务</p>
+                <h3 className="font-bold text-lg mb-2" style={{ color: '#1a1a1a' }}>专业团队</h3>
+                <p className="text-gray-600">10+ 年行业经验，持牌经纪为您服务</p>
               </div>
               <div className="text-center">
-                <div className="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center" style={{ background: 'rgba(212, 168, 85, 0.15)', border: '1px solid rgba(212, 168, 85, 0.3)' }}>
-                  <svg className="w-8 h-8" style={{ color: '#d4a855' }} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+                <div className="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center" style={{
+                  background: 'linear-gradient(135deg, #d4a855 0%, #c59547 100%)',
+                  boxShadow: '0 4px 12px rgba(212, 168, 85, 0.25)'
+                }}>
+                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
                 </div>
-                <h3 className="font-bold text-lg mb-2">快速审批</h3>
-                <p className="text-gray-400">大多数申请 48 小时内获批</p>
+                <h3 className="font-bold text-lg mb-2" style={{ color: '#1a1a1a' }}>快速审批</h3>
+                <p className="text-gray-600">大多数申请 48 小时内获批</p>
               </div>
               <div className="text-center">
-                <div className="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center" style={{ background: 'rgba(212, 168, 85, 0.15)', border: '1px solid rgba(212, 168, 85, 0.3)' }}>
-                  <svg className="w-8 h-8" style={{ color: '#d4a855' }} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0 2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                <div className="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center" style={{
+                  background: 'linear-gradient(135deg, #d4a855 0%, #c59547 100%)',
+                  boxShadow: '0 4px 12px rgba(212, 168, 85, 0.25)'
+                }}>
+                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0 2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
                 </div>
-                <h3 className="font-bold text-lg mb-2">免费评估</h3>
-                <p className="text-gray-400">初次咨询完全免费，无任何义务</p>
+                <h3 className="font-bold text-lg mb-2" style={{ color: '#1a1a1a' }}>免费评估</h3>
+                <p className="text-gray-600">初次咨询完全免费，无任何义务</p>
               </div>
             </div>
           </div>
