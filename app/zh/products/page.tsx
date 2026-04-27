@@ -118,15 +118,25 @@ export default function ProductsPage() {
               const Icon = product.icon;
 
               return (
-                <div key={product.title} className="bg-white rounded-2xl shadow-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                  <div className="bg-gray-50 p-8 border-b border-gray-100">
-                    <div className="w-14 h-14 bg-primary-100 rounded-2xl flex items-center justify-center mb-4">
-                      <Icon className="w-8 h-8 text-primary-700" />
+                <div key={product.title} className="group bg-white rounded-2xl shadow-lg border border-gray-200 overflow-hidden hover:shadow-2xl transition-all duration-300">
+                  {/* Image Header */}
+                  <div className="relative h-48 overflow-hidden">
+                    <div className="absolute inset-0 bg-gradient-to-br from-primary-800 to-primary-900 opacity-90"></div>
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <div className="w-20 h-20 bg-white/20 rounded-2xl flex items-center justify-center backdrop-blur-sm">
+                        <Icon className="w-10 h-10 text-white" />
+                      </div>
                     </div>
-                    <h2 className="text-2xl font-bold mb-3 text-gray-900">{product.title}</h2>
-                    <p className="text-gray-600 leading-relaxed">{product.description}</p>
+                    <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/60 to-transparent">
+                      <h2 className="text-2xl font-bold text-white mb-1">{product.title}</h2>
+                    </div>
                   </div>
+
+                  {/* Content */}
                   <div className="p-6">
+                    <p className="text-gray-600 mb-6 leading-relaxed">{product.description}</p>
+
+                    {/* Features */}
                     <ul className="space-y-3 mb-8">
                       {product.features.map((feat) => (
                         <li key={feat} className="flex items-start gap-3">
@@ -137,12 +147,13 @@ export default function ProductsPage() {
                         </li>
                       ))}
                     </ul>
+
+                    {/* CTA */}
                     <Link
                       href={product.href}
-                      className="bg-primary-700 hover:bg-primary-800 text-white w-full justify-center inline-flex items-center gap-2 px-6 py-3.5 rounded-lg font-semibold transition-colors"
+                      className="block w-full bg-primary-700 hover:bg-primary-800 text-white text-center py-3.5 rounded-lg font-semibold transition-colors"
                     >
-                      {product.cta}
-                      <ArrowRight className="w-4 h-4" />
+                      查看详情
                     </Link>
                   </div>
                 </div>
