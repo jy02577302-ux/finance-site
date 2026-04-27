@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import { Home, TrendingUp, HardHat, ArrowRight, Phone, Mail } from "lucide-react";
+import { Home, TrendingUp, HardHat, ArrowRight, Phone, Mail, CheckCircle } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "贷款产品 | STRESS FREE FINANCE",
@@ -14,7 +14,6 @@ export default function ProductsPage() {
     {
       title: "房屋贷款",
       icon: Home,
-      color: "primary",
       href: "/zh/products/home-loan",
       description: "为自住或投资购买房产提供具有竞争力的利率和灵活的还款方式。",
       features: [
@@ -28,7 +27,6 @@ export default function ProductsPage() {
     {
       title: "商业贷款",
       icon: TrendingUp,
-      color: "emerald",
       href: "/zh/products/business-loan",
       description: "为企业和投资者提供灵活的商业融资方案，助力业务增长。",
       features: [
@@ -42,7 +40,6 @@ export default function ProductsPage() {
     {
       title: "开发贷款",
       icon: HardHat,
-      color: "amber",
       href: "/zh/products/development-loan",
       description: "支持房地产开发商和土地分割项目，提供分期拨款和专业指导。",
       features: [
@@ -59,7 +56,6 @@ export default function ProductsPage() {
     <div className="min-h-screen bg-white">
       {/* Hero */}
       <section className="relative min-h-[300px] flex items-center justify-center overflow-hidden">
-        {/* Background Image */}
         <div className="absolute inset-0">
           <Image
             src="/images/products/business-office.jpg"
@@ -69,19 +65,16 @@ export default function ProductsPage() {
             style={{ width: '100%', height: '100%', objectFit: 'cover' }}
           />
         </div>
-        {/* Gradient Overlay */}
         <div className="absolute inset-0 bg-gradient-to-br from-primary-900/90 via-primary-800/70 to-primary-900/50"></div>
-
-        {/* Content */}
         <div className="relative container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">我们的贷款产品</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">我们的贷款产品</h1>
           <p className="text-xl text-primary-100 max-w-2xl mx-auto">
             无论您是首次置业、投资房产，还是建造梦想家园，我们都有合适的方案。
           </p>
         </div>
       </section>
 
-      {/* Why Choose Us - Benefits */}
+      {/* Why Choose Us */}
       <section className="py-8 bg-primary-50">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-4 gap-6 text-center">
@@ -96,8 +89,8 @@ export default function ProductsPage() {
               <div className="w-10 h-10 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-2">
                 <svg className="w-5 h-5 text-primary-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" /></svg>
               </div>
-              <h3 className="font-bold text-sm">100+ 机构</h3>
-              <p className="text-xs text-gray-600"> access to 100+ lenders 和贷款产品</p>
+              <h3 className="font-bold text-sm">30+ 机构</h3>
+              <p className="text-xs text-gray-600">覆盖主流银行与非银机构</p>
             </div>
             <div>
               <div className="w-10 h-10 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-2">
@@ -111,7 +104,7 @@ export default function ProductsPage() {
                 <svg className="w-5 h-5 text-primary-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
               </div>
               <h3 className="font-bold text-sm">专业可靠</h3>
-              <p className="text-xs text-gray-600">持牌经纪，2015年成立，5000+满意客户</p>
+              <p className="text-xs text-gray-600">持牌经纪，2015年成立</p>
             </div>
           </div>
         </div>
@@ -123,32 +116,33 @@ export default function ProductsPage() {
           <div className="grid md:grid-cols-3 gap-8">
             {products.map((product) => {
               const Icon = product.icon;
-              const isPrimary = product.color === "primary";
-              const bgColor = isPrimary ? "bg-primary-700" : product.color === "emerald" ? "bg-emerald-700" : "bg-amber-700";
-              const hoverColor = isPrimary ? "hover:bg-primary-800" : "hover:bg-opacity-90";
 
               return (
-                <div key={product.title} className="bg-white rounded-2xl shadow-lg border overflow-hidden">
-                  <div className="bg-primary-700 text-white p-6">
-                    <Icon className="w-10 h-10 mb-4" />
-                    <h2 className="text-2xl font-bold mb-2">{product.title}</h2>
-                    <p className="text-primary-100">{product.description}</p>
+                <div key={product.title} className="bg-white rounded-2xl shadow-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                  <div className="bg-gradient-to-br from-primary-700 to-primary-900 text-white p-8">
+                    <div className="w-14 h-14 bg-white/10 rounded-2xl flex items-center justify-center mb-4 backdrop-blur-sm">
+                      <Icon className="w-8 h-8" />
+                    </div>
+                    <h2 className="text-2xl font-bold mb-3">{product.title}</h2>
+                    <p className="text-primary-100 leading-relaxed">{product.description}</p>
                   </div>
                   <div className="p-6">
                     <ul className="space-y-3 mb-8">
                       {product.features.map((feat) => (
-                        <li key={feat} className="flex items-center gap-2">
-                          <svg className="w-5 h-5 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
-                          <span className="text-gray-700">{feat}</span>
+                        <li key={feat} className="flex items-start gap-3">
+                          <div className="w-5 h-5 bg-primary-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                            <svg className="w-3 h-3 text-primary-700" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
+                          </div>
+                          <span className="text-gray-700 text-sm leading-relaxed">{feat}</span>
                         </li>
                       ))}
                     </ul>
                     <Link
                       href={product.href}
-                      className="bg-primary-700 hover:bg-primary-800 text-white w-full justify-between inline-flex items-center px-6 py-3 rounded-lg font-semibold"
+                      className="bg-primary-700 hover:bg-primary-800 text-white w-full justify-center inline-flex items-center gap-2 px-6 py-3.5 rounded-lg font-semibold transition-colors"
                     >
                       {product.cta}
-                      <ArrowRight className="w-5 h-5" />
+                      <ArrowRight className="w-4 h-4" />
                     </Link>
                   </div>
                 </div>
@@ -156,35 +150,35 @@ export default function ProductsPage() {
             })}
           </div>
 
-          {/* Additional Info */}
-          <div className="mt-16 bg-gray-50 rounded-2xl p-8">
-            <h2 className="text-2xl font-bold mb-6">为什么选择我们？</h2>
+          {/* Why Choose Us */}
+          <div className="mt-16 bg-gradient-to-br from-primary-50 to-blue-50 rounded-2xl p-8 border border-primary-100">
+            <h2 className="text-2xl font-bold mb-8 text-center">为什么选择我们？</h2>
             <div className="grid md:grid-cols-3 gap-8">
               <div className="text-center">
-                <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <svg className="w-6 h-6 text-primary-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                <div className="w-16 h-16 bg-primary-700 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
+                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
                 </div>
-                <h3 className="font-bold mb-2">专业团队</h3>
+                <h3 className="font-bold text-lg mb-2">专业团队</h3>
                 <p className="text-gray-600">10+ 年行业经验，持牌经纪为您服务</p>
               </div>
               <div className="text-center">
-                <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <svg className="w-6 h-6 text-primary-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+                <div className="w-16 h-16 bg-primary-700 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
+                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
                 </div>
-                <h3 className="font-bold mb-2">快速审批</h3>
+                <h3 className="font-bold text-lg mb-2">快速审批</h3>
                 <p className="text-gray-600">大多数申请 48 小时内获批</p>
               </div>
               <div className="text-center">
-                <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <svg className="w-6 h-6 text-primary-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                <div className="w-16 h-16 bg-primary-700 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
+                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0 2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
                 </div>
-                <h3 className="font-bold mb-2">免费评估</h3>
+                <h3 className="font-bold text-lg mb-2">免费评估</h3>
                 <p className="text-gray-600">初次咨询完全免费，无任何义务</p>
               </div>
             </div>
           </div>
 
-          {/* Interest Rates Overview */}
+          {/* Interest Rates */}
           <section className="py-8">
             <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg p-6 border">
               <h3 className="text-xl font-bold mb-4 text-center">📊 当前基准利率参考 (2026年4月)</h3>
