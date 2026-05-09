@@ -51,19 +51,19 @@ export default function AboutPageEN() {
             <div className="bg-gradient-to-br from-slate-50 to-white p-8 rounded-2xl border" style={{ borderColor: 'rgba(212, 168, 85, 0.2)', boxShadow: '0 4px 20px rgba(0,0,0,0.04)' }}>
               <div className="grid grid-cols-2 gap-6">
                 <div className="text-center p-4">
-                  <p className="text-4xl font-bold mb-2" style={{ color: '#d4a855' }}>5000+</p>
+                  <p className="text-4xl font-bold mb-2" style={{ color: '#b45309' }}>5000+</p>
                   <p className="text-gray-600">Happy Clients</p>
                 </div>
                 <div className="text-center p-4">
-                  <p className="text-4xl font-bold mb-2" style={{ color: '#d4a855' }}>$2B+</p>
+                  <p className="text-4xl font-bold mb-2" style={{ color: '#b45309' }}>$2B+</p>
                   <p className="text-gray-600">Loans Managed</p>
                 </div>
                 <div className="text-center p-4">
-                  <p className="text-4xl font-bold mb-2" style={{ color: '#d4a855' }}>48h</p>
+                  <p className="text-4xl font-bold mb-2" style={{ color: '#b45309' }}>48h</p>
                   <p className="text-gray-600">Avg Approval</p>
                 </div>
                 <div className="text-center p-4">
-                  <p className="text-4xl font-bold mb-2" style={{ color: '#d4a855' }}>10+</p>
+                  <p className="text-4xl font-bold mb-2" style={{ color: '#b45309' }}>10+</p>
                   <p className="text-gray-600">Years Experience</p>
                 </div>
               </div>

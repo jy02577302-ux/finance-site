@@ -60,19 +60,19 @@ export default function ContactPage() {
         <div className="container mx-auto px-4 py-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             <div>
-              <p className="text-3xl font-bold mb-1" style={{ color: '#d4a855' }}>5000+</p>
+              <p className="text-3xl font-bold mb-1" style={{ color: '#b45309' }}>5000+</p>
               <p className="text-sm text-gray-600">Happy Clients</p>
             </div>
             <div>
-              <p className="text-3xl font-bold mb-1" style={{ color: '#d4a855' }}>$2B+</p>
+              <p className="text-3xl font-bold mb-1" style={{ color: '#b45309' }}>$2B+</p>
               <p className="text-sm text-gray-600">Loans Managed</p>
             </div>
             <div>
-              <p className="text-3xl font-bold mb-1" style={{ color: '#d4a855' }}>48h</p>
+              <p className="text-3xl font-bold mb-1" style={{ color: '#b45309' }}>48h</p>
               <p className="text-sm text-gray-600">Avg Approval</p>
             </div>
             <div>
-              <p className="text-3xl font-bold mb-1" style={{ color: '#d4a855' }}>10+</p>
+              <p className="text-3xl font-bold mb-1" style={{ color: '#b45309' }}>10+</p>
               <p className="text-sm text-gray-600">Years Experience</p>
             </div>
           </div>
@@ -88,15 +88,15 @@ export default function ContactPage() {
           </p>
           <div className="flex flex-wrap justify-center gap-6 text-sm">
             <span className="flex items-center gap-2">
-              <svg className="w-5 h-5" style={{ color: '#d4a855' }} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+              <svg className="w-5 h-5" style={{ color: '#b45309' }} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
               Free Consultation
             </span>
             <span className="flex items-center gap-2">
-              <svg className="w-5 h-5" style={{ color: '#d4a855' }} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0 2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+              <svg className="w-5 h-5" style={{ color: '#b45309' }} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0 2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
               No Obligation
             </span>
             <span className="flex items-center gap-2">
-              <svg className="w-5 h-5" style={{ color: '#d4a855' }} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+              <svg className="w-5 h-5" style={{ color: '#b45309' }} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
               Fast Response
             </span>
           </div>
@@ -108,7 +108,7 @@ export default function ContactPage() {
           <div className="lg:col-span-1 space-y-6">
             <div className="bg-white p-6 rounded-xl shadow-lg border" style={{ borderColor: 'rgba(212, 168, 85, 0.2)', boxShadow: '0 4px 20px rgba(0,0,0,0.04)' }}>
               <h3 className="text-lg font-bold mb-6 flex items-center gap-2" style={{ color: '#1a1a1a' }}>
-                <span style={{ color: '#d4a855' }}>●</span>
+                <span style={{ color: '#b45309' }}>●</span>
                 Contact Details
               </h3>
               <div className="space-y-6">
@@ -118,7 +118,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h4 className="font-bold mb-1" style={{ color: '#1a1a1a' }}>Phone</h4>
-                    <p className="text-xl mb-1" style={{ color: '#d4a855' }}>0412 892 782</p>
+                    <p className="text-xl mb-1" style={{ color: '#b45309' }}>0412 892 782</p>
                     <p className="text-sm text-gray-500">Mon-Fri 9am-5pm AEST</p>
                   </div>
                 </div>
@@ -202,7 +202,7 @@ export default function ContactPage() {
             <div className="bg-gradient-to-r from-slate-100 to-slate-200 h-80 md:h-96 flex items-center justify-center">
               <div className="text-center">
                 <div className="w-20 h-20 mx-auto mb-4 rounded-full flex items-center justify-center" style={{ background: 'rgba(212, 168, 85, 0.1)' }}>
-                  <svg className="w-10 h-10" style={{ color: '#d4a855' }} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+                  <svg className="w-10 h-10" style={{ color: '#b45309' }} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
                 </div>
                 <p className="text-gray-700 font-medium mb-2">STRESS FREE FINANCE</p>
                 <p className="text-gray-600 mb-4">123 Collins St, Melbourne VIC 3000</p>
@@ -211,7 +211,7 @@ export default function ContactPage() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-6 py-2 rounded-full text-sm font-semibold transition-colors"
-                  style={{ background: '#d4a855', color: '#fff' }}
+                  style={{ background: '#b45309', color: '#fff' }}
                 >
                   Open in Google Maps
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>

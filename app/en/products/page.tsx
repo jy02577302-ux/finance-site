@@ -77,28 +77,28 @@ export default function ProductsPageEN() {
           <div className="grid md:grid-cols-4 gap-6 text-center">
             <div>
               <div className="w-10 h-10 rounded-full mx-auto mb-2 flex items-center justify-center" style={{ background: '#f0f4f4' }}>
-                <svg className="w-5 h-5" style={{ color: '#d4a855' }} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0 2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                <svg className="w-5 h-5" style={{ color: '#b45309' }} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0 2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
               </div>
               <h3 className="font-bold text-sm" style={{ color: '#483949' }}>Free Service</h3>
               <p className="text-xs text-gray-500">Broker fee paid by bank</p>
             </div>
             <div>
               <div className="w-10 h-10 rounded-full mx-auto mb-2 flex items-center justify-center" style={{ background: '#f0f4f4' }}>
-                <svg className="w-5 h-5" style={{ color: '#d4a855' }} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" /></svg>
+                <svg className="w-5 h-5" style={{ color: '#b45309' }} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" /></svg>
               </div>
               <h3 className="font-bold text-sm" style={{ color: '#483949' }}>30+ Lenders</h3>
               <p className="text-xs text-gray-500">Access to 100+ loan products</p>
             </div>
             <div>
               <div className="w-10 h-10 rounded-full mx-auto mb-2 flex items-center justify-center" style={{ background: '#f0f4f4' }}>
-                <svg className="w-5 h-5" style={{ color: '#d4a855' }} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+                <svg className="w-5 h-5" style={{ color: '#b45309' }} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
               </div>
               <h3 className="font-bold text-sm" style={{ color: '#483949' }}>Fast Approval</h3>
               <p className="text-xs text-gray-500">Most approved within 48 hours</p>
             </div>
             <div>
               <div className="w-10 h-10 rounded-full mx-auto mb-2 flex items-center justify-center" style={{ background: '#f0f4f4' }}>
-                <svg className="w-5 h-5" style={{ color: '#d4a855' }} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                <svg className="w-5 h-5" style={{ color: '#b45309' }} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
               </div>
               <h3 className="font-bold text-sm" style={{ color: '#483949' }}>Licensed & Trusted</h3>
               <p className="text-xs text-gray-500">Est. 2015, 5000+ happy clients</p>
@@ -140,7 +140,7 @@ export default function ProductsPageEN() {
                     <ul className="space-y-3 mb-8">
                       {product.features.map((feat) => (
                         <li key={feat} className="flex items-start gap-3">
-                          <div className="w-5 h-5 mt-0.5 flex-shrink-0" style={{ color: '#d4a855' }}>
+                          <div className="w-5 h-5 mt-0.5 flex-shrink-0" style={{ color: '#b45309' }}>
                             <svg fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
                           </div>
                           <span className="text-gray-700 leading-relaxed">{feat}</span>
@@ -211,8 +211,8 @@ export default function ProductsPageEN() {
               <h3 className="text-xl font-bold mb-4 text-center" style={{ color: '#1a1a1a', fontFamily: 'Playfair Display, serif' }}>📊 Current Interest Rates (April 2026)</h3>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
                 {[
-                  { label: "Owner Occupier (Variable)", range: "5.89% - 6.49%", color: "text-[#d4a855]" },
-                  { label: "Owner Occupier (Fixed 1-3yr)", range: "5.69% - 6.29%", color: "text-[#d4a855]" },
+                  { label: "Owner Occupier (Variable)", range: "5.89% - 6.49%", color: "text-[#b45309]" },
+                  { label: "Owner Occupier (Fixed 1-3yr)", range: "5.69% - 6.29%", color: "text-[#b45309]" },
                   { label: "Investment Loan", range: "6.09% - 6.79%", color: "text-emerald-700" },
                   { label: "Interest Only", range: "6.29% - 6.99%", color: "text-amber-700" },
                   { label: "Commercial Property", range: "6.29% - 7.19%", color: "text-emerald-700" },

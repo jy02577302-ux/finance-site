@@ -56,13 +56,13 @@ export default function CalculatorsPageEN() {
               <h2 className="text-2xl font-bold mb-6" style={{ color: '#1a1a1a', fontFamily: 'Playfair Display, serif' }}>Calculation Notes</h2>
               <div className="grid md:grid-cols-2 gap-8">
                 <div>
-                  <h3 className="font-bold mb-3" style={{ color: '#d4a855' }}>Monthly Repayments</h3>
+                  <h3 className="font-bold mb-3" style={{ color: '#b45309' }}>Monthly Repayments</h3>
                   <p className="text-gray-600 text-sm leading-relaxed">
                     Repayment estimates are based on loan amount, interest rate, term and repayment type. Results are indicative only. Actual repayments may vary based on specific loan terms, fees and interest rate changes.
                   </p>
                 </div>
                 <div>
-                  <h3 className="font-bold mb-3" style={{ color: '#d4a855' }}>Stamp Duty</h3>
+                  <h3 className="font-bold mb-3" style={{ color: '#b45309' }}>Stamp Duty</h3>
                   <p className="text-gray-600 text-sm leading-relaxed">
                     Stamp duty is calculated based on property type, purchase price and down payment. Rates vary by state; this calculator uses VIC rates. Final amounts determined by government.
                   </p>

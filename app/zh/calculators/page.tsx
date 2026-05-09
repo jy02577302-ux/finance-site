@@ -56,13 +56,13 @@ export default function CalculatorsPage() {
               <h2 className="text-2xl font-bold mb-6" style={{ color: '#1a1a1a', fontFamily: 'Playfair Display, serif' }}>计算结果说明</h2>
               <div className="grid md:grid-cols-2 gap-8">
                 <div>
-                  <h3 className="font-bold mb-3" style={{ color: '#d4a855' }}>月供估算</h3>
+                  <h3 className="font-bold mb-3" style={{ color: '#b45309' }}>月供估算</h3>
                   <p className="text-gray-600 text-sm leading-relaxed">
                     月供计算基于贷款金额、利率、贷款期限和还款方式。结果仅供参考，实际月供可能因具体产品条款、费用和利率变动而有所不同。
                   </p>
                 </div>
                 <div>
-                  <h3 className="font-bold mb-3" style={{ color: '#d4a855' }}>印花税</h3>
+                  <h3 className="font-bold mb-3" style={{ color: '#b45309' }}>印花税</h3>
                   <p className="text-gray-600 text-sm leading-relaxed">
                     印花税计算基于房产类型、价格和首付比例。各州税率不同，此计算器使用维州标准。实际税费请以政府最终核算为准。
                   </p>
