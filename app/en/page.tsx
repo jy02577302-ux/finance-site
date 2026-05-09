@@ -113,7 +113,7 @@ export default function HomePageEN() {
                 </li>
                 <li className="flex items-start gap-2">
                   <svg className="w-5 h-5 text-accent-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
-                  <span>Access to 100+ lenders and products</span>
+                  <span>Access to 30+ lenders and products</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <svg className="w-5 h-5 text-accent-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
@@ -139,7 +139,7 @@ export default function HomePageEN() {
 
               <h3 className="text-2xl font-bold mb-4 text-primary-900 group-hover:text-accent-600 transition-colors">Business Loan</h3>
               <p className="text-primary-600 mb-6 leading-relaxed">
-                Commercial financing for businesses of all sizes. Free service with access to 100+ lenders. Professional support throughout.
+                Commercial financing for businesses of all sizes. Free service with access to 30+ lenders. Professional support throughout.
               </p>
               <ul className="space-y-3 mb-8 text-primary-700">
                 <li className="flex items-start gap-2">
@@ -148,7 +148,7 @@ export default function HomePageEN() {
                 </li>
                 <li className="flex items-start gap-2">
                   <svg className="w-5 h-5 text-accent-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
-                  <span>100+ lenders to choose from</span>
+                  <span>30+ lenders to choose from</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <svg className="w-5 h-5 text-accent-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
@@ -226,8 +226,8 @@ export default function HomePageEN() {
               <div className="w-20 h-20 bg-gradient-to-br from-accent-100 to-accent-200 rounded-full flex items-center justify-center mx-auto mb-6 shadow-md group-hover:scale-110 transition-transform duration-300">
                 <svg className="w-10 h-10 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-primary-900">100+ Lenders</h3>
-              <p className="text-primary-600 leading-relaxed">We access 100+ lenders, from major banks to specialist finance providers, ensuring you get the best rates and terms.</p>
+              <h3 className="text-2xl font-bold mb-4 text-primary-900">30+ Lenders</h3>
+              <p className="text-primary-600 leading-relaxed">We access 30+ lenders, from major banks to specialist finance providers, ensuring you get the best rates and terms.</p>
             </div>
             <div className="text-center group">
               <div className="w-20 h-20 bg-gradient-to-br from-accent-100 to-accent-200 rounded-full flex items-center justify-center mx-auto mb-6 shadow-md group-hover:scale-110 transition-transform duration-300">

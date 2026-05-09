@@ -5,7 +5,7 @@ import { ArrowLeft, CheckCircle, Phone, Mail, HardHat } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "开发贷款 | STRESS FREE FINANCE",
-  description: "开发贷款 - 免费服务，100+银行和贷款机构。土地分割、住宅商业开发。分期拨款，完工转永久贷款。",
+  description: "开发贷款 - 免费服务，30+银行和贷款机构。土地分割、住宅商业开发。分期拨款，完工转永久贷款。",
   keywords: "开发贷款, 土地开发, 项目融资, progress payment, 澳洲开发贷款, 免费房贷经纪"
 };
 
@@ -66,7 +66,7 @@ export default function DevelopmentLoanPage() {
               },
               {
                 title: "专业网络",
-                desc: "我们与 100+ 贷款机构合作，包括专门从事开发贷的机构，能为您找到最合适的融资方案。",
+                desc: "我们与 30+ 贷款机构合作，包括专门从事开发贷的机构，能为您找到最合适的融资方案。",
                 icon: "🏦"
               },
               {

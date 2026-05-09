@@ -6,7 +6,7 @@ import { ArrowLeft, CheckCircle, Phone, Mail } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "房屋贷款 | STRESS FREE FINANCE",
-  description: "房屋贷款 - 免费服务，100+银行和贷款机构。专业房贷经纪全程协助，节省您的时间和精力。",
+  description: "房屋贷款 - 免费服务，30+银行和贷款机构。专业房贷经纪全程协助，节省您的时间和精力。",
   keywords: "房屋贷款, 自住房贷款, 澳洲房贷, 首次置业, 免费房贷经纪, 快速审批"
 };
 
@@ -176,7 +176,7 @@ export default function HomeLoanPage() {
           <div className="grid md:grid-cols-4 gap-8 max-w-4xl mx-auto">
             {[
               { step: "1", title: "初步咨询", desc: "与我们分享您的需求和财务状况，我们会认真聆听" },
-              { step: "2", title: "方案匹配", desc: "从 100+ 贷款机构中为您筛选最合适的产品" },
+              { step: "2", title: "方案匹配", desc: "从 30+ 贷款机构中为您筛选最合适的产品" },
               { step: "3", title: "申请处理", desc: "我们负责所有 paperwork，与银行和各方沟通" },
               { step: "4", title: "成功放款", desc: " Settlement 完成后，我们继续提供支持" },
             ].map((item, i) => (

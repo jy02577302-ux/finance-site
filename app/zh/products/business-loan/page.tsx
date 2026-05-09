@@ -5,7 +5,7 @@ import { ArrowLeft, CheckCircle, Phone, Mail, TrendingUp } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "商业贷款 | STRESS FREE FINANCE",
-  description: "商业贷款 - 免费服务，100+银行和贷款机构。商业地产、营运资金、设备融资。专业顾问全程协助。",
+  description: "商业贷款 - 免费服务，30+银行和贷款机构。商业地产、营运资金、设备融资。专业顾问全程协助。",
   keywords: "商业贷款, 商业房贷, 企业贷款, 澳洲商业贷款, 免费房贷经纪"
 };
 
@@ -66,7 +66,7 @@ export default function BusinessLoanPage() {
               },
               {
                 title: "广泛选择",
-                desc: "我们 access to 100+ lenders，从大型银行到专业金融机构，为您找到最佳条款和利率。",
+                desc: "我们 access to 30+ lenders，从大型银行到专业金融机构，为您找到最佳条款和利率。",
                 icon: "🏦"
               },
               {

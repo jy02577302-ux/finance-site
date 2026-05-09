@@ -26,7 +26,7 @@ export default function HomePageZH() {
             </span>
           </h1>
           <p className="text-xl md:text-2xl mb-10 max-w-3xl mx-auto text-primary-200 font-light">
-            墨尔本专业房贷经纪 · 免费评估 · 100+ 贷款机构 · 透明费用
+            墨尔本专业房贷经纪 · 免费评估 · 30+ 贷款机构 · 透明费用
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
@@ -114,7 +114,7 @@ export default function HomePageZH() {
                 </li>
                 <li className="flex items-start gap-2">
                   <svg className="w-5 h-5 text-accent-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
-                  <span>Access to 100+ 贷款机构</span>
+                  <span>Access to 30+ 贷款机构</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <svg className="w-5 h-5 text-accent-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
@@ -149,7 +149,7 @@ export default function HomePageZH() {
                 </li>
                 <li className="flex items-start gap-2">
                   <svg className="w-5 h-5 text-accent-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
-                  <span>100+ 专业贷款机构选择</span>
+                  <span>30+ 专业贷款机构选择</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <svg className="w-5 h-5 text-accent-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
@@ -227,8 +227,8 @@ export default function HomePageZH() {
               <div className="w-20 h-20 bg-gradient-to-br from-accent-100 to-accent-200 rounded-full flex items-center justify-center mx-auto mb-6 shadow-md group-hover:scale-110 transition-transform duration-300">
                 <svg className="w-10 h-10 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-primary-900">100+ 贷款机构</h3>
-              <p className="text-primary-600 leading-relaxed">我们合作 100+ 家贷款机构，从大型银行到专业金融机构，确保您获得最佳利率和条款。</p>
+              <h3 className="text-2xl font-bold mb-4 text-primary-900">30+ 贷款机构</h3>
+              <p className="text-primary-600 leading-relaxed">我们合作 30+ 家贷款机构，从大型银行到专业金融机构，确保您获得最佳利率和条款。</p>
             </div>
             <div className="text-center group">
               <div className="w-20 h-20 bg-gradient-to-br from-accent-100 to-accent-200 rounded-full flex items-center justify-center mx-auto mb-6 shadow-md group-hover:scale-110 transition-transform duration-300">

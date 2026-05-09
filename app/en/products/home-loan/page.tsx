@@ -6,7 +6,7 @@ import { ArrowLeft, CheckCircle, Phone, Mail } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Home Loan | STRESS FREE FINANCE",
-  description: "Home loans - free service, access to 100+ lenders. Our brokers provide expert advice throughout the entire process.",
+  description: "Home loans - free service, access to 30+ lenders. Our brokers provide expert advice throughout the entire process.",
   keywords: "home loan, owner occupied mortgage, melbourne home loan, australian mortgage, free mortgage broker"
 };
 
@@ -176,7 +176,7 @@ export default function HomeLoanPageEN() {
           <div className="grid md:grid-cols-4 gap-8 max-w-4xl mx-auto">
             {[
               { step: "1", title: "Initial Chat", desc: "Tell us about your goals and current situation" },
-              { step: "2", title: "We Search", desc: "We scour 100+ lenders to find the best match" },
+              { step: "2", title: "We Search", desc: "We scour 30+ lenders to find the best match" },
               { step: "3", title: "We Handle", desc: "We manage all paperwork and lender communication" },
               { step: "4", title: "Settlement", desc: "You get the keys, we continue to support you" },
             ].map((item, i) => (

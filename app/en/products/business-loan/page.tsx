@@ -5,7 +5,7 @@ import { ArrowLeft, CheckCircle, Phone, Mail, TrendingUp } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Business Loan | STRESS FREE FINANCE",
-  description: "Business loans - free service, access to 100+ lenders. Commercial property, working capital, equipment financing. Expert brokers.",
+  description: "Business loans - free service, access to 30+ lenders. Commercial property, working capital, equipment financing. Expert brokers.",
   keywords: "business loan, commercial loan, business financing, australian business loan, free mortgage broker"
 };
 
@@ -53,7 +53,7 @@ export default function BusinessLoanPage() {
               },
               {
                 title: "Broad Lender Access",
-                desc: "We access 100+ lenders, from major banks to specialist finance providers, to find the best terms and rates.",
+                desc: "We access 30+ lenders, from major banks to specialist finance providers, to find the best terms and rates.",
                 icon: "🏦"
               },
               {

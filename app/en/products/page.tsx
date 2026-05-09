@@ -5,7 +5,7 @@ import { Home, TrendingUp, HardHat, ArrowRight, Phone, Mail } from "lucide-react
 
 export const metadata: Metadata = {
   title: "Our Loan Products | STRESS FREE FINANCE",
-  description: "Home loans, business loans, development loans. Free service, access to 100+ lenders. Fast approval, transparent fees. Contact us today.",
+  description: "Home loans, business loans, development loans. Free service, access to 30+ lenders. Fast approval, transparent fees. Contact us today.",
   keywords: "home loans, business loans, development loans, australian mortgage, melbourne mortgage, free mortgage broker, 100 lenders"
 };
 
@@ -87,7 +87,7 @@ export default function ProductsPageEN() {
                 <svg className="w-5 h-5" style={{ color: '#b45309' }} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" /></svg>
               </div>
               <h3 className="font-bold text-sm" style={{ color: '#483949' }}>30+ Lenders</h3>
-              <p className="text-xs text-gray-500">Access to 100+ loan products</p>
+              <p className="text-xs text-gray-500">Access to 30+ loan products</p>
             </div>
             <div>
               <div className="w-10 h-10 rounded-full mx-auto mb-2 flex items-center justify-center" style={{ background: '#f0f4f4' }}>
