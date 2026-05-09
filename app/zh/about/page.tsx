@@ -45,7 +45,7 @@ export default function AboutPage() {
                 我们的使命是让每个人都能轻松获得专业、透明的房贷服务。我们相信，好的金融产品不应该被复杂的过程所掩盖。因此，我们简化了每一步，用专业和热情服务每一位客户。
               </p>
               <p className="text-gray-700 leading-relaxed">
-                如今，我们已经帮助超过 1000 个家庭实现了置业梦想，管理贷款总额超过 20 亿澳元。但我们最骄傲的，不是这些数字，而是客户的口碑和推荐。
+                如今，我们已经帮助超过 1000 个家庭实现了置业梦想，管理贷款总额超过 2 千万澳元。但我们最骄傲的，不是这些数字，而是客户的口碑和推荐。
               </p>
             </div>
             <div className="bg-gradient-to-br from-slate-50 to-white p-8 rounded-2xl border" style={{ borderColor: 'rgba(212, 168, 85, 0.2)', boxShadow: '0 4px 20px rgba(0,0,0,0.04)' }}>
@@ -55,7 +55,7 @@ export default function AboutPage() {
                   <p className="text-gray-600">满意客户</p>
                 </div>
                 <div className="text-center p-4">
-                  <p className="text-4xl font-bold mb-2" style={{ color: '#b45309' }}>$2B+</p>
+                  <p className="text-4xl font-bold mb-2" style={{ color: '#b45309' }}>$20M+</p>
                   <p className="text-gray-600">管理贷款</p>
                 </div>
                 <div className="text-center p-4">

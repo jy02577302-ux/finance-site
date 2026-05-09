@@ -5,8 +5,8 @@ import { CheckCircle, Users, Award, Clock, Heart } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "About Us | STRESS FREE FINANCE",
-  description: "Stress Free Finance - 10+ years experience, 1000+ happy clients, $2B+ loans managed. AFS licensed mortgage brokers in Melbourne.",
-  keywords: "about Stress Free Finance, mortgage brokers melbourne, AFS license, 5000 clients, $2B loans, expert team"
+  description: "Stress Free Finance - 10+ years experience, 1000+ happy clients, $20M+ loans managed. AFS licensed mortgage brokers in Melbourne.",
+  keywords: "about Stress Free Finance, mortgage brokers melbourne, AFS license, 1000 clients, $20M loans, expert team"
 };
 
 export default function AboutPageEN() {
@@ -45,7 +45,7 @@ export default function AboutPageEN() {
                 Our mission is to make professional, transparent mortgage services accessible to everyone. We believe good financial products shouldn't be hidden behind complex processes. That's why we simplify every step, serving each client with professionalism and genuine care.
               </p>
               <p className="text-gray-700 leading-relaxed">
-                To date, we've helped over 1,000 families achieve their homeownership dreams, with more than $2 billion in loans under management. But what we're most proud of isn't the numbers—it's our clients' satisfaction and referrals.
+                To date, we've helped over 1,000 families achieve their homeownership dreams, with more than $20 million in loans under management. But what we're most proud of isn't the numbers—it's our clients' satisfaction and referrals.
               </p>
             </div>
             <div className="bg-gradient-to-br from-slate-50 to-white p-8 rounded-2xl border" style={{ borderColor: 'rgba(212, 168, 85, 0.2)', boxShadow: '0 4px 20px rgba(0,0,0,0.04)' }}>
@@ -55,7 +55,7 @@ export default function AboutPageEN() {
                   <p className="text-gray-600">Happy Clients</p>
                 </div>
                 <div className="text-center p-4">
-                  <p className="text-4xl font-bold mb-2" style={{ color: '#b45309' }}>$2B+</p>
+                  <p className="text-4xl font-bold mb-2" style={{ color: '#b45309' }}>$20M+</p>
                   <p className="text-gray-600">Loans Managed</p>
                 </div>
                 <div className="text-center p-4">

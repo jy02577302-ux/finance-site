@@ -64,7 +64,7 @@ export default function ContactPage() {
               <p className="text-sm text-gray-600">满意客户</p>
             </div>
             <div>
-              <p className="text-3xl font-bold mb-1" style={{ color: '#b45309' }}>$2B+</p>
+              <p className="text-3xl font-bold mb-1" style={{ color: '#b45309' }}>$20M+</p>
               <p className="text-sm text-gray-600">管理贷款</p>
             </div>
             <div>
