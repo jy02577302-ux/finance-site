@@ -5,7 +5,7 @@ import { CheckCircle, Users, Award, Clock, Heart } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "关于我们 | STRESS FREE FINANCE",
-  description: "STRESS FREE FINANCE 成立于 2015 年，拥有 10+ 年经验的房贷经纪团队。已帮助 1000+ 家庭实现置业梦想。",
+  description: "STRESS FREE FINANCE 拥有 10+ 年经验的房贷经纪团队。已帮助 1000+ 家庭实现置业梦想。",
   keywords: "关于 STRESS FREE FINANCE, 房贷经纪, 墨尔本房贷, 贷款专家, AFS 牌照"
 };
 
@@ -39,13 +39,13 @@ export default function AboutPage() {
             <div>
               <h2 className="text-3xl font-bold mb-6" style={{ color: '#1a1a1a', fontFamily: 'Playfair Display, serif' }}>我们的故事</h2>
               <p className="text-gray-700 mb-4 leading-relaxed">
-                STRESS FREE FINANCE 成立于 2015 年，由一群拥有超过 10 年行业经验的房贷经纪创立。我们的创始人曾服务于澳洲四大银行，深知传统房贷流程的繁琐与不便。
+                STRESS FREE FINANCE 由一群拥有超过 10 年行业经验的房贷经纪创立。我们的创始人曾服务于澳洲四大银行，深知传统房贷流程的繁琐与不便。
               </p>
               <p className="text-gray-700 mb-4 leading-relaxed">
                 我们的使命是让每个人都能轻松获得专业、透明的房贷服务。我们相信，好的金融产品不应该被复杂的过程所掩盖。因此，我们简化了每一步，用专业和热情服务每一位客户。
               </p>
               <p className="text-gray-700 leading-relaxed">
-                如今，我们已经帮助超过 5000 个家庭实现了置业梦想，管理贷款总额超过 20 亿澳元。但我们最骄傲的，不是这些数字，而是客户的口碑和推荐。
+                如今，我们已经帮助超过 1000 个家庭实现了置业梦想，管理贷款总额超过 20 亿澳元。但我们最骄傲的，不是这些数字，而是客户的口碑和推荐。
               </p>
             </div>
             <div className="bg-gradient-to-br from-slate-50 to-white p-8 rounded-2xl border" style={{ borderColor: 'rgba(212, 168, 85, 0.2)', boxShadow: '0 4px 20px rgba(0,0,0,0.04)' }}>

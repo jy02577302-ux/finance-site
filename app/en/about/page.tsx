@@ -5,7 +5,7 @@ import { CheckCircle, Users, Award, Clock, Heart } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "About Us | STRESS FREE FINANCE",
-  description: "Stress Free Finance founded in 2015. 10+ years experience, 1000+ happy clients, $2B+ loans managed. AFS licensed mortgage brokers in Melbourne.",
+  description: "Stress Free Finance - 10+ years experience, 1000+ happy clients, $2B+ loans managed. AFS licensed mortgage brokers in Melbourne.",
   keywords: "about Stress Free Finance, mortgage brokers melbourne, AFS license, 5000 clients, $2B loans, expert team"
 };
 
@@ -39,13 +39,13 @@ export default function AboutPageEN() {
             <div>
               <h2 className="text-3xl font-bold mb-6" style={{ color: '#1a1a1a', fontFamily: 'Playfair Display, serif' }}>Our Story</h2>
               <p className="text-gray-700 mb-4 leading-relaxed">
-                Stress Free Finance was founded in 2015 by a team of mortgage brokers with over 10 years of industry experience. Our founders previously worked at major Australian banks and understood the complexity and frustration of traditional mortgage processes.
+                Stress Free Finance was founded by a team of mortgage brokers with over 10 years of industry experience. Our founders previously worked at major Australian banks and understood the complexity and frustration of traditional mortgage processes.
               </p>
               <p className="text-gray-700 mb-4 leading-relaxed">
                 Our mission is to make professional, transparent mortgage services accessible to everyone. We believe good financial products shouldn't be hidden behind complex processes. That's why we simplify every step, serving each client with professionalism and genuine care.
               </p>
               <p className="text-gray-700 leading-relaxed">
-                To date, we've helped over 5,000 families achieve their homeownership dreams, with more than $2 billion in loans under management. But what we're most proud of isn't the numbers—it's our clients' satisfaction and referrals.
+                To date, we've helped over 1,000 families achieve their homeownership dreams, with more than $2 billion in loans under management. But what we're most proud of isn't the numbers—it's our clients' satisfaction and referrals.
               </p>
             </div>
             <div className="bg-gradient-to-br from-slate-50 to-white p-8 rounded-2xl border" style={{ borderColor: 'rgba(212, 168, 85, 0.2)', boxShadow: '0 4px 20px rgba(0,0,0,0.04)' }}>
