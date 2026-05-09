@@ -101,7 +101,7 @@ export default function ProductsPageEN() {
                 <svg className="w-5 h-5" style={{ color: '#b45309' }} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
               </div>
               <h3 className="font-bold text-sm" style={{ color: '#483949' }}>Licensed & Trusted</h3>
-              <p className="text-xs text-gray-500">Est. 2015, 5000+ happy clients</p>
+              <p className="text-xs text-gray-500">Est. 2015, 1000+ happy clients</p>
             </div>
           </div>
         </div>

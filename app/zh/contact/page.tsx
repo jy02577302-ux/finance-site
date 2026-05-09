@@ -60,7 +60,7 @@ export default function ContactPage() {
         <div className="container mx-auto px-4 py-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             <div>
-              <p className="text-3xl font-bold mb-1" style={{ color: '#b45309' }}>5000+</p>
+              <p className="text-3xl font-bold mb-1" style={{ color: '#b45309' }}>1000+</p>
               <p className="text-sm text-gray-600">满意客户</p>
             </div>
             <div>
