@@ -163,7 +163,7 @@ export default function AboutPageEN() {
           {/* CTA */}
           <div className="py-16" style={{ background: 'linear-gradient(135deg, #1a1a1a 0%, #2c2c2c 100%)' }}>
             <div className="container mx-auto px-4 text-center">
-              <h2 className="text-2xl font-bold mb-4" style="{{ color: '#1a1a1a', fontFamily: 'Playfair Display, serif' }}">Ready to Work With Us?</h2>
+              <h2 className="text-2xl font-bold mb-4" style={{ color: '#1a1a1a', fontFamily: 'Playfair Display, serif' }}>Ready to Work With Us?</h2>
               <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
                 Whether you're just starting or ready to apply, we're here to help with free, professional advice.
               </p>
