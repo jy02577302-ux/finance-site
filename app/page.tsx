@@ -1,199 +1,291 @@
 import Link from "next/link";
-import Image from "next/image";
+import Calculator from "@/components/calculator";
+import TestimonialCard from "@/components/testimonial-card";
 
-export default function HomePage() {
+export default function HomePageZH() {
   return (
-    <div className="min-h-screen bg-[#0A0A0A] text-white">
-      {/* Navigation */}
-      <nav className="fixed w-full z-50 bg-[#0A0A0A]/80 backdrop-blur-md border-b border-[#D4AF37]/10">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="flex justify-between items-center h-20">
-            {/* Logo */}
-            <div className="flex items-center space-x-2">
-              <div className="w-10 h-10 bg-[#D4AF37] flex items-center justify-center rounded-sm">
-                <span className="text-[#0A0A0A] font-bold text-sm">SF</span>
-              </div>
-              <div className="flex flex-col">
-                <span className="text-xl font-bold tracking-widest text-white">STRESS FREE FINANCE</span>
-                <span className="text-[10px] text-[#D4AF37] tracking-[0.2em] -mt-1 uppercase">Premium Mortgage Broker</span>
-              </div>
-            </div>
-            {/* Desktop Menu */}
-            <div className="hidden md:flex items-center space-x-10 text-sm font-medium">
-              <Link href="/en/products" className="text-white hover:text-[#D4AF37]">贷款产品</Link>
-              <Link href="/en/about" className="text-white hover:text-[#D4AF37]">关于我们</Link>
-              <Link href="/en/contact" className="text-white hover:text-[#D4AF37]">联系我们</Link>
-              <div className="h-6 w-[1px] bg-[#D4AF37]/30 mx-4"></div>
-              <div className="flex items-center text-[#D4AF37]">
-                <span>📞</span>
-                <span className="ml-2">0412 892 782</span>
-              </div>
-              <Link href="/en/contact" className="bg-gradient-to-r from-[#D4AF37] to-[#996515] text-[#0A0A0A] px-6 py-2.5 rounded-full font-semibold text-xs uppercase tracking-widest">
-                免费评估
-              </Link>
-            </div>
-            {/* Mobile Menu Button */}
-            <div className="md:hidden text-[#D4AF37] text-2xl">
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" /></svg>
-            </div>
-          </div>
-        </div>
-      </nav>
-
-      {/* Hero */}
-      <section className="relative min-h-screen flex items-center justify-center pt-20">
-        <div className="absolute inset-0 z-0">
-          <Image
+    <div className="min-h-screen bg-white">
+      {/* Hero Section - 高端深色系 + 真实夜景天际线 */}
+      <section className="relative py-20 lg:py-32 overflow-hidden">
+        {/* 背景图片 */}
+        <div className="absolute inset-0">
+          <img
             src="/images/hero-melbourne.jpg"
-            alt="Melbourne CBD"
-            fill
-            className="object-cover"
+            alt="Melbourne skyline at night"
+            className="w-full h-full object-cover object-bottom"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0A0A0A] via-[#0A0A0A]/80 to-transparent"></div>
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] to-transparent"></div>
         </div>
-        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-8">
-            <div className="inline-flex items-center px-4 py-2 border border-[#D4AF37]/30 rounded-full bg-[#D4AF37]/5">
-              <span className="w-2 h-2 rounded-full bg-[#D4AF37] mr-3"></span>
-              <span className="text-[#D4AF37] text-xs font-semibold tracking-widest uppercase">Melbourne's Premier Choice</span>
-            </div>
-            <h1 className="text-5xl lg:text-7xl font-serif font-bold leading-tight">
-              Stress-Free Finance<br />
-              <span className="bg-gradient-to-r from-[#D4AF37] to-[#F3E5AB] bg-clip-text text-transparent">Solutions</span>
-            </h1>
-            <p className="text-gray-400 text-lg max-w-lg leading-relaxed">
-              Expert mortgage brokers based in Melbourne. Free assessment, fast approval, transparent fees.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <Link href="/en/contact" className="bg-gradient-to-r from-[#D4AF37] to-[#996515] text-[#0A0A0A] px-10 py-4 rounded-sm font-bold text-sm uppercase tracking-widest flex items-center justify-center">
-                免费评估
-              </Link>
-              <Link href="/en/products" className="border border-[#D4AF37] text-[#D4AF37] px-10 py-4 rounded-sm font-bold text-sm uppercase tracking-widest hover:bg-[#D4AF37]/10">
-                了解我们的方案
-              </Link>
-            </div>
-            <div className="flex items-center space-x-8 pt-6 border-t border-[#D4AF37]/20">
-              <div className="text-center">
-                <div className="text-2xl font-bold text-white">10+</div>
-                <div className="text-[10px] text-gray-500 uppercase tracking-widest">Years Experience</div>
-              </div>
-              <div className="text-center">
-                <div className="text-2xl font-bold text-white">$20M+</div>
-                <div className="text-[10px] text-gray-500 uppercase tracking-widest">Loans Managed</div>
-              </div>
-              <div className="text-center">
-                <div className="text-2xl font-bold text-white">1000+</div>
-                <div className="text-[10px] text-gray-500 uppercase tracking-widest">Happy Clients</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+        {/* 黑金渐变遮罩 - 60% 透明度，看到更多图片细节 */}
+        <div className="absolute inset-0 bg-gradient-to-br from-primary-900/60 via-primary-800/60 to-primary-900/60"></div>
 
-      {/* Process */}
-      <section className="py-24 bg-[#141414]" id="process">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="text-center mb-20">
-            <h2 className="text-[#D4AF37] text-sm font-bold tracking-[0.3em] uppercase mb-4">The Experience</h2>
-            <h3 className="text-4xl lg:text-5xl font-serif font-bold">无压力申请流程</h3>
-            <div className="w-24 h-1 bg-gradient-to-r from-[#D4AF37] to-transparent mx-auto mt-6"></div>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
-            {[
-              { title: "1. 深度评估", desc: "专业顾问 1V1 交流，全方位梳理您的财务状况与购房需求。" },
-              { title: "2. 方案定制", desc: "对接 30+ 银行及非银贷款机构，精准匹配利率最优方案。" },
-              { title: "3. 极速递交", desc: "文案专家全程整理资料，确保申请材料一次性达到审批标准。" },
-              { title: "4. 成功获批", desc: "获取 Unconditional Approval，在拍卖场上从容举牌。" },
-              { title: "5. 无忧结算", desc: "对接律师与房产经纪，确保结算无误，正式开启理想生活。" }
-            ].map((step, idx) => (
-              <div key={idx} className="text-center">
-                <div className="w-20 h-20 mx-auto mb-6 rounded-full border border-[#D4AF37]/30 flex items-center justify-center bg-[#0A0A0A]">
-                  <div className="w-8 h-8 bg-gradient-to-br from-[#D4AF37] to-[#996515] rounded-full flex items-center justify-center">
-                    <span className="text-[#0A0A0A] font-bold text-xs">{idx + 1}</span>
-                  </div>
-                </div>
-                <h4 className="text-lg font-bold mb-3">{step.title}</h4>
-                <p className="text-gray-500 text-sm leading-relaxed px-4">{step.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Team */}
-      <section className="py-24 bg-[#0A0A0A]" id="team">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="text-center mb-16">
-            <h2 className="text-[#D4AF37] text-sm font-bold tracking-[0.3em] uppercase mb-4">Elite Partners</h2>
-            <h3 className="text-4xl lg:text-5xl font-serif font-bold">墨尔本资深顾问团队</h3>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {[
-              { name: "James Wilson", role: "Founder / Lead Broker", img: "/images/team/steven-mo.jpg" },
-              { name: "Elena Zhang", role: "Executive Broker", img: "/images/team/sarah-chen.jpg" },
-              { name: "Michael Chen", role: "Investment Specialist", img: "/images/team/david-liu.jpg" },
-              { name: "David Liu", role: "Business Finance Specialist", img: "/images/team/office-main.jpg" }
-            ].map((broker) => (
-              <div key={broker.name} className="bg-[#141414] border border-[#D4AF37]/20 overflow-hidden">
-                <div className="aspect-[4/5]">
-                  <Image src={broker.img} alt={broker.name} fill className="object-cover" />
-                </div>
-                <div className="p-6 text-center">
-                  <h4 className="text-xl font-bold mb-1">{broker.name}</h4>
-                  <p className="text-[#D4AF37] text-xs uppercase tracking-widest mb-4">{broker.role}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Products Preview */}
-      <section className="py-24 bg-[#141414]" id="products">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="text-center mb-20">
-            <h2 className="text-[#D4AF37] text-sm font-bold tracking-[0.3em] uppercase mb-4">Our Products</h2>
-            <h3 className="text-4xl lg:text-5xl font-serif font-bold">核心产品</h3>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
-              { title: "房屋贷款", href: "/en/products/home-loan", initial: "H" },
-              { title: "商业贷款", href: "/en/products/business-loan", initial: "B" },
-              { title: "开发贷款", href: "/en/products/development-loan", initial: "D" }
-            ].map((product) => (
-              <div key={product.title} className="bg-[#0A0A0A]/60 p-8 border border-[#D4AF37]/20">
-                <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-gradient-to-br from-[#D4AF37] to-[#996515] flex items-center justify-center">
-                  <span className="text-2xl text-[#0A0A0A] font-bold">{product.initial}</span>
-                </div>
-                <h3 className="text-2xl font-bold mb-4 text-center">{product.title}</h3>
-                <p className="text-gray-500 text-center mb-6">
-                  Competitive rates and flexible options.
-                </p>
-                <Link href={product.href} className="block w-full text-center rounded-lg border border-[#D4AF37] px-6 py-3 font-semibold text-[#D4AF37] hover:bg-[#D4AF37] hover:text-[#0A0A0A] transition-all">
-                  了解更多
-                </Link>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* CTA */}
-      <section className="py-24 bg-[#141414]">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12 text-center">
-          <h2 className="text-4xl font-serif font-bold mb-6">准备好开始了吗？</h2>
-          <p className="text-gray-400 max-w-2xl mx-auto mb-10">
-            我们的专家团队随时准备为您提供免费、专业的房贷咨询服务。
+        <div className="container mx-auto px-4 text-center relative z-10">
+          <h1 className="text-4xl md:text-6xl font-display font-bold mb-6 leading-tight">
+            财务轻松，生活乐融
+            <span className="block mt-2 text-accent-500 bg-clip-text text-transparent bg-gradient-to-r from-accent-400 to-accent-500">
+              STRESS FREE FINANCE
+            </span>
+          </h1>
+          <p className="text-xl md:text-2xl mb-10 max-w-3xl mx-auto text-primary-200 font-light">
+            墨尔本专业房贷经纪 · 免费评估 · 30+ 贷款机构 · 透明费用
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/en/contact" className="bg-gradient-to-r from-[#D4AF37] to-[#996515] text-[#0A0A0A] px-10 py-4 rounded-sm font-bold text-sm uppercase tracking-widest">
-              致电 0412 892 782
-            </Link>
-            <Link href="/zh/contact" className="border border-[#D4AF37] text-[#D4AF37] px-10 py-4 rounded-sm font-bold text-sm uppercase tracking-widest hover:bg-[#D4AF37]/10">
-              中文咨询
-            </Link>
+            <a
+              href="/zh/contact"
+              className="inline-flex items-center justify-center rounded-lg border-2 border-accent-500 bg-accent-500 px-8 py-6 text-lg font-semibold text-primary-900 hover:bg-accent-400 hover:border-accent-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-500 focus-visible:ring-offset-2 focus-visible:ring-offset-primary-900 transition-all duration-300 shadow-lg shadow-accent-500/25 hover:shadow-accent-400/30"
+            >
+              免费评估
+            </a>
+            <a
+              href="/zh/calculators"
+              className="inline-flex items-center justify-center rounded-lg border-2 border-white/30 bg-transparent px-8 py-6 text-lg font-semibold text-white hover:bg-white/10 hover:border-white/60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-primary-900 transition-all duration-300"
+            >
+              在线计算
+            </a>
           </div>
+        </div>
+      </section>
+
+
+      {/* Calculator Preview - 铂灰背景 */}
+      <section className="py-12 bg-platinum-50 relative">
+        {/* Hero → Calculator 金色分隔条 */}
+        <div className="absolute top-0 left-0 right-0 h-3 bg-gradient-to-r from-accent-500 to-transparent"></div>
+
+        <div className="container mx-auto px-4">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-3xl md:text-4xl font-bold text-primary-900 mb-6">
+                估算您的房贷还款
+              </h2>
+              <p className="text-lg text-primary-600 mb-8 leading-relaxed">
+                使用我们的计算器快速估算月供、总利息，并了解不同利率和期限对贷款的影响。透明计算，无隐藏费用。
+              </p>
+              <ul className="space-y-4 mb-8">
+                <li className="flex items-center gap-3 text-primary-700">
+                  <svg className="w-6 h-6 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
+                  <span>房屋贷款、投资贷款、建筑贷款</span>
+                </li>
+                <li className="flex items-center gap-3 text-primary-700">
+                  <svg className="w-6 h-6 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
+                  <span>包含印花税和费用估算</span>
+                </li>
+                <li className="flex items-center gap-3 text-primary-700">
+                  <svg className="w-6 h-6 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
+                  <span>即时结果，无需注册</span>
+                </li>
+              </ul>
+              <a
+                href="/zh/calculators"
+                className="inline-flex items-center justify-center rounded-lg bg-primary-900 px-6 py-3 text-base font-medium text-white hover:bg-primary-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-500 focus-visible:ring-offset-2 transition-all shadow-md hover:shadow-lg"
+              >
+                打开计算器
+              </a>
+            </div>
+            <div className="bg-white p-6 rounded-2xl shadow-xl border border-platinum-200">
+              <Calculator compact />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Loan Products - 右下-右对齐边框 + 金色点缀 */}
+      <section className="py-12 bg-white relative">
+        {/* Calculator → Products 金色分隔 */}
+        <div className="absolute top-0 left-0 right-0 h-3 bg-gradient-to-r from-accent-500 to-transparent"></div>
+
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl font-display font-bold text-center mb-4 text-primary-900">我们的贷款产品</h2>
+          <p className="text-center text-primary-600 mb-12 max-w-2xl mx-auto">无论您的置业目标是什么，我们都有专业方案助您实现</p>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Product 1: Home Loan */}
+            <div className="group relative bg-white p-8 rounded-2xl shadow-lg border border-platinum-200 hover:shadow-2xl hover:border-accent-300 transition-all duration-300 overflow-hidden">
+              {/* 金色顶部边框 */}
+              <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-accent-400 to-accent-600"></div>
+
+              <h3 className="text-2xl font-bold mb-4 text-primary-900 group-hover:text-accent-600 transition-colors">房屋贷款</h3>
+              <p className="text-primary-600 mb-6 leading-relaxed">
+                无论是首次购房、重新贷款还是投资，我们都能帮您找到最佳方案。我们的服务完全免费，由银行支付经纪费用。
+              </p>
+              <ul className="space-y-3 mb-8 text-primary-700">
+                <li className="flex items-start gap-2">
+                  <svg className="w-5 h-5 text-accent-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
+                  <span>免费服务，费用由银行承担</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <svg className="w-5 h-5 text-accent-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
+                  <span>Access to 30+ 贷款机构</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <svg className="w-5 h-5 text-accent-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
+                  <span>省时省力，我们处理所有 paperwork</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <svg className="w-5 h-5 text-accent-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
+                  <span>独立建议，以您的利益为先</span>
+                </li>
+              </ul>
+              <a
+                href="/zh/products/home-loan"
+                className="block w-full text-center rounded-lg border-2 border-primary-200 bg-primary-50 px-4 py-3 text-sm font-semibold text-primary-900 hover:bg-accent-500 hover:border-accent-500 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-500 focus-visible:ring-offset-2 transition-all duration-300"
+              >
+                了解详情
+              </a>
+            </div>
+
+            {/* Product 2: Business Loan */}
+            <div className="group relative bg-white p-8 rounded-2xl shadow-lg border border-platinum-200 hover:shadow-2xl hover:border-accent-300 transition-all duration-300 overflow-hidden">
+              {/* 金色顶部边框 */}
+              <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-accent-400 to-accent-600"></div>
+
+              <h3 className="text-2xl font-bold mb-4 text-primary-900 group-hover:text-accent-600 transition-colors">商业贷款</h3>
+              <p className="text-primary-600 mb-6 leading-relaxed">
+                为企业和投资者提供灵活的商业融资方案。覆盖商业地产、营运资金、设备融资等多种需求。
+              </p>
+              <ul className="space-y-3 mb-8 text-primary-700">
+                <li className="flex items-start gap-2">
+                  <svg className="w-5 h-5 text-accent-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
+                  <span>商业地产、营运资金、设备融资</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <svg className="w-5 h-5 text-accent-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
+                  <span>30+ 专业贷款机构选择</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <svg className="w-5 h-5 text-accent-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
+                  <span>资深顾问团队全程支持</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <svg className="w-5 h-5 text-accent-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
+                  <span>定制化方案，适配您的现金流</span>
+                </li>
+              </ul>
+              <a
+                href="/zh/products/business-loan"
+                className="block w-full text-center rounded-lg border-2 border-primary-200 bg-primary-50 px-4 py-3 text-sm font-semibold text-primary-900 hover:bg-accent-500 hover:border-accent-500 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-500 focus-visible:ring-offset-2 transition-all duration-300"
+              >
+                了解详情
+              </a>
+            </div>
+
+            {/* Product 3: Development Loan */}
+            <div className="group relative bg-white p-8 rounded-2xl shadow-lg border border-platinum-200 hover:shadow-2xl hover:border-accent-300 transition-all duration-300 overflow-hidden">
+              {/* 金色顶部边框 */}
+              <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-accent-400 to-accent-600"></div>
+
+              <h3 className="text-2xl font-bold mb-4 text-primary-900 group-hover:text-accent-600 transition-colors">开发贷款</h3>
+              <p className="text-primary-600 mb-6 leading-relaxed">
+                土地分割、住宅商业开发项目融资。按进度拨款，全程专业指导，助您顺利完工。
+              </p>
+              <ul className="space-y-3 mb-8 text-primary-700">
+                <li className="flex items-start gap-2">
+                  <svg className="w-5 h-5 text-accent-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
+                  <span>开发贷款专家 10+ 年经验</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <svg className="w-5 h-5 text-accent-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
+                  <span>Access to  specialist lenders</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <svg className="w-5 h-5 text-accent-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
+                  <span>分期拨款，完工转永久贷款</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <svg className="w-5 h-5 text-accent-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
+                  <span>专人跟进，快速预审批</span>
+                </li>
+              </ul>
+              <a
+                href="/zh/products/development-loan"
+                className="block w-full text-center rounded-lg border-2 border-primary-200 bg-primary-50 px-4 py-3 text-sm font-semibold text-primary-900 hover:bg-accent-500 hover:border-accent-500 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-500 focus-visible:ring-offset-2 transition-all duration-300"
+              >
+                了解详情
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose Us - 简洁铂灰背景 + 金色图标 */}
+      <section className="py-12 bg-platinum-50 relative">
+        {/* Products → Why Choose Us 金色分隔 */}
+        <div className="absolute top-0 left-0 right-0 h-3 bg-gradient-to-r from-accent-500 to-transparent"></div>
+
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl font-display font-bold text-center mb-4 text-primary-900">为什么选择 STRESS FREE FINANCE</h2>
+          <p className="text-center text-primary-600 mb-16 max-w-2xl mx-auto text-lg">我们以专业、透明、高效的服务，助您轻松实现置业梦想</p>
+
+          <div className="grid md:grid-cols-3 gap-12">
+            <div className="text-center group">
+              <div className="w-20 h-20 bg-gradient-to-br from-accent-100 to-accent-200 rounded-full flex items-center justify-center mx-auto mb-6 shadow-md group-hover:scale-110 transition-transform duration-300">
+                <svg className="w-10 h-10 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+              </div>
+              <h3 className="text-2xl font-bold mb-4 text-primary-900">免费服务</h3>
+              <p className="text-primary-600 leading-relaxed">我们的服务对您完全免费。贷款经纪费由银行支付，您无需支付任何咨询费或手续费。</p>
+            </div>
+            <div className="text-center group">
+              <div className="w-20 h-20 bg-gradient-to-br from-accent-100 to-accent-200 rounded-full flex items-center justify-center mx-auto mb-6 shadow-md group-hover:scale-110 transition-transform duration-300">
+                <svg className="w-10 h-10 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+              </div>
+              <h3 className="text-2xl font-bold mb-4 text-primary-900">30+ 贷款机构</h3>
+              <p className="text-primary-600 leading-relaxed">我们合作 30+ 家贷款机构，从大型银行到专业金融机构，确保您获得最佳利率和条款。</p>
+            </div>
+            <div className="text-center group">
+              <div className="w-20 h-20 bg-gradient-to-br from-accent-100 to-accent-200 rounded-full flex items-center justify-center mx-auto mb-6 shadow-md group-hover:scale-110 transition-transform duration-300">
+                <svg className="w-10 h-10 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+              </div>
+              <h3 className="text-2xl font-bold mb-4 text-primary-900">节省您的时间</h3>
+              <p className="text-primary-600 leading-relaxed">研究上百种产品和处理繁琐的 paperwork 非常耗时。让我们为您搞定一切，专注您的事业。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials - 统一浅色背景 */}
+      <section className="bg-platinum-50 py-12 relative">
+        {/* Why Choose Us → Testimonials 金色分隔 */}
+        <div className="absolute top-0 left-0 right-0 h-3 bg-gradient-to-r from-accent-500 to-transparent"></div>
+
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl font-display font-bold text-center mb-4 text-primary-900">客户评价</h2>
+          <p className="text-center text-primary-600 mb-12 max-w-2xl mx-auto">来自真实客户的信任与反馈</p>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <TestimonialCard
+              name="Sarah J."
+              location="墨尔本"
+              text="我的第一套房贷只用了两天就获批，整个过程非常顺畅！强烈推荐。"
+            />
+            <TestimonialCard
+              name="Mike T."
+              location="悉尼"
+              text="帮我重新贷款，每月省了 $400。专业且高效，非常感谢！"
+            />
+            <TestimonialCard
+              name="Lisa K."
+              location="布里斯班"
+              text=" Stress Free Finance 让买房变得如此轻松。经纪人对每个细节都耐心解释。"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* CTA - 统一浅色背景 + 金色按钮 */}
+      <section className="bg-white py-12 relative">
+        {/* Testimonials → CTA 金色分隔 */}
+        <div className="absolute top-0 left-0 right-0 h-3 bg-gradient-to-r from-accent-500 to-transparent"></div>
+
+        <div className="container mx-auto px-4 text-center relative z-10">
+          <h2 className="text-3xl md:text-4xl font-display font-bold mb-6 text-primary-900">准备好轻松置业了吗？</h2>
+          <p className="text-xl text-primary-600 mb-10 max-w-2xl mx-auto leading-relaxed">
+            节省您的时间与精力。让我们用专业服务，帮您找到最合适的贷款方案。
+          </p>
+          <a
+            href="/zh/contact"
+            className="inline-flex items-center justify-center rounded-lg bg-gradient-to-r from-accent-500 to-accent-600 px-10 py-6 text-lg font-bold text-primary-900 hover:from-accent-400 hover:to-accent-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-400 focus-visible:ring-offset-2 focus-visible:ring-offset-primary-900 transition-all duration-300 shadow-xl shadow-accent-500/30 hover:shadow-accent-400/40 transform hover:scale-105"
+          >
+            预约免费评估
+          </a>
         </div>
       </section>
     </div>
