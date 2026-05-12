@@ -162,10 +162,10 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* CTA */}
-      <div className="py-16" style={{ background: 'linear-gradient(135deg, #1a1a1a 0%, #2c2c2c 100%)' }}>
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-2xl font-bold mb-4" style={{ color: '#1a1a1a', fontFamily: 'Playfair Display, serif' }}>准备好与我们合作了吗？</h2>
+      {/* CTA - WHITE BACKGROUND */}
+      <section className="bg-white py-16 relative">
+        <div className="container mx-auto px-4 text-center relative z-10">
+          <h2 className="text-2xl font-bold mb-4" style={{ fontFamily: 'Playfair Display, serif', color: '#1a1a1a' }}>准备好与我们合作了吗？</h2>
           <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
             无论您处于哪个阶段，我们都乐意提供免费、专业的建议。
           </p>
@@ -194,7 +194,7 @@ export default function AboutPage() {
             </a>
           </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 }

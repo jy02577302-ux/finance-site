@@ -1,9 +1,12 @@
-import ContactForm from "@/components/contact-form";
+import { Metadata } from "next";
+import Link from "next/link";
 import Image from "next/image";
+import { CheckCircle, Users, Award, Clock, Heart } from "lucide-react";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "联系我们 | STRESS FREE FINANCE",
   description: "联系 STRESS FREE FINANCE 获取免费房贷评估。填写表单或直接致电 0412 892 782。",
+  keywords: "mortgage, home loan, melbourne mortgage, australian home loan, investment loan, construction loan, 房贷, 房屋贷款, 墨尔本房贷, 澳洲房贷"
 };
 
 export default function ContactPage() {
@@ -27,27 +30,11 @@ export default function ContactPage() {
             免费咨询，无任何义务。我们随时为您提供专业建议。
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="tel:0412892782"
-              className="inline-flex items-center justify-center gap-2 px-8 py-3 font-semibold transition-all rounded-sm"
-              style={{
-                background: 'linear-gradient(135deg, #d4a855 0%, #c59547 100%)',
-                color: '#fff',
-                boxShadow: '0 4px 12px rgba(212, 168, 85, 0.25)'
-              }}
-            >
+            <a href="tel:0412892782" className="inline-flex items-center justify-center gap-2 px-8 py-3 font-semibold transition-all rounded-sm" style={{ background: 'linear-gradient(135deg, #d4a855 0%, #c59547 100%)', color: '#fff', boxShadow: '0 4px 12px rgba(212, 168, 85, 0.25)' }}>
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
               电话咨询
             </a>
-            <a
-              href="#contact-form"
-              className="inline-flex items-center justify-center gap-2 px-8 py-3 font-semibold transition-colors rounded-sm"
-              style={{
-                background: 'transparent',
-                color: '#fff',
-                border: '1px solid rgba(212, 168, 85, 0.6)'
-              }}
-            >
+            <a href="#contact-form" className="inline-flex items-center justify-center gap-2 px-8 py-3 font-semibold transition-colors rounded-sm" style={{ background: 'transparent', color: '#fff', border: '1px solid rgba(212, 168, 85, 0.6)' }}>
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
               在线留言
             </a>
@@ -55,7 +42,7 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Stats Banner */}
+      {/* Stats */}
       <div className="bg-gradient-to-r from-slate-50 to-white border-b" style={{ borderColor: 'rgba(212, 168, 85, 0.1)' }}>
         <div className="container mx-auto px-4 py-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
@@ -79,8 +66,8 @@ export default function ContactPage() {
         </div>
       </div>
 
+      {/* Main Content */}
       <div className="container mx-auto px-4 py-16">
-        {/* Intro Section */}
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-3xl font-bold mb-6" style={{ color: '#1a1a1a', fontFamily: 'Playfair Display, serif' }}>专业团队随时为您服务</h2>
           <p className="text-gray-600 leading-relaxed mb-8">
@@ -102,14 +89,12 @@ export default function ContactPage() {
           </div>
         </div>
 
-        {/* Main Content Grid */}
         <div className="grid lg:grid-cols-3 gap-12 items-start">
-          {/* Contact Info Cards (Left Side) */}
+          {/* Contact Info */}
           <div className="lg:col-span-1 space-y-6">
             <div className="bg-white p-6 rounded-xl shadow-lg border" style={{ borderColor: 'rgba(212, 168, 85, 0.2)', boxShadow: '0 4px 20px rgba(0,0,0,0.04)' }}>
               <h3 className="text-lg font-bold mb-6 flex items-center gap-2" style={{ color: '#1a1a1a' }}>
-                <span style={{ color: '#b45309' }}>●</span>
-                联系方式
+                <span style={{ color: '#b45309' }}>●</span>联系方式
               </h3>
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
@@ -145,57 +130,70 @@ export default function ContactPage() {
               </div>
             </div>
 
-            {/* Business Hours */}
             <div className="bg-gradient-to-br from-slate-50 to-white p-6 rounded-xl border" style={{ borderColor: 'rgba(212, 168, 85, 0.2)' }}>
               <h3 className="text-lg font-bold mb-4" style={{ color: '#1a1a1a' }}>工作时间</h3>
               <div className="space-y-2 text-sm">
-                <div className="flex justify-between">
-                  <span className="text-gray-600">周一 - 周五</span>
-                  <span style={{ color: '#1a1a1a' }}>9:00 AM - 5:00 PM</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-gray-600">周六</span>
-                  <span style={{ color: '#1a1a1a' }}>10:00 AM - 2:00 PM</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-gray-600">周日</span>
-                  <span className="text-gray-500">休息</span>
-                </div>
+                <div className="flex justify-between"><span className="text-gray-600">周一 - 周五</span><span style={{ color: '#1a1a1a' }}>9:00 AM - 5:00 PM</span></div>
+                <div className="flex justify-between"><span className="text-gray-600">周六</span><span style={{ color: '#1a1a1a' }}>10:00 AM - 2:00 PM</span></div>
+                <div className="flex justify-between"><span className="text-gray-600">周日</span><span className="text-gray-500">休息</span></div>
               </div>
               <p className="text-xs text-gray-500 mt-4">* 公共假期可能调整</p>
             </div>
 
-            {/* Social Links */}
             <div className="bg-white p-6 rounded-xl shadow-lg border text-center" style={{ borderColor: 'rgba(212, 168, 85, 0.2)', boxShadow: '0 4px 20px rgba(0,0,0,0.04)' }}>
               <h3 className="text-lg font-bold mb-4" style={{ color: '#1a1a1a' }}>关注我们</h3>
               <div className="flex justify-center gap-4">
                 <a href="#" className="w-10 h-10 rounded-full flex items-center justify-center transition-colors hover:bg-[#b45309] hover:text-white" style={{ background: 'rgba(212, 168, 85, 0.1)', color: '#b45309' }}>
-                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" /></svg>
                 </a>
                 <a href="#" className="w-10 h-10 rounded-full flex items-center justify-center transition-colors hover:bg-[#b45309] hover:text-white" style={{ background: 'rgba(212, 168, 85, 0.1)', color: '#b45309' }}>
-                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" /></svg>
                 </a>
                 <a href="#" className="w-10 h-10 rounded-full flex items-center justify-center transition-colors hover:bg-[#b45309] hover:text-white" style={{ background: 'rgba(212, 168, 85, 0.1)', color: '#b45309' }}>
-                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" /></svg>
                 </a>
               </div>
             </div>
           </div>
 
-          {/* Contact Form (Right Side) */}
+          {/* Contact Form */}
           <div className="lg:col-span-2">
             <div id="contact-form" className="bg-white rounded-xl shadow-lg border p-8" style={{ borderColor: 'rgba(212, 168, 85, 0.2)', boxShadow: '0 4px 20px rgba(0,0,0,0.04)' }}>
               <div className="mb-8">
                 <h2 className="text-2xl font-bold mb-2" style={{ color: '#1a1a1a', fontFamily: 'Playfair Display, serif' }}>发送消息</h2>
                 <p className="text-gray-600">填写以下表单，我们将在24小时内回复</p>
               </div>
-              <ContactForm locale="zh" />
+              <div data-slot="card" data-size="default" className="group/card flex flex-col gap-4 overflow-hidden rounded-xl bg-card py-4 text-sm text-card-foreground ring-1 ring-foreground/10 has-data-[slot=card-footer]:pb-0 has-[&gt;img:first-child]:pt-0 max-w-2xl mx-auto">
+                <div data-slot="card-content" className="group-data-[size=sm]/card:px-3 p-6 space-y-6">
+                  <div className="text-center">
+                    <h2 className="text-2xl font-bold mb-2">联系我们</h2>
+                    <p className="text-gray-600">如有任何问题或咨询，请通过以下方式联系我们：</p>
+                  </div>
+                  <div className="space-y-4">
+                    <div className="flex items-center gap-3 p-4 bg-gray-50 rounded-lg">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-mail w-5 h-5 text-primary"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+                      <div>
+                        <p className="text-sm text-gray-500">电子邮箱</p>
+                        <a href="mailto:info@stressfree.com.au" className="text-primary hover:underline font-medium">info@stressfree.com.au</a>
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-3 p-4 bg-gray-50 rounded-lg">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-phone w-5 h-5 text-primary"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                      <div>
+                        <p className="text-sm text-gray-500">电话</p>
+                        <a href="tel:1300123456" className="text-primary hover:underline font-medium">1300 123 456</a>
+                      </div>
+                    </div>
+                  </div>
+                  <a href="mailto:info@stressfree.com.au" className="inline-flex items-center justify-center rounded-lg font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary bg-primary text-primary-foreground hover:bg-primary/90 h-8 px-4 text-sm w-full">发送邮件</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Map Section */}
+      {/* Map */}
       <div className="mt-16">
         <div className="container mx-auto px-4">
           <div className="rounded-2xl overflow-hidden shadow-lg border" style={{ borderColor: 'rgba(212, 168, 85, 0.15)' }}>
@@ -206,27 +204,18 @@ export default function ContactPage() {
                 </div>
                 <p className="text-gray-700 font-medium mb-2">STRESS FREE FINANCE</p>
                 <p className="text-gray-600 mb-4">123 Collins St, Melbourne VIC 3000</p>
-                <a
-                  href="https://maps.google.com/?q=123+Collins+St+Melbourne+VIC+3000"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-6 py-2 rounded-full text-sm font-semibold transition-colors"
-                  style={{ background: '#b45309', color: '#fff' }}
-                >
-                  在 Google Maps 中打开
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
-                </a>
+                <a href="https://maps.google.com/?q=123+Collins+St+Melbourne+VIC+3000" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-2 rounded-full text-sm font-semibold transition-colors" style={{ background: '#b45309', color: '#fff' }}>在 Google Maps 中打开<svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg></a>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      {/* CTA */}
-      <div className="py-16 mt-16" style={{ background: 'linear-gradient(135deg, #1a1a1a 0%, #2c2c2c 100%)' }}>
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-2xl font-bold mb-4 text-white" style={{ fontFamily: 'Playfair Display, serif' }}>准备好开始了吗？</h2>
-          <p className="text-white/80 mb-8 max-w-2xl mx-auto">
+      {/* CTA - WHITE BACKGROUND */}
+      <section className="bg-white py-16 mt-16 relative">
+        <div className="container mx-auto px-4 text-center relative z-10">
+          <h2 className="text-2xl font-bold mb-4" style={{ fontFamily: 'Playfair Display, serif', color: '#1a1a1a' }}>准备好开始了吗？</h2>
+          <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
             我们的专家团队随时准备为您提供免费、专业的房贷咨询服务。现在就联系我们，迈出置业第一步。
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -247,7 +236,7 @@ export default function ContactPage() {
               className="inline-flex items-center justify-center gap-2 px-10 py-4 font-semibold transition-colors rounded-sm"
               style={{
                 background: 'transparent',
-                color: '#fff',
+                color: '#1a1a1a',
                 border: '1px solid rgba(212, 168, 85, 0.4)'
               }}
             >
@@ -256,7 +245,7 @@ export default function ContactPage() {
             </a>
           </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 }
